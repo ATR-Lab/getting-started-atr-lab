@@ -20,6 +20,8 @@ Please be aware of its contents.
 
 ## Lab Equipment
 
+## Spending ATR's Money
+
 ## Physical Security
 
 ## Privacy
