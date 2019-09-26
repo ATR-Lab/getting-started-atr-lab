@@ -25,3 +25,5 @@ Please be aware of its contents.
 ## Physical Security
 
 ## Privacy
+
+## Password Sharing
