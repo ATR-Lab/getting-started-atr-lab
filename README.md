@@ -1,4 +1,4 @@
-# lab-getting-started
+# Getting Started at the ATR Lab
 <b>Code of conduct, rules and dynamics of the laboratory</b>
 
 <hr>
