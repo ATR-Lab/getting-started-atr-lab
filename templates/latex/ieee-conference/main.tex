@@ -1,0 +1,157 @@
+% IEEE conference paper skeleton
+% Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University
+%
+% Build:  tectonic main.tex        (or: latexmk -pdf main.tex)
+% Guide:  ../../../research/writing-papers.md
+%
+% Before you submit:
+%   1. Check the venue's call for papers. Many IEEE Robotics and Automation
+%      Society conferences (ICRA, IROS, Humanoids) supply their own template
+%      (ieeeconf.cls); if so, move this body into that file.
+%   2. Double-blind venue? Set \anonymoustrue below and remove self-identifying
+%      text (acknowledgments, "our previous work [3]", repository links).
+%   3. Replace every [bracketed placeholder]. Search the file for "[".
+
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts % allows \thanks in the title block
+
+% IEEE papers are set in Times. pdfLaTeX (Overleaf's default) gets Times from
+% IEEEtran itself; XeLaTeX, LuaLaTeX and tectonic need a Times-compatible font.
+\usepackage{iftex}
+\ifPDFTeX\else
+  \usepackage{fontspec}
+  \setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular,
+    BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\fi
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{url}
+
+% ---------------------------------------------------------------------------
+% Review toggle
+% ---------------------------------------------------------------------------
+\newif\ifanonymous
+\anonymousfalse % \anonymoustrue hides authors and acknowledgments for double-blind review
+
+% ---------------------------------------------------------------------------
+% Title and authors
+% ---------------------------------------------------------------------------
+\title{[Paper Title in the Venue's Capitalization Style]}
+
+\ifanonymous
+  \author{\IEEEauthorblockN{Anonymous Author(s)}
+    \IEEEauthorblockA{Affiliation withheld for review}}
+\else
+  \author{%
+    \IEEEauthorblockN{[First Author Name]}
+    \IEEEauthorblockA{\textit{Advanced Telerobotics Research Lab}\\
+      \textit{Department of Computer Science}\\
+      \textit{Kent State University}\\
+      Kent, OH, USA\\
+      {[username]@kent.edu}}
+    \and
+    \IEEEauthorblockN{[Second Author Name]}
+    \IEEEauthorblockA{\textit{Advanced Telerobotics Research Lab}\\
+      \textit{Department of Computer Science}\\
+      \textit{Kent State University}\\
+      Kent, OH, USA\\
+      {[username]@kent.edu}}
+    \and
+    \IEEEauthorblockN{[Faculty Advisor Name]}
+    \IEEEauthorblockA{\textit{Advanced Telerobotics Research Lab}\\
+      \textit{Department of Computer Science}\\
+      \textit{Kent State University}\\
+      Kent, OH, USA\\
+      {[username]@kent.edu}}
+  }
+\fi
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+[One paragraph, usually 150 to 250 words; check the call for papers. State the
+problem, what you built or studied, how you evaluated it and the main result
+with its conditions (for example, ``in simulation'' or ``on a Unitree Go2 in the
+lab'').]
+\end{abstract}
+
+\begin{IEEEkeywords}
+[telerobotics], [human-robot interaction], [keyword three]
+\end{IEEEkeywords}
+
+% ---------------------------------------------------------------------------
+\section{Introduction}
+% ---------------------------------------------------------------------------
+[Motivate the problem and state your contributions as a short list.]
+Robot software in the lab builds on ROS~2~\cite{macenski2022ros2,ros2jazzydocs},
+and many of our controllers are first tested in simulation~\cite{todorov2012mujoco}.
+
+\section{Related Work}
+[Group prior work by approach and say how yours differs.]
+
+\section{Method}
+[Describe the system. Define every symbol the first time it appears.]
+\begin{equation}
+  \mathbf{u}_t = K\,(\mathbf{x}^{*}_t - \mathbf{x}_t)
+  \label{eq:control}
+\end{equation}
+Equation~\eqref{eq:control} is a placeholder.
+
+\section{Experiments}
+[Setup, conditions, participants (with IRB protocol number once approved),
+metrics and results. Say whether each robot run was teleoperated, autonomous
+or scripted.]
+
+% Sample figure. Replace the \fbox placeholder with
+%   \includegraphics[width=\linewidth]{figures/[file].pdf}
+% Export plots as PDF (vector) and photos as PNG or JPEG at 300 dpi or more.
+\begin{figure}[t]
+  \centering
+  \fbox{\parbox[c][1.4in][c]{0.92\linewidth}{\centering Figure placeholder}}
+  \caption{[One-sentence caption that states what the figure shows and under
+  which conditions, for example ``Teleoperated trials, $n=[N]$'']}
+  \label{fig:overview}
+\end{figure}
+
+Fig.~\ref{fig:overview} shows [what the reader should notice].
+
+\begin{table}[t]
+  \caption{[Table Caption Above the Table, as IEEE Style Requires]}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \hline
+    Condition & [Metric 1] & [Metric 2] \\
+    \hline
+    {[Baseline]} & {[0.00]} & {[0.00]} \\
+    {[Ours]}     & {[0.00]} & {[0.00]} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Discussion and Limitations}
+[What the results do and do not show.]
+
+\section{Conclusion}
+[Two or three sentences.]
+
+\ifanonymous\else
+\section*{Acknowledgment}
+% Name funders exactly as the award record does, and only after the PI confirms
+% which award funded this work.
+This work was supported in part by [Sponsor] under [Grant No.].
+% If you used generative AI to write or edit text, or to make figures or code,
+% disclose it here as the IEEE policy on AI-generated content requires
+% (see research/standards.md).
+\fi
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

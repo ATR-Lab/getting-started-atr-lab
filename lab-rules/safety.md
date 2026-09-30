@@ -1,131 +1,205 @@
+# Safety rules
 
+> **Read this when** you are about to use any tool, machine or robot in the lab, before every new kind of experiment, and whenever something feels unsafe.
 
+These are the lab's safety rules, from emergencies to cleaning up. Everyone who works in the Advanced Telerobotics Research Lab follows them, and each device page in [hardware](../hardware/README.md) adds rules for that device. The one thing to remember: **you are responsible for your own safety and your own actions**, and anyone may stop any activity they think is unsafe.
 
-# Lab Safety Guidelines
-### General Rules:
-    	a.) Be aware of fire alarm and safety signs. Follow the instructions in case of an emergency.
-    	b.) Be aware of the building evacuation procedure.
-    	c.) Be aware of where lab safety equipment is and how to use it.
-    	d.) Do not eat in the lab.
-    	e.) Do not drink in the lab.
-    	f.) Report all injuries.
-    	g.) Be aware of all rules.
-    	h.) Clean area when done. (If cleaning equipment is not available, report missing material.)
-    	i.) YOU ARE ULTIMATELY RESPONSIBLE FOR YOUR OWN SAFETY AND ACTIONS.
+## Contents
 
-### Equipment Rules:
-      a.) Wear safety gear when using equipment. (safety glasses, gloves, masks, etc.)
-    	b.) Only use equipment you are permitted to use.
-    	c.) Properly record check-out and check-in of equipment.
-    	c.) Unplug equipment and properly store when done.
-    	d.) Report any missing, malfunctioning, or damaged equipment.
-    	e.) Do not interrupt someone using equipment.
+- [Emergencies first](#emergencies-first)
+- [Reporting injuries and hazards](#reporting-injuries-and-hazards)
+- [Training](#training)
+- [General rules](#general-rules)
+- [Equipment rules](#equipment-rules)
+- [Machine operation](#machine-operation)
+- [Workbench and electronics](#workbench-and-electronics)
+- [Robots in motion](#robots-in-motion)
+- [Batteries](#batteries)
+- [3D printing and resin](#3d-printing-and-resin)
+- [Lasers and sensors](#lasers-and-sensors)
+- [Safety mindset](#safety-mindset)
+- [Safety attire](#safety-attire)
+- [Cleanliness](#cleanliness)
+- [Related](#related)
 
-### Machine Operations
-Never use any machine unless you have been trained on its operation by a lab staff member and are aware of its safe use.
-If you have questions do not hesitate to ask a staff member.
-Report any malfunctioning equipment to lab staff. Do not use any equipment that is not working properly. Notify others by placing an out of order sign at the machine.
-Turn off devices
+## Emergencies first
 
+> [!CAUTION]
+> **Fire, serious injury, smoke from a battery, someone unresponsive: call 911.** Kent State says to "Dial 9-1-1 for immediate help on all campuses" ([Campus safety](https://www.kent.edu/campus-safety)). Get yourself and others out first; then tell [lab safety contact] and the director.
 
-## Workbench
+| What | Where or who |
+| --- | --- |
+| Emergency (police, fire, medical) | **911** |
+| Kent State Police, non-emergency | **330-672-2212**, Stockdale Safety Building, 530 East Summit Street ([Police Services](https://www.kent.edu/publicsafety/police-services)) |
+| Kent State emergency guides (fire, tornado, hazardous materials, active threat) | [Emergency Management](https://www.kent.edu/publicsafety/emergency-management-services) |
+| Emergency alerts | [Flash ALERTS](https://www.kent.edu/flashalerts): students, faculty and staff are enrolled automatically; keep your phone number current |
+| First aid kit | [first aid kit location] |
+| Fire extinguisher | [fire extinguisher location] |
+| Eyewash station | [eyewash location] |
+| Nearest exits and the building's evacuation assembly point | [evacuation route and assembly point] |
+| Lab safety contact | [lab safety contact] |
 
-All students and researchers in the Advanced Telerobotics Research (ATR) Laboratory must gain the skills they need to create a safe laboratory environment.
+Know the building's fire alarm, exits and evacuation procedure before your first day at the bench, and follow the instructions on safety signs and from emergency staff.
 
-Report accidents and injuries immediately to _____.
-Wear safety glasses when cutting wires, trimming component leads and soldering.
-If you are new to soldering, look at several of the many tutorials on soldering on YouTube: 
-www.youtube.com/watch?v=Qps9woUGkvI
-www.youtube.com/watch?v=J5Sb21qbpEQ
-www.youtube.com/watch?v=fYz5nIHH0iY   
+## Reporting injuries and hazards
 
-Do not touch the tip of a soldering iron to find out if it is hot.   
+- **Report every injury, however small, right away** to [lab safety contact] and the director, including cuts, burns and anything that touched your eyes.
+- **Report every near miss and hazard** (a spill, a swollen battery, a robot that moved when it should not have, a broken guard, frayed wiring) to [lab safety contact], so it can be fixed before someone is hurt.
+- **Kent State Environmental Health and Safety (EHS)** must also get a written report: 330-672-4347, <ehs@kent.edu>, Harbourt Hall, Room 323. The [incident reporting page](https://www.kent.edu/facilitiesplanning/incident-reporting) has three forms: an Employee Injury Report, a Lab Incident Report and a Non-employee Incident/Injury Report. EHS asks for injury reports within 48 hours, and notice within 8 hours for a serious injury; Kent State's [workers' compensation page](https://www.kent.edu/people-and-culture/benefits/workers-compensation) asks employees to report within 24 hours. Report the same day, and [lab safety contact] will help you pick the right form.
 
-   
-   Do not melt a ball of solder on the soldering iron tip and then move the tip over to the joint you want to solder.  If the ball of solder drops, you will have molten droplets of solder splattering.   
-   
-When soldering, use a fume extractor to remove and filter the fumes.   
+## Training
 
-YouTube video on solder fumes: www.youtube.com/watch?v=KVaN3vTXY9E.   
+- Complete the lab safety orientation with [lab safety contact] before you use any tool, machine or robot.
+- Never use a machine or robot until someone who is trained on it has trained you and signed you off: [how sign-offs are recorded].
+- Ask [lab safety contact] which Kent State EHS courses you need (they run in FlashTrain). EHS courses must be repeated every three years ([EHS training](https://www.kent.edu/facilitiesplanning/training)).
 
-Some oscilloscope inputs are floating, meaning they are completely isolated from the mains power supply.   For these oscilloscopes one can safely make measurements on the main power supply. Other oscilloscopes may have their ground connection connected to the mains power supply.  Consequently, one has to be very careful with these oscilloscopes when making measurements on the main power supply, otherwise one may inadvertently create a short.  For a particular oscilloscope one may not know how the oscilloscope ground is connected, so a good rule to follow is to avoid making measurements on the mains power supply with an oscilloscope.   The safest method is to us an isolation transformer.   
+## General rules
 
-Always wear shoes, make sure shoes have not slip soles.   
+- Know the fire alarm, safety signs and the building evacuation procedure, and follow the instructions in an emergency.
+- Know where the lab's safety equipment is and how to use it (see the [table above](#emergencies-first)).
+- No eating or drinking in the lab.
+- Report all injuries.
+- Know all of these rules, and the rules on the device page before you use a device.
+- Clean your area when you are done. If cleaning supplies have run out, report it.
+- You are ultimately responsible for your own safety and actions.
 
-Some components can explode, burst into flames and get hot, so be careful   
+## Equipment rules
 
-Electrolytic capacitors are polarized, which means they have a “++ side and a “-“ side.  They can burst open or even explode when they are place in a circuit incorrectly.   
-YouTube: www.youtube.com/watch?v=jnPQCZ0Sfsg   
+- Wear the safety gear the task calls for: safety glasses, gloves, masks.
+- Use only equipment you have been trained and allowed to use.
+- Record every checkout and return of equipment ([equipment checkout](best-practices.md#equipment-checkout)).
+- Unplug equipment and store it properly when you are done.
+- Report any missing, malfunctioning or damaged equipment.
+- Do not interrupt someone who is using equipment.
 
-Tantalum electrolytic capacitors (if used incorrectly) can cause fire.    
-YouTube: www.youtube.com/watch?v=sW0a9d_vWoc.   
+## Machine operation
 
-Never exceed the voltage rating for electrolytic capacitors, as they may explode.
-YouTube: www.youtube.com/watch?v=_WheLp0RdLQ   
+- Never use a machine unless a trained lab staff member has trained you on it and you know how to use it safely. If you have questions, ask; nobody minds.
+- Do not use any equipment that is not working properly. Report it to [lab safety contact], and put an "out of order" sign on it so nobody else uses it.
+- Turn devices off when you are done.
 
-Some LEDs can “pop” or burst open and even catch fire if they are used without current-limiting resistors or the current-limiting resistor is too small   
-YouTube: www.youtube.com/watch?v=ZXEZtePxa0U   
+## Workbench and electronics
 
-Some components in a circuit can get quite hot even though they are functioning properly.  For example, linear voltage regulator ICs is often bolted to heat sink to cool them down.  Without a heat sink some of these ICs will get hot enough to cause severe burns.   
+Every student and researcher in the lab needs the skills to keep the bench safe for everyone.
 
+### Soldering
 
+> [!WARNING]
+> A soldering iron tip is hot enough to burn skin instantly, and solder fumes irritate the lungs. Wear safety glasses and use the fume extractor every time.
 
+- Wear safety glasses when you cut wire, trim component leads or solder; clipped leads fly.
+- Never touch the tip of a soldering iron to find out whether it is hot. Return the iron to its stand every time you put it down.
+- Do not melt a ball of solder on the tip and carry it to the joint. If the ball drops, molten solder splatters.
+- Use the fume extractor to remove and filter the fumes whenever you solder.
+- Wash your hands after soldering, especially before you eat.
+- New to soldering? Watch a tutorial first, such as the [soldering tutorial for beginners (oneTesla)](https://www.youtube.com/watch?v=Qps9woUGkvI) or EEVblog's soldering tutorials ([part 1, tools](https://www.youtube.com/watch?v=J5Sb21qbpEQ); [part 2](https://www.youtube.com/watch?v=fYz5nIHH0iY)), and on fumes, [PACE's fume extraction video](https://www.youtube.com/watch?v=KVaN3vTXY9E).
 
-Be prepared.   Read and fully comprehend the lab procedure as set forth in the lab manual before you begin any experiment.  If you do not understand the procedure, see _________.   
+### Components that can burst, burn or get hot
 
-Think safety.   Work deliberately and carefully.  No horseplay   
+- **Electrolytic capacitors are polarized**: they have a "+" side and a "-" side, and they can burst open or explode if placed in a circuit backward ([video: reverse voltage](https://www.youtube.com/watch?v=jnPQCZ0Sfsg)).
+- **Tantalum capacitors** can catch fire if used incorrectly ([video: SparkFun](https://www.youtube.com/watch?v=sW0a9d_vWoc)).
+- **Never exceed a capacitor's voltage rating**; it may explode ([video: excessive voltage](https://www.youtube.com/watch?v=_WheLp0RdLQ)).
+- **LEDs** can pop, burst or catch fire without a current-limiting resistor, or with one that is too small ([video](https://www.youtube.com/watch?v=ZXEZtePxa0U)).
+- **Some parts run hot even when they work properly.** Linear voltage regulators, for example, are often bolted to a heat sink; without one, some get hot enough to cause severe burns. Touch-test nothing; use a thermometer or wait.
 
-Know the hazards of any materials or machinery you are working with. The laboratory manual and/or instructor will review specific safety issues on individual experiments before you perform any tests.   
+### Oscilloscopes and mains power
 
-All participants must wear appropriate safety equipment. Safety goggles must be worn anytime any laboratory experiment is being performed.  Additional safety equipment must be utilized based on specific experiment requirements.   
+Some oscilloscopes have floating (isolated) inputs; on others, the probe ground is connected to mains earth, and clipping it to a live mains circuit creates a short. You often cannot tell which kind you have. **Do not measure mains power with an oscilloscope.** If a measurement on mains is unavoidable, ask [lab safety contact] first and use an isolation transformer.
 
-All participants wear appropriate laboratory attire. No open toed shoes; no loose fitting clothing; jewelry should be removed; long hair should be tied back   
+### Before you start an experiment
 
-No food or beverage at the workbench.   
+- **Be prepared.** Read and understand the procedure for the experiment before you begin. If you do not understand it, see [lab safety contact].
+- **Think safety.** Work deliberately and carefully. No horseplay.
+- **Know the hazards** of every material and machine you use. The procedure, or the person supervising, will review specific safety issues before you run a test.
+- **Wear the right protective equipment.** Safety goggles are worn whenever a lab experiment is being performed; some experiments need more.
+- No food or drink at the workbench.
+- Know the emergency procedures, fire escape routes and where the nearest phone is.
+- **Report hazards immediately**: spills, equipment malfunctions, injuries and anything else that looks unsafe, to [lab safety contact].
+- Keep your work area clean.
 
-Know emergency procedures. Make note of fire escape routes and emergency phone locations.   
+## Robots in motion
 
-Report any perceived safety hazards. Immediately report any spills, equipment malfunctions, injuries or other perceived safety hazards to_________.   
+Robots are heavy, fast and strong, and they do not know you are there. These rules apply to every robot; each device page adds its own: [Unitree Go2](../hardware/unitree-go2.md#safety), [Booster K1](../hardware/booster-k1.md#safety), [OpenManipulator-X](../hardware/openmanipulator-x.md#safety), [LeRobot SO-101](../hardware/lerobot-so-101.md#safety) and [Yahboom ROSMASTER X3](../hardware/rosmaster-x3.md#safety).
 
-Keep your work area clean.   
+> [!WARNING]
+> Never stand in a robot's reach or path while it is powered and enabled, and never leave a powered robot unattended.
 
-## Safety Mindset
+- **Only trained people operate a robot**, and one named person is in charge of each session.
+- **Find the emergency stop first.** Before every session, locate the robot's stop (a button, a remote or the power switch) and test that it works. The operator keeps it within reach the whole time.
+- **Clear and mark the area.** Move people, cables, bags and liquids out of the test area: [how the lab marks a robot test area]. Say "robot moving" before you enable motors.
+- **New code runs in simulation first**, then on the real robot at low speed or torque, with a legged robot on its stand or in a safe lying position when the device page says so.
+- **Keep hands, hair and cables away from pinch points**: arm joints and grippers, legs and wheels.
+- **Legged and humanoid robots can fall, jump or kick.** Keep a spotter, keep the area clear of people who are not part of the test, and never try to catch a falling robot with your hands.
+- **Teleoperation:** if the video lags or the connection drops, stop the robot before you try to fix it. Test what the robot does when it loses the connection before you rely on it.
+- **Autonomous code, trained policies and AI coding agents** never run on a robot unless a person is watching with the stop in reach ([AI coding agents](../tech-stack/claude-code.md#lab-rules-for-ai-coding-agents)).
+- **Visitors and minors** stay outside the test area and do not operate robots unless a trained member supervises them one-to-one.
+- **When you are done**, disable motors, power the robot down, remove or disconnect its battery and put it back in its place.
 
-Never worked when you are tired, stressed, or unable to work carefully   
+## Batteries
 
-Never interrupt, distract, or walk directly behind a person operating a machine   
+Most lab robots run on lithium batteries (LiPo or Li-ion), which can catch fire if they are damaged, overcharged or short-circuited. Each device page has the rules for its own battery pack.
 
-Never place hands or other body parts in the area of any cutting head, blade, drill, pinch-point, or other moving, rotating or cutting device/tool. Remove all hand tools, accessory devices, and other foreign objects from the immediate work area before beginning to operate any equipment   
+> [!CAUTION]
+> If a battery smokes, hisses, swells quickly or catches fire, leave the room, pull the fire alarm and call 911. Do not try to put out a battery fire unless you are trained to.
 
-Ensure that all safety mechanisms such as guards, shields, and light curtains are operating correctly and securely in place prior to operating any equipment   
+- **Charging:** use only the charger made for that battery, or a balance charger set to the right chemistry and cell count. Charge on a non-flammable surface or in a fire-resistant charging bag or box, [battery charging location], and never leave a charging battery unattended or charging overnight.
+- **Before you charge:** let a hot battery cool down first, and never charge a battery that is swollen, dented, punctured or leaking.
+- **Storage:** store batteries in [battery storage location], in fire-resistant containers, away from heat and direct sun, at the storage charge level (most chargers have a "storage" mode). Do not store batteries inside robots.
+- **Damaged cells:** a swollen ("puffy"), dented, punctured, leaking or unusually hot battery is out of service. Stop using it, move it into a fire-resistant container if you can do so safely, label it "damaged" and tell [lab safety contact]. Never put a lithium battery in the trash.
+- **Disposal:** Kent State recycles rechargeable batteries, including lithium-ion, through the Call2Recycle program ([Kent State zero waste](https://www.kent.edu/sustainability/zero-waste)). For damaged batteries, ask EHS (330-672-4347, <ehs@kent.edu>) how to dispose of them.
+- Tape over the terminals of loose batteries so they cannot short-circuit.
 
-Aisles, exits, and access to emergency equipment must be kept clear at all times   
+## 3D printing and resin
 
+The Formlabs Form 3 prints with liquid photopolymer resin and parts are washed in isopropyl alcohol (IPA). Both are hazardous. The device rules are on the [Formlabs Form 3 page](../hardware/formlabs-form-3.md#safety).
 
+- **Wear nitrile gloves and safety glasses** when you handle liquid resin, uncured parts or used IPA, and work with good ventilation. If resin touches your skin, wash it off with soap and water.
+- **Read the safety data sheet (SDS)** for each resin before you use it: [SDS location].
+- **IPA is flammable** ([Formlabs](https://formlabs.com/support/Isopropyl-Alcohol-IPA/)). Keep it closed, away from heat and sparks.
+- **Never pour liquid resin, or IPA with resin in it, down a drain or into the trash** ([Formlabs: disposing of resin](https://formlabs.com/support/Disposing-of-resin/)). Fully cured resin can go in the regular trash; liquid resin and used IPA are handled as hazardous waste through Kent State EHS (330-672-4347, <ehs@kent.edu>): [lab resin and IPA waste procedure].
 
-## Safety Attire
+## Lasers and sensors
 
-Appropriate clothing and personal protective equipment (PPE) must be worn while in certain lab environments (see table for each lab requirement). Unless otherwise specified, appropriate attire must always be observed while in the labs:   
+Lidars, depth cameras and some motion-capture systems emit laser or infrared light.
 
+- **Check the laser class** on the device label or in its manual before you use it. Class 1 devices are safe under normal use.
+- Do not stare into any emitter, and never look at one through binoculars, a camera lens or other optics.
+- Do not bring a laser pointer or any laser above Class 2 into the lab without approval from [lab safety contact]. Ask Kent State EHS before anyone uses a Class 3B or Class 4 laser.
+- Cameras and microphones on robots record people. Follow the [privacy rules](code-of-conduct.md#privacy) before you record anyone.
 
-Footwear must, at minimum, cover the entire foot, be secure to the foot on all sides, and provide a stable working posture. Shoes such as sandals, clogs, ballerina flats, and heels are not acceptable   
+## Safety mindset
 
-Long hair, including beards, must be tied back such that it is kept away from the front of the face and neck. A good rule-of-thumb is that if hair is long enough to tie back, do so   
+- Never work when you are tired, stressed or unable to work carefully.
+- Never interrupt or distract a person operating a machine or robot, or walk directly behind them.
+- Never put hands or other body parts near a cutting head, blade, drill, pinch point or any other moving, rotating or cutting part. Clear hand tools, accessories and other objects from the work area before you start a machine.
+- Make sure all safety devices (guards, shields, light curtains, emergency stops) work and are in place before you operate any equipment.
+- Keep aisles, exits and access to emergency equipment clear at all times.
 
-No loose clothing may be worn in the shop, including ties, scarves, and loose sleeves   
+## Safety attire
 
-Remove jewelry before beginning work, including rings, earrings, necklaces, bracelets and watches   
+Wear clothing and personal protective equipment (PPE) that fit the task. In the lab at all times:
 
-Gloves should be worn when handling extremely hot or hazardous materials but must never be worn when operating a machine with moving parts   
-
-Do not wear corded headphones and/or listening to portable music players. Cords can potentially get caught in machinery and it is important that you are able to hear Lab staff at all times while in the lab environment   
-
-Cell phones and other personal electronic devices must not be used when working at any machine   
-
+- **Footwear** covers the whole foot, stays secure on all sides and gives a stable, non-slip footing. Sandals, clogs, ballet flats and heels are not acceptable.
+- **Long hair, including beards**, is tied back away from the face and neck. If it is long enough to tie back, tie it back.
+- **No loose clothing**, including ties, scarves and loose sleeves.
+- **Remove jewelry** before you start work: rings, earrings, necklaces, bracelets and watches.
+- **Gloves** protect you from hot or hazardous materials, but never wear gloves when you operate a machine with moving parts; they can be pulled in.
+- **No corded headphones or earbuds**: cords can catch in machinery, and you must be able to hear others in the lab at all times.
+- **No phones or other personal devices** while you work at a machine.
 
 ## Cleanliness
 
-Keeping the labs clean and well maintained is important to the health and safety of everyone in the lab. It is the responsibility of all users to clean up after themselves and dispose of all waste appropriately. Keep your work area clean both while working and when you have finished working in the area.
-Never use compressed air to clean machinery, skin or clothing. Students are required to clean up using vacuums, brooms and dust pans
-Clean up any spilled liquids. If it is a potentially hazardous or oily liquid, then contact Lab staff so that they may respond with the appropriate measures.
+A clean lab is a safer lab. Everyone cleans up after themselves and disposes of waste the right way, both while working and when finished.
 
+- Never use compressed air to clean machinery, skin or clothing. Use a vacuum, broom and dustpan.
+- Clean up spilled liquids right away. If the liquid is hazardous or oily (resin, IPA, battery electrolyte, oil), keep people away and contact [lab safety contact] so it is cleaned up the right way.
+- Put tools back, and throw away solder scraps, wire clippings and packaging.
+
+## Related
+
+- [Lab rules](README.md)
+- [Code of conduct](code-of-conduct.md) and [best practices](best-practices.md)
+- [Hardware](../hardware/README.md): each device page has a safety section
+- [Kent State Environmental Health and Safety](https://www.kent.edu/facilitiesplanning/environmental-health-and-safety)
+
+<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/safety.md)</sub>
