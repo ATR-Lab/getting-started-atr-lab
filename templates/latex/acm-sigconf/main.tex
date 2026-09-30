@@ -1,0 +1,184 @@
+%% ACM conference paper skeleton (acmart, sigconf format)
+%% Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University
+%%
+%% Build:  tectonic main.tex        (or: latexmk -pdf main.tex)
+%% Guide:  ../../../research/writing-papers.md
+%%
+%% Before you submit:
+%%   1. Check the venue's call for papers for the format (sigconf or the
+%%      single-column manuscript format), page or word limits and anonymity rules.
+%%   2. Replace every [bracketed placeholder]. Search the file for "[".
+%%   3. Generate your own CCS concepts at https://dl.acm.org/ccs/ccs.cfm and paste
+%%      the CCSXML block and \ccsdesc lines below.
+
+%% ---------------------------------------------------------------------------
+%% Choose ONE \documentclass line.
+%% ---------------------------------------------------------------------------
+%% 1. Double-blind submission: line numbers on, authors and acknowledgments hidden.
+\documentclass[sigconf,review,anonymous]{acmart}
+%% 2. Single-blind submission: line numbers on, authors shown.
+% \documentclass[sigconf,review]{acmart}
+%% 3. Camera-ready, after acceptance (add the rights commands ACM sends you).
+% \documentclass[sigconf]{acmart}
+%% 4. Venues that ask for the single-column review format.
+% \documentclass[manuscript,review,anonymous]{acmart}
+
+%% ---------------------------------------------------------------------------
+%% Rights and conference metadata
+%% ---------------------------------------------------------------------------
+%% After acceptance, ACM's rights form gives you the exact commands for your
+%% paper (copyright or license type, DOI, ISBN, conference line). Replace this
+%% whole block with them. Until then these placeholders keep the layout right.
+\setcopyright{acmlicensed}
+\copyrightyear{[YYYY]}
+\acmYear{[YYYY]}
+\acmDOI{XXXXXXX.XXXXXXX}
+\acmConference[{[VENUE 'YY]}]{[Full Conference Name]}{[Dates]}{[City, Country]}
+\acmISBN{978-X-XXXX-XXXX-X/YYYY/MM}
+
+\begin{document}
+
+%% ---------------------------------------------------------------------------
+%% Title and authors
+%% ---------------------------------------------------------------------------
+\title{[Paper Title in the Venue's Capitalization Style]}
+
+\author{[First Author Name]}
+\email{[username]@kent.edu}
+\orcid{0000-0000-0000-0000} % [your ORCID iD]; ACM requires one for every author
+\affiliation{%
+  \department[0]{Advanced Telerobotics Research Lab}
+  \department[1]{Department of Computer Science} % [1] = the lab sits inside the department
+  \institution{Kent State University}
+  \city{Kent}
+  \state{OH}
+  \country{USA}
+}
+
+\author{[Second Author Name]}
+\email{[username]@kent.edu}
+\affiliation{%
+  \department[0]{Advanced Telerobotics Research Lab}
+  \department[1]{Department of Computer Science}
+  \institution{Kent State University}
+  \city{Kent}
+  \state{OH}
+  \country{USA}
+}
+
+\author{[Faculty Advisor Name]}
+\email{[username]@kent.edu}
+\affiliation{%
+  \department[0]{Advanced Telerobotics Research Lab}
+  \department[1]{Department of Computer Science}
+  \institution{Kent State University}
+  \city{Kent}
+  \state{OH}
+  \country{USA}
+}
+
+%% Short author list for page headers.
+\renewcommand{\shortauthors}{[Surname] et al.}
+
+\begin{abstract}
+[One paragraph, usually 150 to 250 words; check the call for papers. State the
+problem, what you built or studied, how you evaluated it and the main result
+with its conditions (for example, ``in simulation'' or ``on a Unitree Go2 in the
+lab'').]
+\end{abstract}
+
+%% CCS concepts: replace with your own from https://dl.acm.org/ccs/ccs.cfm
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10010520.10010553.10010554</concept_id>
+       <concept_desc>Computer systems organization~Robotics</concept_desc>
+       <concept_significance>500</concept_significance>
+   </concept>
+   <concept>
+       <concept_id>10003120.10003121</concept_id>
+       <concept_desc>Human-centered computing~Human computer interaction (HCI)</concept_desc>
+       <concept_significance>300</concept_significance>
+   </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Robotics}
+\ccsdesc[300]{Human-centered computing~Human computer interaction (HCI)}
+
+\keywords{[telerobotics], [human-robot interaction], [keyword three]}
+
+\maketitle
+
+%% ---------------------------------------------------------------------------
+\section{Introduction}
+%% ---------------------------------------------------------------------------
+[Motivate the problem and state your contributions as a short list.]
+Robot software in the lab builds on ROS~2~\cite{macenski2022ros2,ros2jazzydocs},
+and many of our controllers are first tested in simulation~\cite{todorov2012mujoco}.
+
+\section{Related Work}
+[Group prior work by approach and say how yours differs.]
+
+\section{Method}
+[Describe the system. Define every symbol the first time it appears.]
+\begin{equation}
+  \mathbf{u}_t = K\,(\mathbf{x}^{*}_t - \mathbf{x}_t)
+  \label{eq:control}
+\end{equation}
+Equation~\eqref{eq:control} is a placeholder.
+
+\section{Study}
+[Participants (with the IRB protocol number once approved), apparatus,
+procedure, measures and analysis. Say whether each robot run was
+teleoperated, autonomous or scripted.]
+
+%% Sample figure. Replace the \fbox placeholder with
+%%   \includegraphics[width=\linewidth]{figures/[file].pdf}
+%% \Description is required: it is the figure's alt text for screen readers.
+\begin{figure}[t]
+  \centering
+  \fbox{\parbox[c][1.4in][c]{0.92\linewidth}{\centering Figure placeholder}}
+  \caption{[One-sentence caption that states what the figure shows and under
+  which conditions, for example ``Teleoperated trials, $n=[N]$'']}
+  \Description{[Alt text: describe what the figure shows for a reader who
+  cannot see it, including the main trend.]}
+  \label{fig:overview}
+\end{figure}
+
+Figure~\ref{fig:overview} shows [what the reader should notice].
+
+\begin{table}[t]
+  \caption{[Table caption above the table, as ACM style requires]}
+  \label{tab:results}
+  \begin{tabular}{lcc}
+    \toprule
+    Condition & [Metric 1] & [Metric 2] \\
+    \midrule
+    {[Baseline]} & {[0.00]} & {[0.00]} \\
+    {[Ours]}     & {[0.00]} & {[0.00]} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Discussion and Limitations}
+[What the results do and do not show.]
+
+\section{Conclusion}
+[Two or three sentences.]
+
+%% The acks environment is hidden automatically in anonymous mode.
+\begin{acks}
+%% Name funders exactly as the award record does, and only after the PI
+%% confirms which award funded this work.
+This work was supported in part by [Sponsor] under [Grant No.].
+%% Generative AI: ACM's authorship policy (updated May 14, 2026) asks you to
+%% describe AI used to do the research (data, code, analysis, figures) in the
+%% Methods section; disclosing AI used only to help write is no longer
+%% required. The venue may ask for more (see research/standards.md).
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
