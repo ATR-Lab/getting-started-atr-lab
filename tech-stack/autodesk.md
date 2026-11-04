@@ -21,7 +21,7 @@ Autodesk Fusion and Autodesk Inventor are 3D CAD (computer-aided design) program
 | Files | Stored in Autodesk's cloud; export `.f3d` or `.f3z` archives to keep a copy | Local `.ipt` parts and `.iam` assemblies |
 | Good for in the lab | Brackets, sensor mounts, enclosures and grippers to 3D print; quick assemblies; sharing a design with a teammate | Large mechanical assemblies and detailed engineering drawings |
 
-The lab's default for new designs: [Fusion or Inventor: lab decision]. Either can export the formats below.
+The lab's default for new designs is **Inventor**, then Fusion: use Inventor when you have a Windows machine, and Fusion on macOS or for a quick shared design. Either can export the formats below.
 
 ## Get an education license
 
@@ -76,4 +76,4 @@ Follow the CAD and hardware file conventions in the dev guidelines' [hardware pa
 - [Unity](unity.md): CAD models in XR scenes
 - [Dev guidelines: hardware](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/hardware.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/autodesk.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/autodesk.md)</sub>

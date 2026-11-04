@@ -76,11 +76,11 @@ Values for the Pro, from the [Go2 product page](https://www.unitree.com/go2/) an
 | Item | Details |
 | --- | --- |
 | Quantity | `[N]` |
-| Location | `[Room ###, shelf or cabinet]` |
+| Location | Room 236, `[shelf or cabinet]` |
 | Owner or contact | `[Go2 owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Handheld remote | `[whether our unit has the optional remote]` |
-| Firmware version | `[current firmware version, from the app]` |
+| Firmware version | `[current firmware version, from the app]`. The lab holds the Go2 at the newest firmware that [UniPwn](https://github.com/Bin4ry/UniPwn) supports, because lab work needs root access to the robot's internal motion control unit for a low-latency video stream |
 | Accounts and credentials | The robot is bound to a Unitree account. Ask `[lab manager name]` for access; never commit account details, Wi-Fi passwords or device keys to any repo |
 | Lab repos | [ATR-Lab/go2_ws](https://github.com/ATR-Lab/go2_ws) (see below) |
 
@@ -112,7 +112,7 @@ Do these with a trained lab member the first time. Unitree does not publish a Go
    - **AP mode:** the robot makes its own hotspot, named `GO2-XXXXXX`.
    - **Wi-Fi (STA) mode:** the robot joins an existing network. The lab network is `[lab robot network]`.
 8. If our unit has the handheld remote, pair it through the app ([Go2 control page](https://www.unitree.com/go2/control/)).
-9. Check the firmware version in the app. **Do not install a firmware update** without asking `[lab manager name]`; updates have broken the community tools and lab code (see [Software](#software)).
+9. Check the firmware version in the app. **Do not install a firmware update.** The lab keeps the Go2 at the newest firmware that [UniPwn](https://github.com/Bin4ry/UniPwn) supports (see [In our lab](#in-our-lab)), and updates have also broken the community tools and lab code (see [Software](#software)). If the app asks to update, decline and tell `[lab manager name]`.
 10. When you finish, lie the robot down (remote: <kbd>L2</kbd> + <kbd>A</kbd>), power it off and return it and the battery as `[checkout procedure]` says.
 
 ## Software
@@ -171,7 +171,7 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - **Use a spotter.** One person drives; a second person watches the robot and is ready to call for damping mode.
 - **Plan for falls.** Walk it on flat, dry floor, away from stairs and table edges, until you have been trained on stairs and slopes. Unitree lists 5 °C to 35 °C and good weather as the operating range.
 - **Tricks and fast gaits.** Unitree's motion docs flag flips and similar actions as "potentially dangerous" and say to keep a safe distance.
-- **Minors.** Unitree's disclaimer says the Go2 is "not suitable for people under the age of 18". Ask `[director or lab manager]` before any demo with high school or middle school visitors.
+- **Minors (lab rule).** A minor at a school event needs a permission slip signed by a parent or guardian before taking part. For the Go2, the lab follows the user manual's limit of 14: visitors under 14 may only watch from outside the test area while it runs; visitors 14 and over may drive it, supervised one-to-one by a trained member. Unitree's [disclaimer](https://shop.unitree.com/pages/disclaimer) also says the Go2 is "not suitable for people under the age of 18".
 - **Low battery.** After the low-battery warning, the robot crouches down by itself within 10 minutes ([About Go2](https://support.unitree.com/home/en/developer/about_Go2)). Stop before that.
 - **Batteries.** Charge only with the Unitree charger for this battery (33.6 V, 3.5 A), on a non-flammable surface and never unattended. Unitree does not publish storage guidance on its own site; follow the lab's [battery rules](../lab-rules/safety.md#batteries).
 
@@ -205,4 +205,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [MuJoCo](../tech-stack/mujoco.md) · [Isaac Sim](../tech-stack/isaac-sim.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/unitree-go2.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/unitree-go2.md)</sub>

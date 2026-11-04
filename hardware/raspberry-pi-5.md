@@ -47,7 +47,7 @@ From the [Raspberry Pi 5 product brief (PDF)](https://pip-assets.raspberrypi.com
 | Item | Details |
 | --- | --- |
 | Quantity | `[N]`, with RAM sizes `[RAM per board]` |
-| Location | `[Room ###, drawer or bin]` |
+| Location | Room 236, `[drawer or bin]` |
 | Owner or contact | `[Raspberry Pi owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Standard lab setup | `[OS image and version the lab uses, for example Ubuntu 24.04 with ROS 2 Jazzy]` |
@@ -159,4 +159,4 @@ Read the lab's [safety rules](../lab-rules/safety.md) first, including [workbenc
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/raspberry-pi-5.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/raspberry-pi-5.md)</sub>

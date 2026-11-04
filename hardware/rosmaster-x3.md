@@ -63,9 +63,9 @@ Kits come in Standard, Advanced, Superior and Ultimate tiers, with or without th
 | Item | Details |
 | --- | --- |
 | Quantity | `[N]` |
-| Main controller | `[main controller]` |
+| Main controller | Jetson Nano 4GB |
 | Kit tier and lidar | `[Standard, Advanced, Superior or Ultimate; A1 or S2L lidar]` |
-| Location | `[Room ###, shelf or cabinet]` |
+| Location | Room 236, `[shelf or cabinet]` |
 | Owner or contact | `[ROSMASTER X3 owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Accounts and credentials | Yahboom's tutorials publish the factory usernames and passwords for the controller, Jupyter Lab, VNC and the robot's hotspot. Ask `[lab manager name]` for the lab's changed logins; never commit them to any repo |
@@ -82,7 +82,7 @@ These steps follow Yahboom's [ROSMASTER X3 tutorials](http://www.yahboom.net/stu
 3. **Charge the battery** with the Yahboom charger, main power switch off.
 4. **Power on with the robot flat on the floor.** It calibrates its IMU at power-on, so "it should be placed horizontally on the ground" until it beeps ([battery and usage precautions](https://www.yahboom.net/public/upload/upload-html/1743656067/2.%20Precautions%20for%20battery.html)).
 5. **Connect.** Out of the box the controller makes a Wi-Fi hotspot and shows its IP address on the OLED screen. Connect your laptop or phone to it, or switch the robot to the lab network (`[lab robot network]`) ([static IP and hotspot mode](https://www.yahboom.net/public/upload/upload-html/1686909289/5.%20Static%20IP%20and%20hotspot%20mode.html)). Then use SSH, VNC or Jupyter Lab on port 8888 ([remote control](https://www.yahboom.net/public/upload/upload-html/1743494533/3.%20Remote%20control.html)).
-6. **Change the default passwords** if `[lab manager name]` hasn't already. They are published online.
+6. **Use the lab's login, not the published one.** The lab has changed the factory passwords on its X3; ask `[lab manager name]` for the login.
 7. **Set the robot type and lidar model** once, from the robot's terminal, using the script for your lidar (A1 or S2) ([first trial](https://www.yahboom.net/public/upload/upload-html/1712911734/First%20Trial.html)):
 
    ```bash
@@ -111,7 +111,7 @@ These steps follow Yahboom's [ROSMASTER X3 tutorials](http://www.yahboom.net/stu
 
 The tutorials cover ROS 2 mapping with Gmapping and Cartographer, RTAB-Map 3D mapping, Nav2 navigation and obstacle avoidance, vision, voice control and YOLO object recognition (on the Orin Super images).
 
-**ROS 2 versions.** ROS 2 Humble (on the Orin controllers) is supported until May 2027. ROS 2 Foxy (on the Pi 5 and Nano images) reached end of life on June 20, 2023 ([ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html)): it gets no security fixes, and current ROS 2 tutorials won't match it. If our unit runs Foxy, talk to `[lab manager name]` before you build a project on it. Lab guides: [ROS 2](../tech-stack/ros2.md), [Docker](../tech-stack/docker.md), [Gazebo](../tech-stack/gazebo.md) and the lab-robots page in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/08-lab-robots.md).
+**ROS 2 versions.** ROS 2 Humble (on the Orin controllers) is supported until May 2027. ROS 2 Foxy (on the Pi 5 and Nano images) reached end of life on June 20, 2023 ([ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html)): it gets no security fixes, and current ROS 2 tutorials won't match it. The lab's X3 runs a Jetson Nano, so it uses Yahboom's Foxy image. NVIDIA's last release for the original Jetson Nano is JetPack 4.6.x on Ubuntu 18.04 ([Jetson notes](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/03-install-native.md#nvidia-jetson)); whether a newer Ubuntu can run on this controller is still being researched. Until then, talk to `[lab manager name]` before you build a project on it. Lab guides: [ROS 2](../tech-stack/ros2.md), [Docker](../tech-stack/docker.md), [Gazebo](../tech-stack/gazebo.md) and the lab-robots page in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/08-lab-robots.md).
 
 **Firmware.** Yahboom says of the expansion board's firmware: "If it is not necessary, please do not update the firmware" ([firmware update](https://www.yahboom.net/public/upload/upload-html/1743494450/1.%20Update%20the%20firmware.html)).
 
@@ -155,4 +155,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md) · [Gazebo](../tech-stack/gazebo.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/rosmaster-x3.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/rosmaster-x3.md)</sub>

@@ -2,7 +2,7 @@
 
 > **Read this when** you start a research project or a study with people, decide who is an author, store data, post a preprint, use generative AI in your work, or write an acknowledgment.
 
-The standards every project in the Advanced Telerobotics Research Lab follows, from research integrity to the funding line at the end of a paper. Most of them come from Kent State University policy and from the publishers (ACM and IEEE); the lab adds a few practices of its own, labeled as such. The one thing to remember: **any study with people needs Kent State IRB approval before you recruit anyone**, and most human-robot interaction studies are studies with people.
+The standards every project in the Advanced Telerobotics Research Laboratory follows, from research integrity to the funding line at the end of a paper. Most of them come from Kent State University policy and from the publishers (ACM and IEEE); the lab adds a few practices of its own, labeled as such. The one thing to remember: **any study with people needs Kent State IRB approval before you recruit anyone**, and most human-robot interaction studies are studies with people.
 
 ## Contents
 
@@ -46,7 +46,12 @@ Kent State's human-subjects procedures are Policy [10-02.1](https://www.kent.edu
 
 ## Authorship and contribution
 
-Agree on authorship early, in writing, and revisit it as the project changes. The director settles disagreements: [lab authorship practice].
+Agree on authorship early, in writing, and revisit it as the project changes. The director settles disagreements. The lab's author order for published papers is:
+
+1. The lead researcher of the project.
+2. The graduate researchers.
+3. The student researchers.
+4. Jong-Hoon Kim, the director, last.
 
 | | ACM | IEEE |
 | --- | --- | --- |
@@ -119,7 +124,7 @@ Lab practice on top of those rules:
 Write the lab's full name and Kent State in every author block, following the venue's format:
 
 ```text
-Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University, Kent, OH, USA
+Advanced Telerobotics Research Laboratory, Department of Computer Science, Kent State University, Kent, OH, USA
 ```
 
 - Spell out the lab's name. "ATR" alone also names a large robotics institute in Kyoto (the Advanced Telecommunications Research Institute International), so reviewers may confuse the two. When you cite work from that institute, name it as "ATR, Kyoto".
@@ -140,4 +145,4 @@ Advanced Telerobotics Research Lab, Department of Computer Science, Kent State U
 - [Code of conduct](../lab-rules/code-of-conduct.md): integrity, privacy and reporting a concern
 - [Kent State Office of Research Compliance](https://www.kent.edu/research/office-research-compliance)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/research/standards.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/research/standards.md)</sub>

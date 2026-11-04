@@ -35,7 +35,7 @@ Pick one `\documentclass` line at the top of `main.tex`:
 | `\documentclass[manuscript,review,anonymous]{acmart}` | Venues that ask for the single-column review format, such as CHI 2027; check the call for papers |
 
 - **Rights block:** `\setcopyright`, `\acmDOI`, `\acmISBN` and `\acmConference` hold sample values. After acceptance, ACM's rights form (sent to the corresponding author) gives you the exact commands for your paper; paste them in place of the whole block. ACM has been fully open access since Jan. 1, 2026, so expect a Creative Commons license in those commands ([writing papers](../../../research/writing-papers.md#camera-ready-and-copyright-forms)).
-- **Authors:** each author has an `\affiliation` with `\department[0]{Advanced Telerobotics Research Lab}` inside `\department[1]{Department of Computer Science}`, so the lab is recorded as part of the department. Replace the placeholder ORCID iD with each author's own.
+- **Authors:** each author has an `\affiliation` with `\department[0]{Advanced Telerobotics Research Laboratory}` inside `\department[1]{Department of Computer Science}`, so the lab is recorded as part of the department. Replace the placeholder ORCID iD with each author's own.
 - **CCS concepts and keywords:** the two sample concepts are real ACM Computing Classification System entries, but choose your own with the tool at [dl.acm.org/ccs](https://dl.acm.org/ccs/ccs.cfm) and paste both the `CCSXML` block and the `\ccsdesc` lines it gives you.
 - **Figures:** every figure needs `\Description{...}`, its alt text for screen readers. Describe what the figure shows, not just its title.
 - **Acknowledgment:** the `acks` environment is hidden automatically in anonymous mode. `[Sponsor]` and `[Grant No.]` stay as brackets until the PI confirms the award.
@@ -48,4 +48,4 @@ Pick one `\documentclass` line at the top of `main.tex`:
 - [Writing papers](../../../research/writing-papers.md)
 - [ACM primary article template](https://www.acm.org/publications/proceedings-template)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/templates/latex/acm-sigconf/README.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/templates/latex/acm-sigconf/README.md)</sub>

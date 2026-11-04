@@ -23,7 +23,7 @@ The [Formlabs Form 3](https://formlabs.com/3d-printers/form-3/) is a desktop ste
 What the lab uses it for: `[what the lab prints on the Form 3, for example prototype parts and robot fixtures]`. Who may use it: `[trained users]`. Resin costs money, so prints need `[resin budget/approval]`.
 
 > [!NOTE]
-> Formlabs has replaced the Form 3 line with the Form 4. Its [support notice](https://formlabs.com/support/Ongoing-support-for-the-Form-3-and-Form-3B/) says consumables and support for Form 3 generation printers continue "until at least January 2028", and spare parts until at least January 2027.
+> Formlabs has replaced the Form 3 line with the Form 4. Its [support notice](https://formlabs.com/support/Ongoing-support-for-the-Form-3-and-Form-3B/) says consumables and support for Form 3 generation printers continue "until at least January 2028", and spare parts until at least January 2027. The lab's plan: [resins and the end-of-support plan](#resins-and-the-end-of-support-plan).
 
 ## Key specs
 
@@ -50,7 +50,7 @@ From the Form 3 column of Formlabs' [resin printer tech specs](https://formlabs.
 | Item | Details |
 | --- | --- |
 | Quantity | `[N]` |
-| Location | `[Room ###, the printer's station]` |
+| Location | Room 236, `[the printer's station]` |
 | Owner or contact | `[Form 3 owner or contact name]` |
 | Who may print | `[trained users]` (trained by `[Form 3 trainer name]`) |
 | Booking and checkout | `[procedure for booking the printer]` |
@@ -86,6 +86,16 @@ Your first prints are with `[Form 3 trainer name]`. The workflow, from Formlabs'
 **Resins.** Formlabs' [material guide](https://formlabs.com/support/Choosing-the-Right-Material/) lists which resins print on the Form 3: general-purpose resins (such as Grey, Black, White, Clear, Draft and Model) and engineering resins (such as Tough 1500, Tough 2000, Durable, Rigid 4000, Flexible 80A and High Temp), among others. Some newer resins are Form 4 only, and BioMed and dental resins need the Form 3B. Check the guide before you order.
 
 **Resin tanks.** Resin Tank V2.1 prints "all resins compatible with the Form 3/Form 3+"; the older V1 tank can't be used with several resins, including Rigid 4000, Tough 2000 and Grey Pro ([tank types](https://formlabs.com/support/Understanding-the-different-types-of-resin-tanks-Form-3/)). Formlabs says to "use a different resin tank for each type of Formlabs resin" ([resin care](https://formlabs.com/support/Resin-Care/)).
+
+### Resins and the end-of-support plan
+
+The lab will keep the Form 3 running past Formlabs' support dates:
+
+- **Third-party resins.** The lab will move to third-party resin as Formlabs consumables run out. Check a resin's safety data sheet and its printer settings before the first print.
+- **Reuse current materials safely.** Keep one tank per resin: use a different tank whenever you swap the resin cartridge. Clean the old tank and cartridge as Formlabs' [resin spill cleanup guide](https://formlabs.com/support/Cleaning-After-a-Resin-Spill-Form3/) describes before you store them.
+- **Curing.** A resin curing station is on the lab's purchase list: `[curing station model, once bought]`.
+
+Further reading on resin types: Formlabs' [choosing the right material](https://formlabs.com/support/Choosing-the-Right-Material/) and Dassault Systèmes' [overview of 3D printing resins](https://www.3ds.com/make/solutions/blog/best-resins-3d-printing).
 
 ### Maintenance
 
@@ -152,4 +162,4 @@ Formlabs says uncured resin "may be classified as hazardous waste" and that you 
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [Autodesk tools for CAD](../tech-stack/autodesk.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/formlabs-form-3.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/formlabs-form-3.md)</sub>

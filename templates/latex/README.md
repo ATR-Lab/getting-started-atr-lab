@@ -27,7 +27,7 @@ With a full TeX Live 2026 installation, `latexmk -pdf main.tex` works too. On [O
 
 ## What every template includes
 
-- The lab's affiliation block: Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University, Kent, OH, USA ([why this wording](../../research/standards.md#the-lab-affiliation-line)).
+- The lab's affiliation block: Advanced Telerobotics Research Laboratory, Department of Computer Science, Kent State University, Kent, OH, USA ([why this wording](../../research/standards.md#the-lab-affiliation-line)).
 - A review toggle for double-blind venues that hides authors and acknowledgments.
 - An acknowledgment with `[Sponsor]` and `[Grant No.]`, to fill only after the PI confirms which award funded the work.
 - A sample figure with a caption, a sample table and three sample references checked against Crossref.
@@ -38,4 +38,4 @@ With a full TeX Live 2026 installation, `latexmk -pdf main.tex` works too. On [O
 - [Publishing checklist](../../research/publishing-checklist.md)
 - [Research standards](../../research/standards.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/templates/latex/README.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/templates/latex/README.md)</sub>

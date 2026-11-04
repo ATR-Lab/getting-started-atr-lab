@@ -1,6 +1,6 @@
 # AGENTS.md: getting-started-atr-lab
 
-This repository is the onboarding handbook for new members of the Advanced Telerobotics Research Lab (Department of Computer Science, Kent State University): research standards, LaTeX paper templates for ACM and IEEE venues, the lab's tech stack by layer, the lab's rules and conduct, and one page per piece of lab hardware. It is read by new students and by coding agents such as Claude Code and Codex. It is **not** the lab's public profile (that is `ATR-Lab/about`), not a coding style guide (`ATR-Lab/dev-guidelines`) and not a ROS 2 tutorial (`ATR-Lab/all-things-ros2`). It is plain Markdown plus two LaTeX templates; there is no application code.
+This repository is the onboarding handbook for new members of the Advanced Telerobotics Research Laboratory (Department of Computer Science, Kent State University): research standards, LaTeX paper templates for ACM and IEEE venues, the lab's tech stack by layer, the lab's rules and conduct, and one page per piece of lab hardware. It is read by new students and by coding agents such as Claude Code and Codex. It is **not** the lab's public profile (that is `ATR-Lab/about`), not a coding style guide (`ATR-Lab/dev-guidelines`) and not a ROS 2 tutorial (`ATR-Lab/all-things-ros2`). It is plain Markdown plus two LaTeX templates; there is no application code.
 
 ## Repo map
 
@@ -61,7 +61,7 @@ This repository is the onboarding handbook for new members of the Advanced Teler
 
 - **Voice:** precise, curious, hands-on, welcoming, grounded. Write for a smart first-year student; define jargon on first use.
 - **Kent State style:** sentence-case headings; no Oxford comma in a simple series; "and", not "&"; one through nine spelled out, 10 and up as numerals, numerals with units and versions; dates like "Sept. 30, 2026"; times like "9 a.m."; phones like "330-672-9980".
-- **Names:** "Advanced Telerobotics Research Lab" on first reference, then "the lab"; "ATR Lab" only in display type and always with Kent State nearby; never "ATR" alone or "KSU" in running copy. Director: "Jong-Hoon Kim, associate professor of computer science". Never print the nonexistent social handle, the director's office room or phone as the lab's, or the college's former name: the exact strings are on the "Never print" list in `brand-foundation.md` §11, and `brand_check.py` flags them.
+- **Names:** "Advanced Telerobotics Research Laboratory" on first reference, then "the lab"; "ATR Lab" only in display type and always with Kent State nearby; never "ATR" alone or "KSU" in running copy. Director: "Jong-Hoon Kim, associate professor of computer science". Never print the nonexistent social handle, the director's office room or phone as the lab's, or the college's former name: the exact strings are on the "Never print" list in `brand-foundation.md` §11, and `brand_check.py` flags them.
 - **Words:** ROS 2 (never "ROS2" in prose), teleoperation, telepresence, tele-embodiment, Physical AI, human-robot interaction, open-source (adjective), real-world (adjective), advisor, leader-follower. Robots are "it".
 - **Cut hype:** cutting-edge, state-of-the-art, revolutionary, groundbreaking, world-class, innovative, novel, leverage, utilize, seamless, robust, holistic, transformative, pivotal, delve, furthermore, moreover.
 - **AI and robots:** label every robot demo as teleoperated, autonomous, semi-autonomous or scripted, with playback speed; concrete verbs, no "understands" or "thinks".
@@ -118,18 +118,18 @@ Every placeholder in this repository, by file, with who can fill it. Agents must
 | `lab-rules/safety.md` | `[battery charging location]`, `[battery storage location]`, `[SDS location]`, `[lab resin and IPA waste procedure]` | Lab safety contact, with Kent State EHS |
 | `lab-rules/best-practices.md` | `[Slack workspace]`, `[main lab channel]`, `[lab calendar tool]`, `[equipment checkout log or system]`, `[machine administrator]`, `[GPU booking method]` | Lab manager |
 | `lab-rules/best-practices.md` | `[day, time and place of the lab meeting]`, `[where: ...]`, `[day and time]`, `[update format, ...]`, `[how often and how to book]` | Director |
-| `lab-rules/best-practices.md` | `[shared data location]`, `[Overleaf or shared drive]`, `[CAD file location]`, `[private or public by default: confirm]` | Director and lab manager |
+| `lab-rules/best-practices.md` | `[shared data location]`, `[Overleaf or shared drive]`, `[CAD file location]` | Director and lab manager |
 | `lab-rules/best-practices.md` | `[ATR]` | Not a placeholder: the lab's email subject tag |
-| `research/standards.md` | `[lab authorship practice]`, `[lab Zotero group]`, `[shared data location]` | Director |
+| `research/standards.md` | `[lab Zotero group]`, `[shared data location]` | Director |
 | `research/standards.md` | `[Grant No.]` | PI, per paper |
 | `research/writing-papers.md` | `[paper repository naming convention]`, `[lab Overleaf plan, if any]` | Director |
 | `research/writing-papers.md` | `[ask Kent State University Libraries whether Kent State is an ACM Open institution]` | Lab manager, with Kent State University Libraries |
-| `research/publishing-checklist.md` | `[how many days before the deadline the director needs the draft]`, `[where the lab tracks submissions]` | Director |
+| `research/publishing-checklist.md` | `[where the lab tracks submissions]` | Director |
 | `templates/latex/*/main.tex` | Author names, emails, ORCID iDs, `[Sponsor]`, `[Grant No.]`, venue metadata | Each paper's authors and the PI |
 | `tech-stack/isaac-sim.md` | `[list of lab workstations with RTX GPUs]`, `[GPU booking method]`, `[shared asset location]` | Lab manager |
 | `tech-stack/mujoco.md` | `[location of lab MuJoCo models]` | Lab manager |
 | `tech-stack/lerobot.md` | `[lab Hugging Face organization]` | Director |
-| `tech-stack/autodesk.md` | `[Fusion or Inventor: lab decision]`, `[CAD file location]` | Director |
+| `tech-stack/autodesk.md` | `[CAD file location]` | Director |
 | `tech-stack/unity.md` | `[which Unity license lab machines use]`, `[Meta Quest headsets and location]` | Lab manager |
 | `tech-stack/claude-code.md`, `tech-stack/codex.md` | Which AI coding agent accounts the lab provides, and which lab work they may be used for under Kent State's AI guidance | Director, with Kent State Information Security (<security@kent.edu>) |
 | `tech-stack/docker.md` | `[lab manager name]` (Docker Desktop license question), `[machine administrator]` | Lab manager |

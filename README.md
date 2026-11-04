@@ -1,16 +1,16 @@
 <p align="center">
-  <img src=".github/assets/header.png" alt="Getting started: the onboarding handbook for new lab members. Advanced Telerobotics Research Lab, Kent State University." width="100%">
+  <img src=".github/assets/header.png" alt="Getting started: the onboarding handbook for new lab members. Advanced Telerobotics Research Laboratory, Kent State University." width="100%">
 </p>
 
 <p align="center">
-  <b>The onboarding handbook for new members of the Advanced Telerobotics Research Lab: research standards, paper templates, the lab's tech stack and hardware, and the rules we work by.</b><br>
-  <sub>Advanced Telerobotics Research Lab · Department of Computer Science · Kent State University</sub>
+  <b>The onboarding handbook for new members of the Advanced Telerobotics Research Laboratory: research standards, paper templates, the lab's tech stack and hardware, and the rules we work by.</b><br>
+  <sub>Advanced Telerobotics Research Laboratory · Department of Computer Science · Kent State University</sub>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-003976?style=flat-square"></a>
-  <a href="https://www.atr.cs.kent.edu/"><img alt="Advanced Telerobotics Research Lab, Kent State University" src="https://img.shields.io/badge/ATR_Lab-Kent_State-003976?style=flat-square"></a>
-  <img alt="Last reviewed Sept. 2026" src="https://img.shields.io/badge/last_reviewed-Sept._2026-4A5868?style=flat-square">
+  <a href="https://www.atr.cs.kent.edu/"><img alt="Advanced Telerobotics Research Laboratory, Kent State University" src="https://img.shields.io/badge/ATR_Lab-Kent_State-003976?style=flat-square"></a>
+  <img alt="Last reviewed Nov. 2026" src="https://img.shields.io/badge/last_reviewed-Nov._2026-4A5868?style=flat-square">
 </p>
 
 ## Start here
@@ -54,7 +54,7 @@
 
 ## Welcome and your first week
 
-The Advanced Telerobotics Research Lab at Kent State University is an innovation research laboratory focused on exploring the frontiers of telepresence robotics, tele-embodiment, autonomy and artificial intelligence. This handbook is what we wish every new member had on day one. Work through the checklist below in your first week; your mentor can help with any step.
+The Advanced Telerobotics Research Laboratory at Kent State University is an innovation research laboratory focused on exploring the frontiers of telepresence robotics, tele-embodiment, autonomy and artificial intelligence. This handbook is what we wish every new member had on day one. Work through the checklist below in your first week; your mentor can help with any step.
 
 **Accounts**
 
@@ -98,7 +98,7 @@ Found something wrong or out of date? [Open an issue](https://github.com/ATR-Lab
 
 ## License
 
-Text and code in this repository are released under the [MIT License](LICENSE). The names and logos of the Advanced Telerobotics Research Lab and Kent State University are trademarks and are not covered by that license.
+Text and code in this repository are released under the [MIT License](LICENSE). The names and logos of the Advanced Telerobotics Research Laboratory and Kent State University are trademarks and are not covered by that license.
 
 The LaTeX templates load the IEEEtran and acmart document classes, which are distributed separately under their own licenses (LaTeX Project Public License); they are not part of this repository.
 
@@ -111,6 +111,6 @@ The LaTeX templates load the IEEEtran and acmart document classes, which are dis
   <a href="https://github.com/ATR-Lab/dev-guidelines">Dev guidelines</a> ·
   <a href="https://github.com/ATR-Lab/all-things-ros2">All things ROS 2</a> ·
   <a href="https://github.com/ATR-Lab">All repositories</a></sub><br>
-  <sub>Advanced Telerobotics Research Lab · Department of Computer Science · Kent State University ·
+  <sub>Advanced Telerobotics Research Laboratory · Department of Computer Science · Kent State University ·
   <a href="https://www.atr.cs.kent.edu/">www.atr.cs.kent.edu</a></sub>
 </p>

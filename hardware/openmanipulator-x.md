@@ -55,7 +55,7 @@ The XM430-W350-T servo takes 10.0-14.8 V, 12.0 V recommended ([XM430-W350 refere
 | Item | Details |
 | --- | --- |
 | Quantity | `[N]` |
-| Location | `[Room ###, bench or shelf]` |
+| Location | Room 236, `[bench or shelf]` |
 | Owner or contact | `[OpenManipulator-X owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Interface and power supply | `[U2D2 with U2D2 Power Hub Board, or OpenCR; which 12 V supply]` |
@@ -246,4 +246,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Gazebo](../tech-stack/gazebo.md) · [MuJoCo](../tech-stack/mujoco.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/openmanipulator-x.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/openmanipulator-x.md)</sub>

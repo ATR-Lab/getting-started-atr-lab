@@ -2,7 +2,7 @@
 
 > **Read this when** you join the lab, and again before you speak for the lab, spend its money, use its equipment or share its data.
 
-This code describes how members of the Advanced Telerobotics Research Lab work together and represent the lab. It extends Kent State University's [Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct) (University Policy Register 4-02, Administrative Code 3342-4-02), and it applies to everyone in the lab: undergraduate and graduate students, staff, faculty, visiting researchers and program participants. Employees also follow the university's employee policies. Where this code and a university policy differ, the university policy wins. The one thing to remember: if you are unsure whether something is allowed, ask before you act.
+This code describes how members of the Advanced Telerobotics Research Laboratory work together and represent the lab. It extends Kent State University's [Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct) (University Policy Register 4-02, Administrative Code 3342-4-02), and it applies to everyone in the lab: undergraduate and graduate students, staff, faculty, visiting researchers and program participants. Employees also follow the university's employee policies. Where this code and a university policy differ, the university policy wins. The one thing to remember: if you are unsure whether something is allowed, ask before you act.
 
 > [!IMPORTANT]
 > **Draft until the director approves.** This code is a draft for Jong-Hoon Kim, associate professor of computer science and director of the lab, to review. Until he approves it, treat it as guidance, and treat the Kent State University policies it links as binding.
@@ -136,6 +136,7 @@ Only the director approves spending lab funds, and every purchase follows Kent S
 
 - **Never share your Kent State credentials.** Kent State's [responsible use policy](https://www.kent.edu/policyreg/university-policy-responsible-use-information-technology) (Policy 9-02) says users may not "share authentication details or provide access to their university accounts with anyone else (e.g., sharing the password)." That includes your FlashLine password and your two-factor codes.
 - **Shared robot and service accounts** (a robot's onboard computer, a lab server, a shared cloud account) are managed by [lab manager name] in [lab password manager]. Get access there, never by message.
+- **Lab workstations:** use your own user account, with your own password. Ask [lab manager name] for one; never log in as someone else.
 - **Never put a password, key or token in a repository**, a README, Slack, an issue or a prompt to an AI tool. If one leaks, tell [lab manager name] so it can be changed.
 - **Change default passwords** on every robot and device before it goes on the network, and change shared passwords when someone leaves the lab.
 - **If your account may be compromised**, contact Kent State Information Security (<security@kent.edu>, 330-672-5566) ([Secure IT](https://www.kent.edu/secureit/fraud-recovery)). Forward phishing email to <phish@kent.edu>. For other help, TechHelp is at 330-672-HELP (4357).
@@ -165,4 +166,4 @@ You can raise any concern about safety, conduct, research integrity or how you a
 - [Research standards](../research/standards.md)
 - [Kent State University Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/code-of-conduct.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/code-of-conduct.md)</sub>

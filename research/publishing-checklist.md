@@ -24,7 +24,7 @@ Every check to run before a paper leaves the lab, in the order you usually meet 
 - [ ] The paper uses the **venue's template**, or the lab template moved into it, unmodified ([templates](../templates/latex/README.md)).
 - [ ] **Authorship and author order** are agreed with every co-author and the director, and each author meets the publisher's criteria ([authorship](standards.md#authorship-and-contribution)).
 - [ ] Any **study with people** ran under an approved or exempt IRB protocol, and the paper reports it as the protocol allows ([human-subjects research](standards.md#human-subjects-research)).
-- [ ] The director has a date in the calendar to review the full draft: [how many days before the deadline the director needs the draft].
+- [ ] The **final draft is done one week before the extended abstract deadline**, so there is room for last-minute changes and to check that the submission meets the venue's requirements. The director has a date in the calendar to review it.
 
 ## Claims and content
 
@@ -67,7 +67,7 @@ Every check to run before a paper leaves the lab, in the order you usually meet 
 - [ ] **Funding:** the funder and award number were confirmed by the PI and match the award record; no `[Grant No.]` placeholder remains in the camera-ready version ([funding acknowledgments](standards.md#funding-acknowledgments)).
 - [ ] **Conflicts of interest** are declared in the submission system and, if the venue asks, in the paper.
 - [ ] People thanked in the acknowledgments agreed to be named; study participants are thanked as a group, never by name.
-- [ ] The affiliation is the lab's full line: Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University ([affiliation line](standards.md#the-lab-affiliation-line)).
+- [ ] The affiliation is the lab's full line: Advanced Telerobotics Research Laboratory, Department of Computer Science, Kent State University ([affiliation line](standards.md#the-lab-affiliation-line)).
 
 ## Video and supplementary material
 
@@ -104,4 +104,4 @@ Every check to run before a paper leaves the lab, in the order you usually meet 
 - [Research standards](standards.md)
 - [LaTeX templates](../templates/latex/README.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/research/publishing-checklist.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/research/publishing-checklist.md)</sub>

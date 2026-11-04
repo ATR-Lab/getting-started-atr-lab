@@ -52,7 +52,7 @@ Start the subject line of internal lab email with `[ATR]` so people can filter i
 [ATR] Who can help clean the lab on Friday?
 ```
 
-The tag is an internal filter label. In email to people outside the lab, write the lab's full name, Advanced Telerobotics Research Lab, in the message itself.
+The tag is an internal filter label. In email to people outside the lab, write the lab's full name, Advanced Telerobotics Research Laboratory, in the message itself.
 
 ## Keep a clean workspace
 
@@ -98,7 +98,7 @@ Lab workstations and GPU servers are shared. To keep them usable for everyone:
 
 | What | Where | Notes |
 | --- | --- | --- |
-| Code | The lab's GitHub organization, [ATR-Lab](https://github.com/ATR-Lab) | Ask [lab manager name] to create a repository. New repositories are [private or public by default: confirm]. Follow the [dev guidelines](https://github.com/ATR-Lab/dev-guidelines) |
+| Code | The lab's GitHub organization, [ATR-Lab](https://github.com/ATR-Lab) | Ask [lab manager name] to create a repository. New repositories are **private by default**. Make one public only when it has the MIT License in a `LICENSE` file at its root: every public lab project is MIT-licensed. Follow the [dev guidelines](https://github.com/ATR-Lab/dev-guidelines) |
 | Papers and figures | [Overleaf or shared drive] | One project per paper; see [writing papers](../research/writing-papers.md) |
 | Datasets, recordings and models | [shared data location] | Record where each dataset came from and its license |
 | Human-subjects study data | Only where the IRB protocol says | See [data management](../research/standards.md#data-management) |
@@ -129,4 +129,4 @@ When you graduate, finish a project or leave the lab, hand everything over befor
 - [Tech stack](../tech-stack/README.md)
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines): code style, Git and reviews
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/best-practices.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/best-practices.md)</sub>

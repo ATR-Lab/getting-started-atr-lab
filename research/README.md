@@ -2,7 +2,7 @@
 
 > **Read this when** you are about to start a study, write a paper or submit one, and want the lab's standards in one place.
 
-These pages cover how research is done and published in the Advanced Telerobotics Research Lab: the standards every project follows, how to write a paper for ACM and IEEE venues in LaTeX, and the checklist to run before you press submit. Kent State University's policies and the publisher's rules always win; these pages point you to them.
+These pages cover how research is done and published in the Advanced Telerobotics Research Laboratory: the standards every project follows, how to write a paper for ACM and IEEE venues in LaTeX, and the checklist to run before you press submit. Kent State University's policies and the publisher's rules always win; these pages point you to them.
 
 | Page | What it covers | Read it when |
 | --- | --- | --- |
@@ -20,4 +20,4 @@ These pages cover how research is done and published in the Advanced Telerobotic
 - [Lab rules](../lab-rules/README.md): conduct, safety and best practices
 - [About the lab](https://github.com/ATR-Lab/about): the lab's research areas and publications
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/research/README.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/research/README.md)</sub>

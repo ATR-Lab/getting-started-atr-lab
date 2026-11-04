@@ -54,7 +54,7 @@ The README's reference prices were $121.94 for one follower arm and $229.88 for 
 | --- | --- |
 | Quantity | `[N leader arms, N follower arms]` |
 | Follower motor version | `[7.4 V or 12 V follower motors]` (this sets which power supply to use) |
-| Location | `[Room ###, bench or shelf]` |
+| Location | Room 236, `[bench or shelf]` |
 | Owner or contact | `[SO-101 owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Arm IDs | `[the calibration ID written on each arm's label]` |
@@ -265,4 +265,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [LeRobot](../tech-stack/lerobot.md) · [MuJoCo](../tech-stack/mujoco.md) · [Isaac Sim](../tech-stack/isaac-sim.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/lerobot-so-101.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/lerobot-so-101.md)</sub>

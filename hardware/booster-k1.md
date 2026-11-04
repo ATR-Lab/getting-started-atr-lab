@@ -55,7 +55,7 @@ Not published on the official pages we checked: battery voltage and watt-hours, 
 | --- | --- |
 | Quantity | `[N]` |
 | Variant | `[K1 variant: Geek, Education or Professional]` |
-| Location | `[Room ###, shelf or cabinet]` |
+| Location | Room 236, `[shelf or cabinet]` |
 | Owner or contact | `[K1 owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Hoist or stand | `[where the lab's hoist or stand is, and who trains you on it]` |
@@ -90,7 +90,7 @@ These steps follow Booster's [K1 quick start](https://docs.booster.tech/docs/pro
 ssh booster@192.168.10.102
 ```
 
-Booster's connect guide publishes the factory-default password. Ask `[lab manager name]` for the lab's login instead, and never write it in a repo, notebook or chat.
+Booster's connect guide publishes the factory-default password; the lab has changed it on its units. Ask `[lab manager name]` for the lab's login, and never write it in a repo, notebook or chat.
 
 **Firmware.** Check the installed version on the robot with `cat /opt/booster/version.txt`. The latest release listed on Sept. 30, 2026 was v1.8.0.9 (Sept. 15, 2026) ([version upgrade](https://docs.booster.tech/docs/product-manual/k1/firmware-version/software-upgrade/)). SDK and demo versions are tied to firmware versions, so don't upgrade without asking `[lab manager name]`.
 
@@ -150,7 +150,7 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - **Always PREP before WALK**, with the robot "standing securely on the ground".
 - **Upgrades.** Installing software stops the motion controller and the joints "no longer output torque". Lay the robot flat, switch to DAMP and keep the power on until the upgrade finishes.
 - **Batteries.** Charge with the Booster charger: the charger light is red while charging and green when full ([charging](https://docs.booster.tech/docs/product-manual/k1/basic-operations/charging/)). Booster's [service terms](https://www.booster.tech/service) exclude damage from non-original battery packs. Booster's public docs give no storage guidance; follow the lab's [battery rules](../lab-rules/safety.md#batteries).
-- **Minors.** Ask `[director or lab manager]` before any demo with high school or middle school visitors.
+- **Minors (lab rule).** A minor at a school event needs a permission slip signed by a parent or guardian before taking part. Ask `[director or lab manager]` before a minor operates the K1.
 
 > [!CAUTION]
 > **Do not lift the robot while it walks.** The quick start warns that in WALK mode "it may fail to detect the ground and kick unpredictably, causing injury". Put it in PREP and lay it flat, or power it off, before you pick it up. During motion, "do not touch any part of the robot with your body except the handle."
@@ -187,4 +187,4 @@ Booster's remote support uses a third-party remote-desktop tool. Check with `[la
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [Isaac Sim](../tech-stack/isaac-sim.md) · [MuJoCo](../tech-stack/mujoco.md) · [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/booster-k1.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/booster-k1.md)</sub>

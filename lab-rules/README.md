@@ -2,7 +2,7 @@
 
 > **Read this when** you join the lab, before your first day at the bench, and whenever you are unsure whether something is allowed.
 
-Three pages cover how we work together in the Advanced Telerobotics Research Lab. The code of conduct and the safety rules are binding; best practices are the lab's everyday habits. Kent State University policy always comes first: these pages add to it and never replace it.
+Three pages cover how we work together in the Advanced Telerobotics Research Laboratory. The code of conduct and the safety rules are binding; best practices are the lab's everyday habits. Kent State University policy always comes first: these pages add to it and never replace it.
 
 | Page | What it covers | Read it when |
 | --- | --- | --- |
@@ -19,4 +19,4 @@ Three pages cover how we work together in the Advanced Telerobotics Research Lab
 - [Hardware](../hardware/README.md): device pages, each with its own safety section
 - [Kent State University Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/README.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/README.md)</sub>

@@ -2,7 +2,7 @@
 
 > **Read this when** you are about to use any tool, machine or robot in the lab, before every new kind of experiment, and whenever something feels unsafe.
 
-These are the lab's safety rules, from emergencies to cleaning up. Everyone who works in the Advanced Telerobotics Research Lab follows them, and each device page in [hardware](../hardware/README.md) adds rules for that device. The one thing to remember: **you are responsible for your own safety and your own actions**, and anyone may stop any activity they think is unsafe.
+These are the lab's safety rules, from emergencies to cleaning up. Everyone who works in the Advanced Telerobotics Research Laboratory follows them, and each device page in [hardware](../hardware/README.md) adds rules for that device. The one thing to remember: **you are responsible for your own safety and your own actions**, and anyone may stop any activity they think is unsafe.
 
 ## Contents
 
@@ -132,7 +132,7 @@ Robots are heavy, fast and strong, and they do not know you are there. These rul
 - **Legged and humanoid robots can fall, jump or kick.** Keep a spotter, keep the area clear of people who are not part of the test, and never try to catch a falling robot with your hands.
 - **Teleoperation:** if the video lags or the connection drops, stop the robot before you try to fix it. Test what the robot does when it loses the connection before you rely on it.
 - **Autonomous code, trained policies and AI coding agents** never run on a robot unless a person is watching with the stop in reach ([AI coding agents](../tech-stack/claude-code.md#lab-rules-for-ai-coding-agents)).
-- **Visitors and minors** stay outside the test area and do not operate robots unless a trained member supervises them one-to-one.
+- **Visitors and minors** stay outside the test area and do not operate robots unless a trained member supervises them one-to-one. A minor at a school event needs a permission slip signed by a parent or guardian. For the Go2, visitors under 14 only watch and those 14 and over may drive it ([Unitree Go2](../hardware/unitree-go2.md#safety)).
 - **When you are done**, disable motors, power the robot down, remove or disconnect its battery and put it back in its place.
 
 ## Batteries
@@ -202,4 +202,4 @@ A clean lab is a safer lab. Everyone cleans up after themselves and disposes of 
 - [Hardware](../hardware/README.md): each device page has a safety section
 - [Kent State Environmental Health and Safety](https://www.kent.edu/facilitiesplanning/environmental-health-and-safety)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/safety.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/safety.md)</sub>

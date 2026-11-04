@@ -49,7 +49,7 @@ From NVIDIA's [Jetson Thor product page](https://www.nvidia.com/en-us/autonomous
 | Item | Details |
 | --- | --- |
 | Quantity | `[N]` |
-| Location | `[Room ###, bench, rack or robot it is mounted on]` |
+| Location | Room 236, `[bench, rack or robot it is mounted on]` |
 | Owner or contact | `[Jetson AGX Thor owner or contact name]` |
 | Checkout | `[checkout procedure]` |
 | Installed JetPack and power mode | `[JetPack version; nvpmodel mode]` |
@@ -170,4 +170,4 @@ Read the lab's [safety rules](../lab-rules/safety.md) first, including [workbenc
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [Docker](../tech-stack/docker.md) · [ROS 2](../tech-stack/ros2.md) · [Isaac Sim](../tech-stack/isaac-sim.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/jetson-agx-thor.md)</sub>
+<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/jetson-agx-thor.md)</sub>
