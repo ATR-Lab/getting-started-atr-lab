@@ -136,7 +136,7 @@ Every placeholder in this folder, by page, with who can fill it. Agents must not
 - **Go2 firmware.** Held at the newest firmware that UniPwn supports, for root access to the motion control unit. Still open: who keeps the Unitree account and the per-device key.
 - **ROSMASTER X3 software.** The lab's X3 runs a Jetson Nano with Yahboom's Foxy image. Whether a newer Ubuntu runs on it is being researched.
 - **Default passwords.** Changed on the lab's robots. Students use their own accounts on lab workstations.
-- **Minors.** The director approves every robot demo with K-12 visitors. Each minor needs a signed permission slip: the school's own form at a school event, otherwise the lab's form signed by a parent or guardian (`[link to the lab's permission slip in atr-lab-design-skill]`). Go2 and Booster K1: under 14 watch only; 14 and over may operate them with a trained member.
+- **Minors.** The director approves every robot demo with K-12 visitors. Each minor needs a signed permission slip: the school's own form at a school event, otherwise the lab's form signed by a parent or guardian ([permission slip, PDF](https://github.com/ATR-Lab/atr-lab-design-skill/blob/main/atr-lab-design/assets/templates/ATR-Minor-Permission-Slip-Letter.pdf)). Go2 and Booster K1: under 14 watch only; 14 and over may operate them with a trained member.
 - **Form 3 end of support.** The lab will keep the Form 3 running on third-party resins and reuse its current materials safely; a resin curing station is to be bought. See [Formlabs Form 3](formlabs-form-3.md#resins-and-the-end-of-support-plan).
 
 <sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/README.md)</sub>
