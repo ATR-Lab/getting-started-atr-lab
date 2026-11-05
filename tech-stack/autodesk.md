@@ -32,7 +32,7 @@ Autodesk Education gives eligible students and educators "free, one-year, single
 3. Download Fusion or Inventor from the education page and sign in.
 
 > [!IMPORTANT]
-> Education licenses are for "learning, teaching, or educational research", not for commercial, professional or for-profit work ([Autodesk: educational purposes](https://www.autodesk.com/company/educational-purposes)). Before you use an education license on a project funded by or delivered to a company, ask [lab manager name] whether the project needs a commercial license.
+> Education licenses are for "learning, teaching, or educational research", not for commercial, professional or for-profit work ([Autodesk: educational purposes](https://www.autodesk.com/company/educational-purposes)). Before you use an education license on a project funded by or delivered to a company, ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) whether the project needs a commercial license.
 
 ## From CAD to the Form 3 printer
 
@@ -76,4 +76,4 @@ Follow the CAD and hardware file conventions in the dev guidelines' [hardware pa
 - [Unity](unity.md): CAD models in XR scenes
 - [Dev guidelines: hardware](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/hardware.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/autodesk.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/autodesk.md)</sub>

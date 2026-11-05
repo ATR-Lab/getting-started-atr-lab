@@ -59,7 +59,7 @@ The README's reference prices were $121.94 for one follower arm and $229.88 for 
 | Checkout | `[checkout procedure]` |
 | Arm IDs | `[the calibration ID written on each arm's label]` |
 | Cameras | `[which cameras go with the arms]` |
-| Accounts and credentials | Hugging Face datasets and models go to `[lab Hugging Face organization]`. Ask `[lab manager name]` for access; never commit Hugging Face or Weights & Biases tokens to any repo |
+| Accounts and credentials | Hugging Face datasets and models go to `[lab Hugging Face organization]`. Ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) for access; never commit Hugging Face or Weights & Biases tokens to any repo |
 | Lab repos | `[lab SO-101 repo, if any]` |
 
 ## First steps
@@ -168,7 +168,7 @@ lerobot-record \
 ```
 
 > [!IMPORTANT]
-> Recording **uploads the dataset to the Hugging Face Hub by default**. If a camera can see people, or the data belongs to a study, add `--dataset.push_to_hub=False` and ask `[lab manager name]` before you share it. Human-subjects data follows the lab's research standards and IRB approval.
+> Recording **uploads the dataset to the Hugging Face Hub by default**. If a camera can see people, or the data belongs to a study, add `--dataset.push_to_hub=False` and ask the lab manager before you share it. Human-subjects data follows the lab's research standards and IRB approval.
 
 **Replay** an episode on the follower:
 
@@ -265,4 +265,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [LeRobot](../tech-stack/lerobot.md) · [MuJoCo](../tech-stack/mujoco.md) · [Isaac Sim](../tech-stack/isaac-sim.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/lerobot-so-101.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/lerobot-so-101.md)</sub>

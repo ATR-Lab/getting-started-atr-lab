@@ -69,7 +69,7 @@ Put tools back where they belong, label anything you leave overnight with your n
 
 Robots, sensors, laptops and tools leave their shelf only through the checkout process:
 
-1. Check that you are trained and allowed to use the device (ask [lab manager name]).
+1. Check that you are trained and allowed to use the device (ask the lab manager, Marcus Arnett, <marnett5@kent.edu>).
 2. Record the checkout in [equipment checkout log or system]: device, your name, date, where it will be and when it comes back.
 3. Return it charged, complete (cables, batteries, controllers) and clean, and record the return.
 4. Report anything missing, damaged or not working right away, and tag the device "out of order".
@@ -81,7 +81,7 @@ Device-by-device notes, including where each robot lives and who looks after it,
 - **Lab meetings:** [day, time and place of the lab meeting]. Come prepared to give your update.
 - **Weekly updates:** send your update to [where: channel, document or email] by [day and time], in this format: [update format, for example "done, next, blocked"].
 - **One-on-one meetings** with your advisor: [how often and how to book].
-- Bring slides for research updates on the lab's template (ask [lab manager name] for the current one).
+- Bring slides for research updates on the lab's template (ask the lab manager for the current one).
 
 ## Shared machines and GPUs
 
@@ -98,7 +98,7 @@ Lab workstations and GPU servers are shared. To keep them usable for everyone:
 
 | What | Where | Notes |
 | --- | --- | --- |
-| Code | The lab's GitHub organization, [ATR-Lab](https://github.com/ATR-Lab) | Ask [lab manager name] to create a repository. New repositories are **private by default**. Make one public only when it has the MIT License in a `LICENSE` file at its root: every public lab project is MIT-licensed. Follow the [dev guidelines](https://github.com/ATR-Lab/dev-guidelines) |
+| Code | The lab's GitHub organization, [ATR-Lab](https://github.com/ATR-Lab) | Ask the lab manager to create a repository. New repositories are **private by default**. Make one public only when it has the MIT License in a `LICENSE` file at its root: every public lab project is MIT-licensed. Follow the [dev guidelines](https://github.com/ATR-Lab/dev-guidelines) |
 | Papers and figures | [Overleaf or shared drive] | One project per paper; see [writing papers](../research/writing-papers.md) |
 | Datasets, recordings and models | [shared data location] | Record where each dataset came from and its license |
 | Human-subjects study data | Only where the IRB protocol says | See [data management](../research/standards.md#data-management) |
@@ -111,14 +111,14 @@ Back up anything you cannot recreate. A common rule is three copies, on two kind
 When you graduate, finish a project or leave the lab, hand everything over before your last day:
 
 - [ ] Return every device you checked out, and record the returns.
-- [ ] Return keys, access cards and anything else issued to you ([lab manager name]).
+- [ ] Return keys, access cards and anything else issued to you to the lab manager.
 - [ ] Push all code to the lab's GitHub organization, with a README that says how to build and run it.
 - [ ] Move datasets, recordings, models and CAD files to [shared data location], with a short note on what each one is.
 - [ ] Hand study data over as the IRB protocol requires, and tell the PI.
 - [ ] Write a short handover note for whoever continues the work: what works, what doesn't and where things are.
 - [ ] Clear your bench and shelf space.
 - [ ] Remove your files and accounts from shared machines, and ask [machine administrator] to close lab accounts.
-- [ ] Tell [lab manager name] where you can be reached, if you would like to stay in touch.
+- [ ] Tell the lab manager where you can be reached, if you would like to stay in touch.
 
 ## Related
 
@@ -129,4 +129,4 @@ When you graduate, finish a project or leave the lab, hand everything over befor
 - [Tech stack](../tech-stack/README.md)
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines): code style, Git and reviews
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/best-practices.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/best-practices.md)</sub>

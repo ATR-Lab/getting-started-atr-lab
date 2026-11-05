@@ -5,7 +5,7 @@
 Claude Code is Anthropic's coding agent: it runs in your terminal (and in editors and a desktop app), reads your repository, edits files and runs commands after you approve them. Lab repositories keep their agent instructions in `AGENTS.md`, with a one-line `CLAUDE.md` that imports it, so Claude Code and [Codex](codex.md) follow the same rules. The one thing to remember: you are the author of everything the agent writes, so read every diff before you commit it, and never give it passwords, keys or identifiable study data.
 
 > [!IMPORTANT]
-> **Kent State's guidance comes first.** Kent State's [AI Hub](https://www.kent.edu/ai) lists Microsoft Copilot, Google Gemini and NotebookLM, and Adobe Firefly as sanctioned for university use, and says tools outside that list, naming Claude and ChatGPT, "may be used for personal/non-sensitive work only, do not input university data." Until the director confirms with Kent State Information Security (<security@kent.edu>) which lab work Claude Code may be used for, use it only on public or non-sensitive code, such as the lab's open-source repositories, and never on student records, study data or other university data.
+> **Kent State's guidance comes first.** Kent State's [AI Hub](https://www.kent.edu/ai) lists Microsoft Copilot, Google Gemini and NotebookLM, and Adobe Firefly as sanctioned for university use, and says tools outside that list, naming Claude and ChatGPT, "may be used for personal/non-sensitive work only, do not input university data." The director's rule (Nov. 2026): use Claude Code only on public or non-sensitive code, such as the lab's open-source repositories, and never on student records, study data or other university data. No current lab work involves personal or sensitive data; the lab will set rules before any does.
 
 ## Contents
 
@@ -54,7 +54,7 @@ cd ~/src/[repository]
 claude
 ```
 
-The first run opens a browser to sign in. Claude Code needs a Claude Pro, Max, Team or Enterprise plan or an Anthropic Console (API) account; the free Claude plan does not include it ([setup guide](https://code.claude.com/docs/en/setup#authenticate)). The lab's arrangement for accounts is [which Claude accounts the lab provides, if any: ask lab manager name]. Type `/login` to switch accounts and `/help` for commands.
+The first run opens a browser to sign in. Claude Code needs a Claude Pro, Max, Team or Enterprise plan or an Anthropic Console (API) account; the free Claude plan does not include it ([setup guide](https://code.claude.com/docs/en/setup#authenticate)). The lab has a Claude plan ($20 a month, which includes Claude Code); to be added to it, ask the director, Jong-Hoon Kim (<jkim72@kent.edu>). Type `/login` to switch accounts and `/help` for commands.
 
 Good first prompts on a lab repository:
 
@@ -109,4 +109,4 @@ Claude Code is named here because lab members use it; this page describes the to
 - [AI-assisted development](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/ai-assisted-development.md) in the dev guidelines
 - [Claude Code documentation](https://code.claude.com/docs/en/overview)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/claude-code.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/claude-code.md)</sub>

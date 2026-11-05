@@ -68,7 +68,7 @@ Kits come in Standard, Advanced, Superior and Ultimate tiers, with or without th
 | Location | Room 236, `[shelf or cabinet]` |
 | Owner or contact | `[ROSMASTER X3 owner or contact name]` |
 | Checkout | `[checkout procedure]` |
-| Accounts and credentials | Yahboom's tutorials publish the factory usernames and passwords for the controller, Jupyter Lab, VNC and the robot's hotspot. Ask `[lab manager name]` for the lab's changed logins; never commit them to any repo |
+| Accounts and credentials | Yahboom's tutorials publish the factory usernames and passwords for the controller, Jupyter Lab, VNC and the robot's hotspot. Ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) for the lab's changed logins; never commit them to any repo |
 | Lab repos | `[lab ROSMASTER X3 repo, if any]` |
 
 The lab's public [ATR-Lab/yahboom_r2l_ros2](https://github.com/ATR-Lab/yahboom_r2l_ros2) repo is for a **different Yahboom robot, the R2L** (a ROS 2 Humble port from ROS 1 Noetic). It is not an X3 driver, but its structure is a useful example of a Yahboom ROS 2 workspace.
@@ -82,7 +82,7 @@ These steps follow Yahboom's [ROSMASTER X3 tutorials](http://www.yahboom.net/stu
 3. **Charge the battery** with the Yahboom charger, main power switch off.
 4. **Power on with the robot flat on the floor.** It calibrates its IMU at power-on, so "it should be placed horizontally on the ground" until it beeps ([battery and usage precautions](https://www.yahboom.net/public/upload/upload-html/1743656067/2.%20Precautions%20for%20battery.html)).
 5. **Connect.** Out of the box the controller makes a Wi-Fi hotspot and shows its IP address on the OLED screen. Connect your laptop or phone to it, or switch the robot to the lab network (`[lab robot network]`) ([static IP and hotspot mode](https://www.yahboom.net/public/upload/upload-html/1686909289/5.%20Static%20IP%20and%20hotspot%20mode.html)). Then use SSH, VNC or Jupyter Lab on port 8888 ([remote control](https://www.yahboom.net/public/upload/upload-html/1743494533/3.%20Remote%20control.html)).
-6. **Use the lab's login, not the published one.** The lab has changed the factory passwords on its X3; ask `[lab manager name]` for the login.
+6. **Use the lab's login, not the published one.** The lab has changed the factory passwords on its X3; ask the lab manager for the login.
 7. **Set the robot type and lidar model** once, from the robot's terminal, using the script for your lidar (A1 or S2) ([first trial](https://www.yahboom.net/public/upload/upload-html/1712911734/First%20Trial.html)):
 
    ```bash
@@ -111,7 +111,7 @@ These steps follow Yahboom's [ROSMASTER X3 tutorials](http://www.yahboom.net/stu
 
 The tutorials cover ROS 2 mapping with Gmapping and Cartographer, RTAB-Map 3D mapping, Nav2 navigation and obstacle avoidance, vision, voice control and YOLO object recognition (on the Orin Super images).
 
-**ROS 2 versions.** ROS 2 Humble (on the Orin controllers) is supported until May 2027. ROS 2 Foxy (on the Pi 5 and Nano images) reached end of life on June 20, 2023 ([ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html)): it gets no security fixes, and current ROS 2 tutorials won't match it. The lab's X3 runs a Jetson Nano, so it uses Yahboom's Foxy image. NVIDIA's last release for the original Jetson Nano is JetPack 4.6.x on Ubuntu 18.04 ([Jetson notes](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/03-install-native.md#nvidia-jetson)); whether a newer Ubuntu can run on this controller is still being researched. Until then, talk to `[lab manager name]` before you build a project on it. Lab guides: [ROS 2](../tech-stack/ros2.md), [Docker](../tech-stack/docker.md), [Gazebo](../tech-stack/gazebo.md) and the lab-robots page in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/08-lab-robots.md).
+**ROS 2 versions.** ROS 2 Humble (on the Orin controllers) is supported until May 2027. ROS 2 Foxy (on the Pi 5 and Nano images) reached end of life on June 20, 2023 ([ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html)): it gets no security fixes, and current ROS 2 tutorials won't match it. The lab's X3 runs a Jetson Nano, so it uses Yahboom's Foxy image. NVIDIA's last release for the original Jetson Nano is JetPack 4.6.x on Ubuntu 18.04 ([Jetson notes](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/03-install-native.md#nvidia-jetson)); whether a newer Ubuntu can run on this controller is still being researched. Until then, talk to the lab manager before you build a project on it. Lab guides: [ROS 2](../tech-stack/ros2.md), [Docker](../tech-stack/docker.md), [Gazebo](../tech-stack/gazebo.md) and the lab-robots page in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/08-lab-robots.md).
 
 **Firmware.** Yahboom says of the expansion board's firmware: "If it is not necessary, please do not update the firmware" ([firmware update](https://www.yahboom.net/public/upload/upload-html/1743494450/1.%20Update%20the%20firmware.html)).
 
@@ -120,13 +120,13 @@ The tutorials cover ROS 2 mapping with Gmapping and Cartographer, RTAB-Map 3D ma
 Read the lab's safety rules first, especially [robots in motion](../lab-rules/safety.md#robots-in-motion) and [batteries](../lab-rules/safety.md#batteries). Battery rules below are quoted or summarized from Yahboom's [battery and usage precautions](https://www.yahboom.net/public/upload/upload-html/1743656067/2.%20Precautions%20for%20battery.html).
 
 > [!WARNING]
-> **Lithium battery.** "It is strictly forbidden to use batteries or chargers not provided by the company." Turn the main power switch off before charging, don't use the robot while it charges and "Someone needs to be present when charging." Unplug the charger when its light turns from red to green. If the pack or charger swells, gets very hot or smells, stop using it and tell `[lab safety contact]`. If it smokes or catches fire, follow the lab's [battery emergency rule](../lab-rules/safety.md#batteries): leave the room, pull the fire alarm and call 911. (Yahboom mentions sand or a dry-powder extinguisher; use one only if you are trained to.)
+> **Lithium battery.** "It is strictly forbidden to use batteries or chargers not provided by the company." Turn the main power switch off before charging, don't use the robot while it charges and "Someone needs to be present when charging." Unplug the charger when its light turns from red to green. If the pack or charger swells, gets very hot or smells, stop using it and tell the lab safety contact (Marcus Arnett, <marnett5@kent.edu>; backup: Lucky Sah, <lsah@kent.edu>). If it smokes or catches fire, follow the lab's [battery emergency rule](../lab-rules/safety.md#batteries): leave the room, pull the fire alarm and call 911. (Yahboom mentions sand or a dry-powder extinguisher; use one only if you are trained to.)
 
 - **Low battery.** Below 9.6 V the expansion board beeps and the MCU light flashes fast: switch off and charge.
 - **Storage.** For long storage, keep the pack at 11.1-11.7 V, remove it from the robot and store it away from metal objects, with its insulating wrap intact, in `[battery storage location]`.
 - **Temperature and water.** Use it between 0 °C and 35 °C, and never in damp conditions or rain.
 - **Lidar.** It spins as soon as the robot powers on: "do not block the rotation of the lidar".
-- **Load.** Yahboom forbids loads beyond the product's capacity but publishes no payload number, so don't add weight without asking `[lab manager name]`.
+- **Load.** Yahboom forbids loads beyond the product's capacity but publishes no payload number, so don't add weight without asking the lab manager.
 - **Autonomous runs.** Stay within reach of the power switch or the gamepad, and keep people out of its path.
 
 > [!CAUTION]
@@ -155,4 +155,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md) · [Gazebo](../tech-stack/gazebo.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/rosmaster-x3.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/rosmaster-x3.md)</sub>

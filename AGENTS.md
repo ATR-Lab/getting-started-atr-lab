@@ -35,7 +35,7 @@ This repository is the onboarding handbook for new members of the Advanced Teler
 | `tech-stack/claude-code.md` | Claude Code: install, AGENTS.md and CLAUDE.md, permission modes, lab rules for AI coding agents |
 | `tech-stack/codex.md` | Codex CLI: install, AGENTS.md, sandbox and approvals, lab rules for AI coding agents |
 | `lab-rules/README.md` | Index of the lab rules |
-| `lab-rules/code-of-conduct.md` | Code of conduct (draft until the director approves), extending Kent State's Code of Student Conduct |
+| `lab-rules/code-of-conduct.md` | Code of conduct (approved by the director, Nov. 5, 2026), extending Kent State's Code of Student Conduct |
 | `lab-rules/safety.md` | Safety rules: emergencies, injuries, benches and soldering, robots in motion, batteries, resin, lasers, attire |
 | `lab-rules/best-practices.md` | Everyday habits: Slack, calendar, `[ATR]` email tag, checkout, meetings, shared GPUs, storage, leaving the lab |
 | `hardware/README.md` | Hardware index and inventory table (maintained separately; see its own open items) |
@@ -70,7 +70,7 @@ This repository is the onboarding handbook for new members of the Advanced Teler
 - **Callouts:** GitHub alerts (`> [!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]`, `[!CAUTION]`), sparingly; safety rules in WARNING or CAUTION.
 - **Mermaid:** start every diagram with the brand theme line used in `tech-stack/README.md`. When edges carry labels, add `linkStyle default color:#1B2533` at the end of the diagram so the labels stay readable. Don't set a font in the theme line: a custom `fontFamily` makes node text clip.
 - **Files and links:** lowercase kebab-case names; relative links inside this repo; full `https://github.com/ATR-Lab/<repo>/blob/<branch>/<path>` links across repos (`master` for dev-guidelines, about and this repo; `main` for all-things-ros2 and .github). Link only public ATR-Lab repositories.
-- **Repo-specific:** the code of conduct stays marked "Draft until the director approves" until he does. Don't commit PDFs. Keep the anchors other pages link to (`#safety` on hardware pages, `#human-subjects-research`, `#data-management`, `#robots-in-motion` and the rest) stable, or update every link.
+- **Repo-specific:** the code of conduct is approved by the director (Nov. 5, 2026); changes to its rules need his approval. Don't commit PDFs. Keep the anchors other pages link to (`#safety` on hardware pages, `#human-subjects-research`, `#data-management`, `#robots-in-motion` and the rest) stable, or update every link.
 
 ## How to check your work
 
@@ -105,15 +105,13 @@ Every placeholder in this repository, by file, with who can fill it. Agents must
 | File | Placeholder | Who fills it |
 | --- | --- | --- |
 | `README.md` | `[who sends GitHub organization invitations]`, `[Slack workspace]`, `[main lab channel]`, `[lab calendar]` | Lab manager |
-| `README.md` | `[lab safety contact]` | Director |
 | `README.md` | `[mentor name]` | Director, per new member |
-| `lab-rules/code-of-conduct.md` | Approval of the whole draft | Director (Jong-Hoon Kim) |
 | `lab-rules/code-of-conduct.md` | `[designated break area]`, `[lab door rules: ...]`, `[visitor rules: ...]`, `[after-hours rules, ...]`, `[lab policy on personal use of equipment and printers]` | Director and lab manager |
 | `lab-rules/code-of-conduct.md` | `[purchase request procedure]`, `[reimbursement procedure]` | Director, with the department office |
-| `lab-rules/code-of-conduct.md` | `[lab social media administrators]`, `[lab password manager]`, `[lab manager name]`, `[lab contact for concerns]` | Director |
+| `lab-rules/code-of-conduct.md` | `[lab social media administrators]`, `[lab contact for concerns]` | Director |
 | `lab-rules/code-of-conduct.md` | `[Department of Computer Science chair]` | Lab manager (from the department website; name the role if the person changes) |
 | `lab-rules/code-of-conduct.md` | `[where students check assistantship and employment terms]` | Lab manager, with the Graduate College |
-| `lab-rules/safety.md` | `[lab safety contact]`, `[how sign-offs are recorded]`, `[how the lab marks a robot test area]` | Director |
+| `lab-rules/safety.md` | `[how sign-offs are recorded]`, `[how the lab marks a robot test area]` | Director |
 | `lab-rules/safety.md` | `[first aid kit location]`, `[fire extinguisher location]`, `[eyewash location]`, `[evacuation route and assembly point]` | Lab safety contact (walk the lab and building) |
 | `lab-rules/safety.md` | `[battery charging location]`, `[battery storage location]`, `[SDS location]`, `[lab resin and IPA waste procedure]` | Lab safety contact, with Kent State EHS |
 | `lab-rules/best-practices.md` | `[Slack workspace]`, `[main lab channel]`, `[lab calendar tool]`, `[equipment checkout log or system]`, `[machine administrator]`, `[GPU booking method]` | Lab manager |
@@ -131,10 +129,10 @@ Every placeholder in this repository, by file, with who can fill it. Agents must
 | `tech-stack/lerobot.md` | `[lab Hugging Face organization]` | Director |
 | `tech-stack/autodesk.md` | `[CAD file location]` | Director |
 | `tech-stack/unity.md` | `[which Unity license lab machines use]`, `[Meta Quest headsets and location]` | Lab manager |
-| `tech-stack/claude-code.md`, `tech-stack/codex.md` | Which AI coding agent accounts the lab provides, and which lab work they may be used for under Kent State's AI guidance | Director, with Kent State Information Security (<security@kent.edu>) |
-| `tech-stack/docker.md` | `[lab manager name]` (Docker Desktop license question), `[machine administrator]` | Lab manager |
+| `tech-stack/codex.md` | `[which OpenAI accounts the lab provides, if any]` | Director |
+| `tech-stack/docker.md` | `[machine administrator]` | Lab manager |
 
-Lab decisions these pages raise (not placeholders, but open): whether the lab needs a paid Docker Desktop plan under Docker's public-sector terms (`tech-stack/docker.md`); which lab repositories AI coding agents may be used on, given Kent State's AI Hub guidance (`tech-stack/claude-code.md`, `tech-stack/codex.md`).
+Lab decisions these pages raise (not placeholders, but open): whether the lab needs a paid Docker Desktop plan under Docker's public-sector terms (`tech-stack/docker.md`). Lab contacts (Nov. 5, 2026): lab manager Marcus Arnett, secondary Irvin Cardenas; lab safety contact Marcus Arnett, backup Lucky Sah. AI coding agents stay limited to public or non-sensitive work; the hardware pages' minors rules, the code of conduct and the password and SSH-key rules are the director's.
 
 ## Related repos
 

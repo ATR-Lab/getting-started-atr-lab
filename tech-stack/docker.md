@@ -38,7 +38,7 @@ Docker runs software in containers: isolated copies of an operating system and i
 On Linux, Docker Desktop runs its own virtual machine with a separate `desktop-linux` context, so images you pulled with Docker Engine do not show up in it ([Docker docs](https://docs.docker.com/desktop/setup/install/linux/)). Pick one per machine. Apple silicon Macs have no NVIDIA GPU, so CUDA containers do not run there.
 
 > [!IMPORTANT]
-> **Docker Desktop licensing is a lab decision.** Docker's [Desktop license page](https://docs.docker.com/subscription/desktop-license/) lists education among free uses, but its [subscription service agreement](https://www.docker.com/legal/docker-subscription-service-agreement/) (updated Aug. 26, 2026) says U.S. public education entities are covered by a separate public-sector agreement and are not entitled to the no-fee services, and that a research group sharing a project needs a paid institutional plan. Before you install Docker Desktop on a lab or university machine, ask [lab manager name] whether the lab has a license. Docker Engine on Linux is not affected.
+> **Docker Desktop licensing is a lab decision.** Docker's [Desktop license page](https://docs.docker.com/subscription/desktop-license/) lists education among free uses, but its [subscription service agreement](https://www.docker.com/legal/docker-subscription-service-agreement/) (updated Aug. 26, 2026) says U.S. public education entities are covered by a separate public-sector agreement and are not entitled to the no-fee services, and that a research group sharing a project needs a paid institutional plan. Before you install Docker Desktop on a lab or university machine, ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) whether the lab has a license. Docker Engine on Linux is not affected.
 
 ## Install Docker Engine on Ubuntu
 
@@ -227,4 +227,4 @@ The full ROS 2 guide, including when to use ROSEnv and when to install natively,
 - [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2): installing ROS 2 natively or with ROSEnv
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/docker.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/docker.md)</sub>

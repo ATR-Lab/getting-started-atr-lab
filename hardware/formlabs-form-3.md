@@ -58,7 +58,7 @@ From the Form 3 column of Formlabs' [resin printer tech specs](https://formlabs.
 | Resins and tanks on hand | `[resins, resin tank versions]` |
 | Post-processing | `[Form Wash and Form Cure models, or other wash and cure setup]` |
 | Chemical waste | `[lab resin and IPA waste procedure]`, including who requests EHS pickups |
-| Accounts and credentials | PreForm and Dashboard sign-in: ask `[lab manager name]` for the lab's Formlabs account; never commit it to any repo |
+| Accounts and credentials | PreForm and Dashboard sign-in: ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) for the lab's Formlabs account; never commit it to any repo |
 
 ## First steps
 
@@ -132,7 +132,7 @@ Formlabs says uncured resin "may be classified as hazardous waste" and that you 
 | Liquid or partly cured resin, resin-soaked towels and gloves | Collect in the lab's labeled resin waste container for EHS pickup: `[lab resin and IPA waste procedure]` |
 | Used IPA with dissolved resin | Collect in a closed, labeled container for EHS pickup. Never pour it down a drain |
 | Fully washed and cured parts and supports | Formlabs lists them as household waste, and the lab's [resin rules](../lab-rules/safety.md#3d-printing-and-resin) allow the regular trash |
-| Empty cartridges and failed tanks | Ask `[lab manager name]`; don't throw away a cartridge or tank that still holds liquid resin |
+| Empty cartridges and failed tanks | Ask the lab manager; don't throw away a cartridge or tank that still holds liquid resin |
 
 - Kent State's waste management page says to "contact the Environmental Health and Safety Office at 330-672-1950" to arrange hazardous waste disposal, and that containers "must be labeled or marked so that their contents are known" ([waste management services](https://www.kent.edu/universityarchitect/waste-management-services)).
 - For other questions, EHS is at 330-672-4347 or <ehs@kent.edu> ([Environmental Health and Safety](https://www.kent.edu/facilitiesplanning/environmental-health-and-safety)).
@@ -162,4 +162,4 @@ Formlabs says uncured resin "may be classified as hazardous waste" and that you 
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [Autodesk tools for CAD](../tech-stack/autodesk.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/formlabs-form-3.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/formlabs-form-3.md)</sub>

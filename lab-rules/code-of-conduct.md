@@ -5,7 +5,7 @@
 This code describes how members of the Advanced Telerobotics Research Laboratory work together and represent the lab. It extends Kent State University's [Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct) (University Policy Register 4-02, Administrative Code 3342-4-02), and it applies to everyone in the lab: undergraduate and graduate students, staff, faculty, visiting researchers and program participants. Employees also follow the university's employee policies. Where this code and a university policy differ, the university policy wins. The one thing to remember: if you are unsure whether something is allowed, ask before you act.
 
 > [!IMPORTANT]
-> **Draft until the director approves.** This code is a draft for Jong-Hoon Kim, associate professor of computer science and director of the lab, to review. Until he approves it, treat it as guidance, and treat the Kent State University policies it links as binding.
+> **Approved by the director.** Jong-Hoon Kim, associate professor of computer science and director of the lab, approved this code on Nov. 5, 2026. The Kent State University policies it links are binding too, and win where they differ.
 
 ## Contents
 
@@ -100,10 +100,10 @@ The lab's code, robots, datasets, website, printers and name belong to the lab a
 Lab equipment is Kent State property, bought with grants and university funds, and shared by everyone.
 
 - Use a device only after training, and check it out and back in ([equipment checkout](best-practices.md#equipment-checkout)).
-- Don't take equipment out of the lab without a recorded checkout and the approval of [lab manager name].
+- Don't take equipment out of the lab without a recorded checkout and the approval of the lab manager (Marcus Arnett, <marnett5@kent.edu>).
 - Don't open, modify or reflash a robot or instrument (firmware, wiring, mechanical changes) without the approval of the person responsible for it.
 - Report damage, loss and malfunctions right away. Accidents happen; hiding one makes it worse.
-- Lab equipment must be cleared by Kent State EHS before it is thrown away or moved to another location ([moving lab equipment](https://www.kent.edu/facilitiesplanning/moving-lab-equipment)); ask [lab manager name].
+- Lab equipment must be cleared by Kent State EHS before it is thrown away or moved to another location ([moving lab equipment](https://www.kent.edu/facilitiesplanning/moving-lab-equipment)); ask the lab manager.
 
 ## Spending the lab's money
 
@@ -118,7 +118,7 @@ Only the director approves spending lab funds, and every purchase follows Kent S
 ## Physical security
 
 - **Door:** [lab door rules: when the door is locked, who may open it]. Never prop the door open, and never lend your key or access card.
-- **Keys and cards:** key and access-card requests go through the Facilities lock shop, and duplicating keys is prohibited ([Policy 5-12.405](https://www.kent.edu/policyreg/operational-policy-regarding-key-and-electronic-access-control)). Report a lost key or card to [lab manager name] the same day.
+- **Keys and cards:** key and access-card requests go through the Facilities lock shop, and duplicating keys is prohibited ([Policy 5-12.405](https://www.kent.edu/policyreg/operational-policy-regarding-key-and-electronic-access-control)). Report a lost key or card to the lab manager the same day.
 - **Visitors:** [visitor rules: sign-in, escort, who may bring visitors]. Visitors never operate robots or tools without a trained member supervising them.
 - **After hours:** Kent State's academic buildings are closed from 11 p.m. to 7 a.m. Monday through Friday and all weekend; a student in a closed building needs permission from the building curator (and the department chair where appropriate) and a valid Kent State ID ([Policy 5-12.403](https://www.kent.edu/policyreg/operational-procedures-and-regulations-regarding-schedule-use-and-closed-periods-buildings)). The lab's own after-hours rules: [after-hours rules, for example no robot testing or soldering alone].
 - **Leaving:** the last person out turns off soldering irons and chargers, shuts the door and checks that it locks.
@@ -135,9 +135,10 @@ Only the director approves spending lab funds, and every purchase follows Kent S
 ## Password sharing
 
 - **Never share your Kent State credentials.** Kent State's [responsible use policy](https://www.kent.edu/policyreg/university-policy-responsible-use-information-technology) (Policy 9-02) says users may not "share authentication details or provide access to their university accounts with anyone else (e.g., sharing the password)." That includes your FlashLine password and your two-factor codes.
-- **Shared robot and service accounts** (a robot's onboard computer, a lab server, a shared cloud account) are managed by [lab manager name] in [lab password manager]. Get access there, never by message.
-- **Lab workstations:** use your own user account, with your own password. Ask [lab manager name] for one; never log in as someone else.
-- **Never put a password, key or token in a repository**, a README, Slack, an issue or a prompt to an AI tool. If one leaks, tell [lab manager name] so it can be changed.
+- **Shared robot and service accounts** (a robot's onboard computer, a lab server, a shared cloud account) are managed by the lab manager in the lab's password manager, Vaultwarden, which runs on a lab Raspberry Pi. It holds the passwords for the lab's wireless access points, robots and machines and the administrator accounts on lab workstations. Get access there, never by message.
+- **Use SSH keys, not passwords,** to reach lab robots and machines over SSH. Keep your private keys on an encrypted drive of at least 16 GB, using the encryption your operating system offers (for example FileVault on macOS, BitLocker on Windows or LUKS on Linux). Never share or commit a private key.
+- **Lab workstations:** use your own user account, with your own password. Ask the lab manager for one; never log in as someone else.
+- **Never put a password, key or token in a repository**, a README, Slack, an issue or a prompt to an AI tool. If one leaks, tell the lab manager so it can be changed.
 - **Change default passwords** on every robot and device before it goes on the network, and change shared passwords when someone leaves the lab.
 - **If your account may be compromised**, contact Kent State Information Security (<security@kent.edu>, 330-672-5566) ([Secure IT](https://www.kent.edu/secureit/fraud-recovery)). Forward phishing email to <phish@kent.edu>. For other help, TechHelp is at 330-672-HELP (4357).
 
@@ -157,7 +158,7 @@ You can raise any concern about safety, conduct, research integrity or how you a
 | Research misconduct | In writing to the chair, director or dean of the academic unit of the person involved, as [Policy 10-07.1](https://www.kent.edu/policyreg/administrative-policy-and-procedures-regarding-allegations-and-instances-misconduct-0) describes. Questions about research compliance: Office of Research Compliance, 330-672-2704, <researchcompliance@kent.edu> |
 | Fraud or misuse of university funds | Kent State's reporting line, 1-800-683-5621, available 24/7 ([Policy 7-02.9](https://www.kent.edu/policyreg/administrative-policy-reporting-and-investigating-fraud-and-fiscal-abuse)) |
 | Suspicious activity or threats (not urgent) | Kent State Police [Threatline](https://apps.kent.edu/KSUPD/Threatline/), 330-672-7233 |
-| Safety hazards and injuries | [lab safety contact] and Kent State EHS, 330-672-4347 ([safety rules](safety.md#reporting-injuries-and-hazards)) |
+| Safety hazards and injuries | The lab safety contact (Marcus Arnett, <marnett5@kent.edu>; backup: Lucky Sah, <lsah@kent.edu>) and Kent State EHS, 330-672-4347 ([safety rules](safety.md#reporting-injuries-and-hazards)) |
 
 ## Related
 
@@ -166,4 +167,4 @@ You can raise any concern about safety, conduct, research integrity or how you a
 - [Research standards](../research/standards.md)
 - [Kent State University Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/code-of-conduct.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/code-of-conduct.md)</sub>

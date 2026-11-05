@@ -60,7 +60,7 @@ Not published on the official pages we checked: battery voltage and watt-hours, 
 | Checkout | `[checkout procedure]` |
 | Hoist or stand | `[where the lab's hoist or stand is, and who trains you on it]` |
 | Firmware version | `[current firmware version, from /opt/booster/version.txt]` |
-| Accounts and credentials | The Booster App needs a Booster account, and the robot has an SSH login. Ask `[lab manager name]`; never commit them to any repo |
+| Accounts and credentials | The Booster App needs a Booster account, and the robot has an SSH login. Ask the lab manager (Marcus Arnett, <marnett5@kent.edu>); never commit them to any repo |
 | Lab repos | [ATR-Lab/expressive-motion](https://github.com/ATR-Lab/expressive-motion) (see below) |
 
 **ATR-Lab/expressive-motion.** Its README describes a pipeline that turns a single video of a person walking into a Booster K1 reference motion and a training task for Booster's Isaac Lab tools (Booster Train, using BeyondMimic). It runs on x86_64 Linux with an NVIDIA GPU, pins Booster's `booster_train`, `booster_assets` and `booster_deploy` repos as submodules, and leaves training and deployment as manual steps: "Hardware execution additionally requires the upstream SDK, firmware, ROS 2, networking and safety procedures." Its code is MIT-licensed, but two dependencies (GVHMR and the SMPL body models) are for non-commercial research only.
@@ -81,7 +81,7 @@ These steps follow Booster's [K1 quick start](https://docs.booster.tech/docs/pro
 7. Press <kbd>L2</kbd> + <kbd>Up</kbd> to stand up. The robot then enters WALK mode on its own: the left stick moves it and the right stick turns it.
 8. To finish: press <kbd>L2</kbd> + <kbd>Start</kbd> (PREP mode), lay the robot flat, then hold the power button for 3 seconds. Wait 6 seconds before you power it on again.
 
-**The Booster App.** Download it from Booster's [app page](https://www.booster.tech/app-download), sign in with the lab's Booster account (ask `[lab manager name]`) and tap "Connect Robot" ([connect guide](https://docs.booster.tech/docs/product-manual/k1/basic-operations/connect-robot/)). Bluetooth and Location must be on. You can put the robot on the same Wi-Fi network as your phone, or connect your phone to the robot's own hotspot. The lab network is `[lab robot network]`.
+**The Booster App.** Download it from Booster's [app page](https://www.booster.tech/app-download), sign in with the lab's Booster account (ask the lab manager) and tap "Connect Robot" ([connect guide](https://docs.booster.tech/docs/product-manual/k1/basic-operations/connect-robot/)). Bluetooth and Location must be on. You can put the robot on the same Wi-Fi network as your phone, or connect your phone to the robot's own hotspot. The lab network is `[lab robot network]`.
 
 **A wired connection from a computer.** Set your computer's Ethernet port to 192.168.10.10 with netmask 255.255.255.0, then log in:
 
@@ -90,9 +90,9 @@ These steps follow Booster's [K1 quick start](https://docs.booster.tech/docs/pro
 ssh booster@192.168.10.102
 ```
 
-Booster's connect guide publishes the factory-default password; the lab has changed it on its units. Ask `[lab manager name]` for the lab's login, and never write it in a repo, notebook or chat.
+Booster's connect guide publishes the factory-default password; the lab has changed it on its units. Ask the lab manager for the lab's login, and never write it in a repo, notebook or chat.
 
-**Firmware.** Check the installed version on the robot with `cat /opt/booster/version.txt`. The latest release listed on Sept. 30, 2026 was v1.8.0.9 (Sept. 15, 2026) ([version upgrade](https://docs.booster.tech/docs/product-manual/k1/firmware-version/software-upgrade/)). SDK and demo versions are tied to firmware versions, so don't upgrade without asking `[lab manager name]`.
+**Firmware.** Check the installed version on the robot with `cat /opt/booster/version.txt`. The latest release listed on Sept. 30, 2026 was v1.8.0.9 (Sept. 15, 2026) ([version upgrade](https://docs.booster.tech/docs/product-manual/k1/firmware-version/software-upgrade/)). SDK and demo versions are tied to firmware versions, so don't upgrade without asking the lab manager.
 
 ### Modes
 
@@ -150,7 +150,7 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - **Always PREP before WALK**, with the robot "standing securely on the ground".
 - **Upgrades.** Installing software stops the motion controller and the joints "no longer output torque". Lay the robot flat, switch to DAMP and keep the power on until the upgrade finishes.
 - **Batteries.** Charge with the Booster charger: the charger light is red while charging and green when full ([charging](https://docs.booster.tech/docs/product-manual/k1/basic-operations/charging/)). Booster's [service terms](https://www.booster.tech/service) exclude damage from non-original battery packs. Booster's public docs give no storage guidance; follow the lab's [battery rules](../lab-rules/safety.md#batteries).
-- **Minors (lab rule).** A minor at a school event needs a permission slip signed by a parent or guardian before taking part. Ask `[director or lab manager]` before a minor operates the K1.
+- **Minors (lab rule).** The director approves every robot demo with K-12 visitors. Each minor needs a signed permission slip before taking part: the school's own form at a school event, otherwise the lab's form signed by a parent or guardian (`[link to the lab's permission slip in atr-lab-design-skill]`). Ask the director before a minor operates the K1.
 
 > [!CAUTION]
 > **Do not lift the robot while it walks.** The quick start warns that in WALK mode "it may fail to detect the ground and kick unpredictably, causing injury". Put it in PREP and lay it flat, or power it off, before you pick it up. During motion, "do not touch any part of the robot with your body except the handle."
@@ -170,9 +170,9 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 | The Python SDK fails with `LocoClientInitError` | The robot needs "typically 30–60 seconds after boot" before the SDK can connect | [Python SDK FAQ](https://docs.booster.tech/docs/developer-guide/booster-os-python-sdk/faq-and-debugging-tools/faq/) |
 | Your first walking commands are too fast | Booster recommends starting velocity commands at 0.1 | [Python SDK FAQ](https://docs.booster.tech/docs/developer-guide/booster-os-python-sdk/faq-and-debugging-tools/faq/) |
 | Booster support asks for logs | Upload from the app, or use `booster-cli log` on the robot. The robot's clock defaults to UTC+8, so convert your time range | [Log retrieval](https://docs.booster.tech/docs/product-manual/k1/troubleshooting/logs/) |
-| The software is badly broken | Booster documents a factory reset; "do not cut off power during the recovery process". Ask `[lab manager name]` before you run it | [Restore factory settings](https://docs.booster.tech/docs/product-manual/k1/troubleshooting/restore-factory-settings/) |
+| The software is badly broken | Booster documents a factory reset; "do not cut off power during the recovery process". Ask the lab manager before you run it | [Restore factory settings](https://docs.booster.tech/docs/product-manual/k1/troubleshooting/restore-factory-settings/) |
 
-Booster's remote support uses a third-party remote-desktop tool. Check with `[lab manager name]` before you install it on a lab machine.
+Booster's remote support uses a third-party remote-desktop tool. Check with the lab manager before you install it on a lab machine.
 
 ## Resources
 
@@ -187,4 +187,4 @@ Booster's remote support uses a third-party remote-desktop tool. Check with `[la
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [Isaac Sim](../tech-stack/isaac-sim.md) · [MuJoCo](../tech-stack/mujoco.md) · [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/booster-k1.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/booster-k1.md)</sub>

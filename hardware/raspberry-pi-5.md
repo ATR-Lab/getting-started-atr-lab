@@ -52,7 +52,7 @@ From the [Raspberry Pi 5 product brief (PDF)](https://pip-assets.raspberrypi.com
 | Checkout | `[checkout procedure]` |
 | Standard lab setup | `[OS image and version the lab uses, for example Ubuntu 24.04 with ROS 2 Jazzy]` |
 | Accessories | `[27 W power supplies, Active Coolers, M.2 HAT+ boards, NVMe drives, cases]` |
-| Accounts and credentials | Set your own user password when you flash the card, and ask `[lab manager name]` for Wi-Fi access. Never commit passwords, Wi-Fi keys or SSH keys to any repo |
+| Accounts and credentials | Set your own user password when you flash the card, and ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) for Wi-Fi access. Never commit passwords, Wi-Fi keys or SSH keys to any repo |
 | Lab repos | `[lab repos that run on the Pi 5, if any are public]` |
 
 ## First steps
@@ -132,7 +132,7 @@ Read the lab's [safety rules](../lab-rules/safety.md) first, including [workbenc
 - **Surface and airflow.** Run it on a stable, flat, non-conductive surface, in a well-ventilated place, and don't cover it while it runs.
 - **Static.** Handle the board by its edges.
 - **Water and heat.** Keep it away from liquids and heat sources.
-- **On a robot.** Mount it firmly, and if it shares a battery with motors, power it through a regulator rated for 5 V and 5 A. Ask `[lab manager name]` before you wire a Pi to a robot battery.
+- **On a robot.** Mount it firmly, and if it shares a battery with motors, power it through a regulator rated for 5 V and 5 A. Ask the lab manager before you wire a Pi to a robot battery.
 
 ## Troubleshooting
 
@@ -159,4 +159,4 @@ Read the lab's [safety rules](../lab-rules/safety.md) first, including [workbenc
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/raspberry-pi-5.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/raspberry-pi-5.md)</sub>

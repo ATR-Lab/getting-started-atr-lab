@@ -60,7 +60,7 @@ The XM430-W350-T servo takes 10.0-14.8 V, 12.0 V recommended ([XM430-W350 refere
 | Checkout | `[checkout procedure]` |
 | Interface and power supply | `[U2D2 with U2D2 Power Hub Board, or OpenCR; which 12 V supply]` |
 | Lab computer set up for it | `[computer name or "bring your own Ubuntu 24.04 laptop"]` |
-| Accounts and credentials | None needed for the arm itself. Lab computer logins: ask `[lab manager name]`; never commit them |
+| Accounts and credentials | None needed for the arm itself. Lab computer logins: ask the lab manager (Marcus Arnett, <marnett5@kent.edu>); never commit them |
 | Lab repos | [ATR-Lab/multi-servo-dynamixel-library](https://github.com/ATR-Lab/multi-servo-dynamixel-library) (older, see below) |
 
 **ATR-Lab/multi-servo-dynamixel-library** holds older lab code for driving several DYNAMIXEL servos: Python driver helpers and a ROS 1 (catkin) workspace, last updated in November 2021. Its README has only a title, it is not ROS 2 and it was not written for the OpenManipulator-X. Treat it as reference, not as the arm's driver.
@@ -246,4 +246,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Gazebo](../tech-stack/gazebo.md) · [MuJoCo](../tech-stack/mujoco.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/openmanipulator-x.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/openmanipulator-x.md)</sub>

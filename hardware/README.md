@@ -76,7 +76,7 @@ This folder has one page per piece of lab hardware: what it is, what we use it f
 | ROSMASTER X3 | Mecanum-wheel mobile robot | `[current ROSMASTER X3 projects]` | Jetson Nano 4GB; Yahboom system images, Rosmaster_Lib | Foxy in Yahboom's Docker image, past end of life (Jetson Nano) | Medium | [rosmaster-x3.md](rosmaster-x3.md) |
 | Formlabs Form 3 | Resin 3D printer | `[what the lab prints on the Form 3]` | PreForm software | Not applicable | Chemical | [formlabs-form-3.md](formlabs-form-3.md) |
 
-**Safety levels** are this folder's rough guide to each device's main hazards, not a Kent State or lab policy. `[lab manager name]` decides who may use what.
+**Safety levels** are this folder's rough guide to each device's main hazards, not a Kent State or lab policy. The lab manager (Marcus Arnett, <marnett5@kent.edu>) decides who may use what.
 
 - **Higher:** a robot that moves under its own power, is heavy enough to hurt someone or itself in a fall and has only a software stop. Trained users only, with a spotter.
 - **Medium:** moving joints or wheels in a small workspace: pinch points, and lithium batteries on the X3.
@@ -92,7 +92,7 @@ Do these before you power on any device in this folder, and again when you use a
 - [ ] You have checked the device out through `[checkout procedure]`, and you know when and where to return it.
 - [ ] You know how to stop it: the soft emergency stop or damping command for the legged robots, <kbd>Ctrl</kbd>+<kbd>C</kbd> and the power switch for the arms and the X3.
 - [ ] Batteries are charged and stored the way the device page and the lab's [battery rules](../lab-rules/safety.md#batteries) say.
-- [ ] You will **never store Wi-Fi passwords, account credentials, API tokens or device keys in any repo**, notebook or chat. Ask `[lab manager name]` for them, and keep them in environment variables or a password manager.
+- [ ] You will **never store Wi-Fi passwords, account credentials, API tokens or device keys in any repo**, notebook or chat. Ask the lab manager for them, and keep them in environment variables or the lab's password manager (Vaultwarden; see the [code of conduct](../lab-rules/code-of-conduct.md#password-sharing)). Reach robots over SSH with your own key, not a shared password.
 - [ ] You will label every demo and video as teleoperated or autonomous.
 - [ ] You know how to report damage, a near miss or an injury right away ([reporting injuries and hazards](../lab-rules/safety.md#reporting-injuries-and-hazards)).
 
@@ -109,13 +109,13 @@ Every placeholder in this folder, by page, with who can fill it. Agents must not
 
 | Page | Placeholders | Who can fill it |
 | --- | --- | --- |
-| Every device page | `[N]`, the shelf, bench or cabinet in Room 236 (location), `[checkout procedure]`, `[lab manager name]` | Lab manager |
+| Every device page | `[N]`, the shelf, bench or cabinet in Room 236 (location), `[checkout procedure]` | Lab manager |
 | Every device page | `[... owner or contact name]` (one per device), `[current ... projects and who leads them]` (one per device) | Director |
 | `README.md` | `[lab contact who trains on each device]`; the "What the lab uses it for" cells: `[current Go2 projects]`, `[other current K1 projects]`, `[current OpenManipulator-X projects]`, `[current SO-101 projects]`, `[current Jetson AGX Thor projects]`, `[current Raspberry Pi 5 projects]`, `[current ROSMASTER X3 projects]`, `[what the lab prints on the Form 3]` (the same as each page's Overview) | Director |
 | `unitree-go2.md` | `[whether our unit has the optional remote]`, `[current firmware version, from the app]`, `[power-on button sequence, from training]`, `[app emergency-stop steps, from training]` | Go2 owner or trainer |
 | `unitree-go2.md` | `[go2_ws maintainer]`, `[lab robot network]` | Lab manager |
 | `booster-k1.md` | `[K1 variant: Geek, Education or Professional]`, `[current firmware version, from /opt/booster/version.txt]`, `[DAMP command on our firmware]`, `[where the lab's hoist or stand is, and who trains you on it]` | K1 owner or trainer |
-| `booster-k1.md` | `[other current K1 projects and who leads them]`, `[director or lab manager]` (who may let a minor operate the K1) | Director |
+| `booster-k1.md` | `[other current K1 projects and who leads them]` | Director |
 | `booster-k1.md` | `[lab robot network]` | Lab manager |
 | `openmanipulator-x.md` | `[U2D2 with U2D2 Power Hub Board, or OpenCR; which 12 V supply]`, `[computer name or "bring your own Ubuntu 24.04 laptop"]` | OpenManipulator-X owner |
 | `lerobot-so-101.md` | `[N leader arms, N follower arms]`, `[7.4 V or 12 V follower motors]`, `[the calibration ID written on each arm's label]`, `[which cameras go with the arms]`, `[lab SO-101 repo, if any]` | SO-101 owner |
@@ -124,7 +124,7 @@ Every placeholder in this folder, by page, with who can fill it. Agents must not
 | `raspberry-pi-5.md` | `[RAM per board]`, `[27 W power supplies, Active Coolers, M.2 HAT+ boards, NVMe drives, cases]`, `[lab repos that run on the Pi 5, if any are public]` | Lab manager |
 | `raspberry-pi-5.md` | `[OS image and version the lab uses, for example Ubuntu 24.04 with ROS 2 Jazzy]`, `[confirm lab default distro]` | Director and lab manager (one decision for all lab computers) |
 | `rosmaster-x3.md` | `[Standard, Advanced, Superior or Ultimate; A1 or S2L lidar]`, `[assembled or not]`, `[lab ROSMASTER X3 repo, if any]` | ROSMASTER X3 owner |
-| `rosmaster-x3.md` | `[lab robot network]`, `[battery storage location]`, `[lab safety contact]` | Lab manager and lab safety contact (the last two are also open in `lab-rules/safety.md`) |
+| `rosmaster-x3.md` | `[lab robot network]`, `[battery storage location]` | Lab manager and lab safety contact (the battery storage location is also open in `lab-rules/safety.md`) |
 | `formlabs-form-3.md` | `[what the lab prints on the Form 3, for example prototype parts and robot fixtures]`, `[trained users]`, `[resin budget/approval]`, `[Form 3 trainer name]` | Director |
 | `formlabs-form-3.md` | `[procedure for booking the printer]`, `[curing station model, once bought]`, `[resins, resin tank versions]`, `[Form Wash and Form Cure models, or other wash and cure setup]`, `[print log]`, `[who maintains the printer]` | Form 3 owner |
 | `formlabs-form-3.md` | `[lab resin and IPA waste procedure]`, `[SDS location]`, `[required EHS trainings]` | Lab safety contact, with Kent State EHS (the first two are also open in `lab-rules/safety.md`) |
@@ -136,7 +136,7 @@ Every placeholder in this folder, by page, with who can fill it. Agents must not
 - **Go2 firmware.** Held at the newest firmware that UniPwn supports, for root access to the motion control unit. Still open: who keeps the Unitree account and the per-device key.
 - **ROSMASTER X3 software.** The lab's X3 runs a Jetson Nano with Yahboom's Foxy image. Whether a newer Ubuntu runs on it is being researched.
 - **Default passwords.** Changed on the lab's robots. Students use their own accounts on lab workstations.
-- **Minors.** A signed parent or guardian permission slip for school events. Go2: under 14 watch only; 14 and over may drive it with a trained member.
+- **Minors.** The director approves every robot demo with K-12 visitors. Each minor needs a signed permission slip: the school's own form at a school event, otherwise the lab's form signed by a parent or guardian (`[link to the lab's permission slip in atr-lab-design-skill]`). Go2: under 14 watch only; 14 and over may drive it with a trained member.
 - **Form 3 end of support.** The lab will keep the Form 3 running on third-party resins and reuse its current materials safely; a resin curing station is to be bought. See [Formlabs Form 3](formlabs-form-3.md#resins-and-the-end-of-support-plan).
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/README.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/README.md)</sub>

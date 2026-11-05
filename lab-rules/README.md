@@ -6,7 +6,7 @@ Three pages cover how we work together in the Advanced Telerobotics Research Lab
 
 | Page | What it covers | Read it when |
 | --- | --- | --- |
-| [Code of conduct](code-of-conduct.md) | Integrity, conflicts of interest, outside communications, lab money and equipment, physical security, privacy, passwords, reporting a concern. Draft until the director approves | Before your first day, and before you speak for the lab, spend its money or share its data |
+| [Code of conduct](code-of-conduct.md) | Integrity, conflicts of interest, outside communications, lab money and equipment, physical security, privacy, passwords, reporting a concern. Approved by the director, Nov. 5, 2026 | Before your first day, and before you speak for the lab, spend its money or share its data |
 | [Safety rules](safety.md) | Emergencies, injuries, machines, soldering and electronics, robots in motion, batteries, 3D printing and resin, lasers, attire, cleanliness | Before you touch any tool or robot, and before every new kind of experiment |
 | [Best practices](best-practices.md) | Courtesy, Slack, calendar invitations, the `[ATR]` email tag, clean benches, equipment checkout, meetings, shared GPUs, storage, leaving the lab | In your first week, and when you leave |
 
@@ -19,4 +19,4 @@ Three pages cover how we work together in the Advanced Telerobotics Research Lab
 - [Hardware](../hardware/README.md): device pages, each with its own safety section
 - [Kent State University Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/README.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/README.md)</sub>

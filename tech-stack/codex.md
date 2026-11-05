@@ -5,7 +5,7 @@
 Codex is OpenAI's coding agent. The Codex CLI runs in your terminal, reads your repository, edits files and runs commands inside a sandbox, asking before it goes outside it; the same agent is also available as an editor extension and as Codex cloud. Codex reads a repository's `AGENTS.md` before it starts work, and lab repositories keep their agent instructions there, so Codex and [Claude Code](claude-code.md) follow the same rules. The one thing to remember: you are the author of everything the agent writes, so read every diff before you commit it, and never give it passwords, keys or identifiable study data.
 
 > [!IMPORTANT]
-> **Kent State's guidance comes first.** Kent State's [AI Hub](https://www.kent.edu/ai) lists Microsoft Copilot, Google Gemini and NotebookLM, and Adobe Firefly as sanctioned for university use, and says tools outside that list, naming Claude and ChatGPT, "may be used for personal/non-sensitive work only, do not input university data." Until the director confirms with Kent State Information Security (<security@kent.edu>) which lab work Codex may be used for, use it only on public or non-sensitive code, such as the lab's open-source repositories, and never on student records, study data or other university data.
+> **Kent State's guidance comes first.** Kent State's [AI Hub](https://www.kent.edu/ai) lists Microsoft Copilot, Google Gemini and NotebookLM, and Adobe Firefly as sanctioned for university use, and says tools outside that list, naming Claude and ChatGPT, "may be used for personal/non-sensitive work only, do not input university data." The director's rule (Nov. 2026): use Codex only on public or non-sensitive code, such as the lab's open-source repositories, and never on student records, study data or other university data. No current lab work involves personal or sensitive data; the lab will set rules before any does.
 
 ## Contents
 
@@ -56,7 +56,7 @@ Choose **Sign in with ChatGPT** to use a ChatGPT plan that includes Codex, or si
 printenv OPENAI_API_KEY | codex login --with-api-key
 ```
 
-The lab's arrangement for accounts is [which OpenAI accounts the lab provides, if any: ask lab manager name]. Never paste an API key into a prompt or commit it; keep it in an environment variable.
+The lab's arrangement for accounts is `[which OpenAI accounts the lab provides, if any]`. Never paste an API key into a prompt or commit it; keep it in an environment variable.
 
 ## AGENTS.md
 
@@ -99,4 +99,4 @@ Codex is named here because lab members use it; this page describes the tool and
 - [AI-assisted development](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/ai-assisted-development.md) in the dev guidelines
 - [Codex documentation](https://learn.chatgpt.com/docs/codex/cli)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/codex.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/codex.md)</sub>

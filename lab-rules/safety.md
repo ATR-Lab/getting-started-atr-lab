@@ -25,7 +25,7 @@ These are the lab's safety rules, from emergencies to cleaning up. Everyone who 
 ## Emergencies first
 
 > [!CAUTION]
-> **Fire, serious injury, smoke from a battery, someone unresponsive: call 911.** Kent State says to "Dial 9-1-1 for immediate help on all campuses" ([Campus safety](https://www.kent.edu/campus-safety)). Get yourself and others out first; then tell [lab safety contact] and the director.
+> **Fire, serious injury, smoke from a battery, someone unresponsive: call 911.** Kent State says to "Dial 9-1-1 for immediate help on all campuses" ([Campus safety](https://www.kent.edu/campus-safety)). Get yourself and others out first; then tell the lab safety contact (Marcus Arnett, <marnett5@kent.edu>; backup: Lucky Sah, <lsah@kent.edu>) and the director.
 
 | What | Where or who |
 | --- | --- |
@@ -37,21 +37,21 @@ These are the lab's safety rules, from emergencies to cleaning up. Everyone who 
 | Fire extinguisher | [fire extinguisher location] |
 | Eyewash station | [eyewash location] |
 | Nearest exits and the building's evacuation assembly point | [evacuation route and assembly point] |
-| Lab safety contact | [lab safety contact] |
+| Lab safety contact | Marcus Arnett, <marnett5@kent.edu> (Discord: marcodotio). Backup: Lucky Sah, <lsah@kent.edu> (Discord: lucky_sah_22) |
 
 Know the building's fire alarm, exits and evacuation procedure before your first day at the bench, and follow the instructions on safety signs and from emergency staff.
 
 ## Reporting injuries and hazards
 
-- **Report every injury, however small, right away** to [lab safety contact] and the director, including cuts, burns and anything that touched your eyes.
-- **Report every near miss and hazard** (a spill, a swollen battery, a robot that moved when it should not have, a broken guard, frayed wiring) to [lab safety contact], so it can be fixed before someone is hurt.
-- **Kent State Environmental Health and Safety (EHS)** must also get a written report: 330-672-4347, <ehs@kent.edu>, Harbourt Hall, Room 323. The [incident reporting page](https://www.kent.edu/facilitiesplanning/incident-reporting) has three forms: an Employee Injury Report, a Lab Incident Report and a Non-employee Incident/Injury Report. EHS asks for injury reports within 48 hours, and notice within 8 hours for a serious injury; Kent State's [workers' compensation page](https://www.kent.edu/people-and-culture/benefits/workers-compensation) asks employees to report within 24 hours. Report the same day, and [lab safety contact] will help you pick the right form.
+- **Report every injury, however small, right away** to the lab safety contact and the director, including cuts, burns and anything that touched your eyes.
+- **Report every near miss and hazard** (a spill, a swollen battery, a robot that moved when it should not have, a broken guard, frayed wiring) to the lab safety contact, so it can be fixed before someone is hurt.
+- **Kent State Environmental Health and Safety (EHS)** must also get a written report: 330-672-4347, <ehs@kent.edu>, Harbourt Hall, Room 323. The [incident reporting page](https://www.kent.edu/facilitiesplanning/incident-reporting) has three forms: an Employee Injury Report, a Lab Incident Report and a Non-employee Incident/Injury Report. EHS asks for injury reports within 48 hours, and notice within 8 hours for a serious injury; Kent State's [workers' compensation page](https://www.kent.edu/people-and-culture/benefits/workers-compensation) asks employees to report within 24 hours. Report the same day, and the lab safety contact will help you pick the right form.
 
 ## Training
 
-- Complete the lab safety orientation with [lab safety contact] before you use any tool, machine or robot.
+- Complete the lab safety orientation with the lab safety contact before you use any tool, machine or robot.
 - Never use a machine or robot until someone who is trained on it has trained you and signed you off: [how sign-offs are recorded].
-- Ask [lab safety contact] which Kent State EHS courses you need (they run in FlashTrain). EHS courses must be repeated every three years ([EHS training](https://www.kent.edu/facilitiesplanning/training)).
+- Ask the lab safety contact which Kent State EHS courses you need (they run in FlashTrain). EHS courses must be repeated every three years ([EHS training](https://www.kent.edu/facilitiesplanning/training)).
 
 ## General rules
 
@@ -75,7 +75,7 @@ Know the building's fire alarm, exits and evacuation procedure before your first
 ## Machine operation
 
 - Never use a machine unless a trained lab staff member has trained you on it and you know how to use it safely. If you have questions, ask; nobody minds.
-- Do not use any equipment that is not working properly. Report it to [lab safety contact], and put an "out of order" sign on it so nobody else uses it.
+- Do not use any equipment that is not working properly. Report it to the lab safety contact, and put an "out of order" sign on it so nobody else uses it.
 - Turn devices off when you are done.
 
 ## Workbench and electronics
@@ -104,17 +104,17 @@ Every student and researcher in the lab needs the skills to keep the bench safe 
 
 ### Oscilloscopes and mains power
 
-Some oscilloscopes have floating (isolated) inputs; on others, the probe ground is connected to mains earth, and clipping it to a live mains circuit creates a short. You often cannot tell which kind you have. **Do not measure mains power with an oscilloscope.** If a measurement on mains is unavoidable, ask [lab safety contact] first and use an isolation transformer.
+Some oscilloscopes have floating (isolated) inputs; on others, the probe ground is connected to mains earth, and clipping it to a live mains circuit creates a short. You often cannot tell which kind you have. **Do not measure mains power with an oscilloscope.** If a measurement on mains is unavoidable, ask the lab safety contact first and use an isolation transformer.
 
 ### Before you start an experiment
 
-- **Be prepared.** Read and understand the procedure for the experiment before you begin. If you do not understand it, see [lab safety contact].
+- **Be prepared.** Read and understand the procedure for the experiment before you begin. If you do not understand it, see the lab safety contact.
 - **Think safety.** Work deliberately and carefully. No horseplay.
 - **Know the hazards** of every material and machine you use. The procedure, or the person supervising, will review specific safety issues before you run a test.
 - **Wear the right protective equipment.** Safety goggles are worn whenever a lab experiment is being performed; some experiments need more.
 - No food or drink at the workbench.
 - Know the emergency procedures, fire escape routes and where the nearest phone is.
-- **Report hazards immediately**: spills, equipment malfunctions, injuries and anything else that looks unsafe, to [lab safety contact].
+- **Report hazards immediately**: spills, equipment malfunctions, injuries and anything else that looks unsafe, to the lab safety contact.
 - Keep your work area clean.
 
 ## Robots in motion
@@ -132,7 +132,7 @@ Robots are heavy, fast and strong, and they do not know you are there. These rul
 - **Legged and humanoid robots can fall, jump or kick.** Keep a spotter, keep the area clear of people who are not part of the test, and never try to catch a falling robot with your hands.
 - **Teleoperation:** if the video lags or the connection drops, stop the robot before you try to fix it. Test what the robot does when it loses the connection before you rely on it.
 - **Autonomous code, trained policies and AI coding agents** never run on a robot unless a person is watching with the stop in reach ([AI coding agents](../tech-stack/claude-code.md#lab-rules-for-ai-coding-agents)).
-- **Visitors and minors** stay outside the test area and do not operate robots unless a trained member supervises them one-to-one. A minor at a school event needs a permission slip signed by a parent or guardian. For the Go2, visitors under 14 only watch and those 14 and over may drive it ([Unitree Go2](../hardware/unitree-go2.md#safety)).
+- **Visitors and minors** stay outside the test area and do not operate robots unless a trained member supervises them one-to-one. The director approves every robot demo with K-12 visitors, and each minor needs a signed permission slip: the school's own form at a school event, otherwise the lab's form signed by a parent or guardian (`[link to the lab's permission slip in atr-lab-design-skill]`). For the Go2, visitors under 14 only watch and those 14 and over may drive it ([Unitree Go2](../hardware/unitree-go2.md#safety)).
 - **When you are done**, disable motors, power the robot down, remove or disconnect its battery and put it back in its place.
 
 ## Batteries
@@ -145,7 +145,7 @@ Most lab robots run on lithium batteries (LiPo or Li-ion), which can catch fire 
 - **Charging:** use only the charger made for that battery, or a balance charger set to the right chemistry and cell count. Charge on a non-flammable surface or in a fire-resistant charging bag or box, [battery charging location], and never leave a charging battery unattended or charging overnight.
 - **Before you charge:** let a hot battery cool down first, and never charge a battery that is swollen, dented, punctured or leaking.
 - **Storage:** store batteries in [battery storage location], in fire-resistant containers, away from heat and direct sun, at the storage charge level (most chargers have a "storage" mode). Do not store batteries inside robots.
-- **Damaged cells:** a swollen ("puffy"), dented, punctured, leaking or unusually hot battery is out of service. Stop using it, move it into a fire-resistant container if you can do so safely, label it "damaged" and tell [lab safety contact]. Never put a lithium battery in the trash.
+- **Damaged cells:** a swollen ("puffy"), dented, punctured, leaking or unusually hot battery is out of service. Stop using it, move it into a fire-resistant container if you can do so safely, label it "damaged" and tell the lab safety contact. Never put a lithium battery in the trash.
 - **Disposal:** Kent State recycles rechargeable batteries, including lithium-ion, through the Call2Recycle program ([Kent State zero waste](https://www.kent.edu/sustainability/zero-waste)). For damaged batteries, ask EHS (330-672-4347, <ehs@kent.edu>) how to dispose of them.
 - Tape over the terminals of loose batteries so they cannot short-circuit.
 
@@ -164,7 +164,7 @@ Lidars, depth cameras and some motion-capture systems emit laser or infrared lig
 
 - **Check the laser class** on the device label or in its manual before you use it. Class 1 devices are safe under normal use.
 - Do not stare into any emitter, and never look at one through binoculars, a camera lens or other optics.
-- Do not bring a laser pointer or any laser above Class 2 into the lab without approval from [lab safety contact]. Ask Kent State EHS before anyone uses a Class 3B or Class 4 laser.
+- Do not bring a laser pointer or any laser above Class 2 into the lab without approval from the lab safety contact. Ask Kent State EHS before anyone uses a Class 3B or Class 4 laser.
 - Cameras and microphones on robots record people. Follow the [privacy rules](code-of-conduct.md#privacy) before you record anyone.
 
 ## Safety mindset
@@ -192,7 +192,7 @@ Wear clothing and personal protective equipment (PPE) that fit the task. In the 
 A clean lab is a safer lab. Everyone cleans up after themselves and disposes of waste the right way, both while working and when finished.
 
 - Never use compressed air to clean machinery, skin or clothing. Use a vacuum, broom and dustpan.
-- Clean up spilled liquids right away. If the liquid is hazardous or oily (resin, IPA, battery electrolyte, oil), keep people away and contact [lab safety contact] so it is cleaned up the right way.
+- Clean up spilled liquids right away. If the liquid is hazardous or oily (resin, IPA, battery electrolyte, oil), keep people away and tell the lab safety contact so it is cleaned up the right way.
 - Put tools back, and throw away solder scraps, wire clippings and packaging.
 
 ## Related
@@ -202,4 +202,4 @@ A clean lab is a safer lab. Everyone cleans up after themselves and disposes of 
 - [Hardware](../hardware/README.md): each device page has a safety section
 - [Kent State Environmental Health and Safety](https://www.kent.edu/facilitiesplanning/environmental-health-and-safety)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/safety.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/safety.md)</sub>

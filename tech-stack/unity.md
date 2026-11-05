@@ -35,7 +35,7 @@ From Meta's [Unity project setup guide](https://developers.meta.com/horizon/docu
 3. Set the build target to **Meta Quest** (or Android on older editors).
 4. Install [Meta Quest Developer Hub](https://developers.meta.com/horizon/documentation/unity/ts-mqdh-getting-started/), a companion app for Windows and macOS, to manage headsets, install builds and read logs.
 
-Headsets need developer mode turned on through a Meta developer account; ask [lab manager name] which lab headsets are already set up.
+Headsets need developer mode turned on through a Meta developer account; ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) which lab headsets are already set up.
 
 ## Connecting Unity to ROS 2
 
@@ -63,4 +63,4 @@ For a new project, the rosbridge route is the most actively maintained today, at
 - [TeleBot-4R-XR](https://github.com/ATR-Lab/TeleBot-4R-XR), the lab's Meta Quest interface for TeleBot-4R
 - [Autodesk Fusion and Inventor](autodesk.md): models and meshes for Unity scenes
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/unity.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/unity.md)</sub>

@@ -81,7 +81,7 @@ Values for the Pro, from the [Go2 product page](https://www.unitree.com/go2/) an
 | Checkout | `[checkout procedure]` |
 | Handheld remote | `[whether our unit has the optional remote]` |
 | Firmware version | `[current firmware version, from the app]`. The lab holds the Go2 at the newest firmware that [UniPwn](https://github.com/Bin4ry/UniPwn) supports, because lab work needs root access to the robot's internal motion control unit for a low-latency video stream |
-| Accounts and credentials | The robot is bound to a Unitree account. Ask `[lab manager name]` for access; never commit account details, Wi-Fi passwords or device keys to any repo |
+| Accounts and credentials | The robot is bound to a Unitree account. Ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) for access; never commit account details, Wi-Fi passwords or device keys to any repo |
 | Lab repos | [ATR-Lab/go2_ws](https://github.com/ATR-Lab/go2_ws) (see below) |
 
 **ATR-Lab/go2_ws.** Its README describes a ROS 2 workspace "for controlling and interacting with Unitree Go2 robot dogs" with these packages:
@@ -100,19 +100,19 @@ Do these with a trained lab member the first time. Unitree does not publish a Go
 
 1. Finish the [hardware checklist](README.md#before-you-use-any-hardware) and read [Safety](#safety) below.
 2. Install the **Unitree Go** app (iOS or Android, international version) from Unitree's [Go2 app page](https://www.unitree.com/app/go2/).
-3. Ask `[lab manager name]` which Unitree account the robot is bound to and how to sign in. Don't bind the lab robot to a personal account.
+3. Ask the lab manager which Unitree account the robot is bound to and how to sign in. Don't bind the lab robot to a personal account.
 4. Put the robot on flat, open floor in its **initial position** (lying down, legs folded). Unitree's [FAQ](https://support.unitree.com/home/en/developer/FAQ): "The Go2 does not support hanging and powering on".
 5. Insert a charged battery and power on with `[power-on button sequence, from training]`.
 6. Watch the status light ([About Go2](https://support.unitree.com/home/en/developer/about_Go2)):
    - Flashing green: switching on.
    - Steady green: powered on, default obstacle avoidance on.
-   - Slow red flash: system abnormality, boot failure or hardware failure. Power off and tell `[lab manager name]`.
+   - Slow red flash: system abnormality, boot failure or hardware failure. Power off and tell the lab manager.
    - Fast red flash: motor and IMU calibration failed.
 7. Turn on your phone's Bluetooth and connect in the app ([app binding guide](https://support.unitree.com/home/en/developer/App_binding)). Pick one mode:
    - **AP mode:** the robot makes its own hotspot, named `GO2-XXXXXX`.
    - **Wi-Fi (STA) mode:** the robot joins an existing network. The lab network is `[lab robot network]`.
 8. If our unit has the handheld remote, pair it through the app ([Go2 control page](https://www.unitree.com/go2/control/)).
-9. Check the firmware version in the app. **Do not install a firmware update.** The lab keeps the Go2 at the newest firmware that [UniPwn](https://github.com/Bin4ry/UniPwn) supports (see [In our lab](#in-our-lab)), and updates have also broken the community tools and lab code (see [Software](#software)). If the app asks to update, decline and tell `[lab manager name]`.
+9. Check the firmware version in the app. **Do not install a firmware update.** The lab keeps the Go2 at the newest firmware that [UniPwn](https://github.com/Bin4ry/UniPwn) supports (see [In our lab](#in-our-lab)), and updates have also broken the community tools and lab code (see [Software](#software)). If the app asks to update, decline and tell the lab manager.
 10. When you finish, lie the robot down (remote: <kbd>L2</kbd> + <kbd>A</kbd>), power it off and return it and the battery as `[checkout procedure]` says.
 
 ## Software
@@ -131,7 +131,7 @@ On an EDU, these tools talk to the robot over a wired Ethernet link; Unitree's [
 ### Community tools for the Air and Pro
 
 > [!CAUTION]
-> These projects are **unofficial**: Unitree does not support them, and they work by speaking the same WebRTC protocol as the phone app. Firmware updates have broken them several times (for example, go2_ros2_sdk issues [#178](https://github.com/abizovnuralem/go2_ros2_sdk/issues/178), [#236](https://github.com/abizovnuralem/go2_ros2_sdk/issues/236) and [#238](https://github.com/abizovnuralem/go2_ros2_sdk/issues/238)). Since firmware 1.1.15 they need a **per-device key** that is fetched with the Unitree account's email and password. Only `[lab manager name]` fetches that key, and it never goes into a repo.
+> These projects are **unofficial**: Unitree does not support them, and they work by speaking the same WebRTC protocol as the phone app. Firmware updates have broken them several times (for example, go2_ros2_sdk issues [#178](https://github.com/abizovnuralem/go2_ros2_sdk/issues/178), [#236](https://github.com/abizovnuralem/go2_ros2_sdk/issues/236) and [#238](https://github.com/abizovnuralem/go2_ros2_sdk/issues/238)). Since firmware 1.1.15 they need a **per-device key** that is fetched with the Unitree account's email and password. Only the lab manager fetches that key, and it never goes into a repo.
 
 Checked on Sept. 30, 2026 with each repo's README and GitHub metadata:
 
@@ -171,7 +171,7 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - **Use a spotter.** One person drives; a second person watches the robot and is ready to call for damping mode.
 - **Plan for falls.** Walk it on flat, dry floor, away from stairs and table edges, until you have been trained on stairs and slopes. Unitree lists 5 °C to 35 °C and good weather as the operating range.
 - **Tricks and fast gaits.** Unitree's motion docs flag flips and similar actions as "potentially dangerous" and say to keep a safe distance.
-- **Minors (lab rule).** A minor at a school event needs a permission slip signed by a parent or guardian before taking part. For the Go2, the lab follows the user manual's limit of 14: visitors under 14 may only watch from outside the test area while it runs; visitors 14 and over may drive it, supervised one-to-one by a trained member. Unitree's [disclaimer](https://shop.unitree.com/pages/disclaimer) also says the Go2 is "not suitable for people under the age of 18".
+- **Minors (lab rule).** The director approves every robot demo with K-12 visitors. Each minor needs a signed permission slip before taking part: the school's own form at a school event, otherwise the lab's form signed by a parent or guardian (`[link to the lab's permission slip in atr-lab-design-skill]`). For the Go2, the lab follows the user manual's limit of 14: visitors under 14 may only watch from outside the test area while it runs; visitors 14 and over may drive it, supervised one-to-one by a trained member. Unitree's [disclaimer](https://shop.unitree.com/pages/disclaimer) also says the Go2 is "not suitable for people under the age of 18".
 - **Low battery.** After the low-battery warning, the robot crouches down by itself within 10 minutes ([About Go2](https://support.unitree.com/home/en/developer/about_Go2)). Stop before that.
 - **Batteries.** Charge only with the Unitree charger for this battery (33.6 V, 3.5 A), on a non-flammable surface and never unattended. Unitree does not publish storage guidance on its own site; follow the lab's [battery rules](../lab-rules/safety.md#batteries).
 
@@ -184,7 +184,7 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 | --- | --- | --- |
 | The app or a community tool can't connect | Only one WebRTC client can connect at a time: close the app before using a community tool, and the other way round. The robot runs either AP mode or Wi-Fi (STA) mode, not both | [go2_ros2_sdk](https://github.com/abizovnuralem/go2_ros2_sdk), [unitree_webrtc_connect](https://github.com/legion1581/unitree_webrtc_connect), [network docs](https://support.unitree.com/home/en/developer/network%20service) |
 | You need the robot's IP address for a community tool | In the app, open Device, then Data, then Automatic Machine Inspection, and look for "STA Network: wlan0" | [go2_ros2_sdk README](https://github.com/abizovnuralem/go2_ros2_sdk) |
-| After a firmware update: "RSA key format is not supported", or the data channel never opens | Firmware 1.1.15 and later needs the per-device AES-128 key, passed in an environment variable (`ROBOT_AES_KEY`) set outside the repo. Ask `[lab manager name]`; check the project's issues for the current fix | [go2_ros2_sdk README](https://github.com/abizovnuralem/go2_ros2_sdk), [unitree_webrtc_connect README](https://github.com/legion1581/unitree_webrtc_connect) |
+| After a firmware update: "RSA key format is not supported", or the data channel never opens | Firmware 1.1.15 and later needs the per-device AES-128 key, passed in an environment variable (`ROBOT_AES_KEY`) set outside the repo. Ask the lab manager; check the project's issues for the current fix | [go2_ros2_sdk README](https://github.com/abizovnuralem/go2_ros2_sdk), [unitree_webrtc_connect README](https://github.com/legion1581/unitree_webrtc_connect) |
 | Legs are in the wrong position after power-on | Power off, put the robot in its initial position on the floor and power on again. Never power on while it hangs | [Unitree FAQ](https://support.unitree.com/home/en/developer/FAQ) |
 | Red status light | Slow flash: system abnormality or hardware failure. Fast flash: motor and IMU calibration failed. Power off and report it | [About Go2](https://support.unitree.com/home/en/developer/about_Go2) |
 | Motor protection or a similar fault | Unitree says these faults "require a restart" | [Faults](https://support.unitree.com/home/en/developer/FAULTS) |
@@ -205,4 +205,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [MuJoCo](../tech-stack/mujoco.md) · [Isaac Sim](../tech-stack/isaac-sim.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 4, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/unitree-go2.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/unitree-go2.md)</sub>

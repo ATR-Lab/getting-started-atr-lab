@@ -64,7 +64,7 @@ The Advanced Telerobotics Research Laboratory at Kent State University is an inn
 
 **Trainings**
 
-- [ ] Complete the lab safety orientation with [lab safety contact] before you use any tool, machine or robot.
+- [ ] Complete the lab safety orientation with the lab safety contact (Marcus Arnett, <marnett5@kent.edu>; backup: Lucky Sah, <lsah@kent.edu>) before you use any tool, machine or robot.
 - [ ] Complete CITI human-subjects training before you work on any study with people. Most human-robot interaction studies need it; see [human-subjects research](research/standards.md#human-subjects-research).
 
 **Read**
@@ -80,6 +80,14 @@ The Advanced Telerobotics Research Laboratory at Kent State University is an inn
 **Meet**
 
 - [ ] Meet your mentor, [mentor name], and agree on a first task and how often you will meet.
+
+### Who to ask
+
+| For | Ask |
+| --- | --- |
+| Accounts, equipment, keys and most day-to-day questions | Lab manager: Marcus Arnett, <marnett5@kent.edu> (Discord: marcodotio). Secondary: Irvin Cardenas, <icardenas@kent.edu> (Discord: irvinxyz) |
+| Safety orientation, injuries and hazards | Lab safety contact: Marcus Arnett. Backup: Lucky Sah, <lsah@kent.edu> (Discord: lucky_sah_22) |
+| Approvals, funding and anything about the lab's direction | The director, Jong-Hoon Kim, <jkim72@kent.edu> |
 
 ## Repo map
 
