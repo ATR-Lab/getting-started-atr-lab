@@ -49,6 +49,7 @@ flowchart BT
 | | Git and GitHub | [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines) | [git-scm.com](https://git-scm.com/), [GitHub Docs](https://docs.github.com/) |
 | AI coding agents | Claude Code | [Claude Code](claude-code.md) | [Claude Code docs](https://code.claude.com/docs/en/overview) |
 | | Codex | [Codex](codex.md) | [Codex docs](https://learn.chatgpt.com/docs/codex/cli) |
+| Lab assistant | Teo, the lab's Discord bot (Claude) | [Teo](teo-discord-bot.md) | [Lab Discord server](https://discord.gg/NvwsANWEuw) |
 
 Students can get free developer tools, including GitHub features, through the [GitHub Student Developer Pack](https://education.github.com/pack).
 

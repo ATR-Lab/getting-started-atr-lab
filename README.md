@@ -60,6 +60,7 @@ The Advanced Telerobotics Research Laboratory at Kent State University is an inn
 
 - [ ] Accept the invitation to the [ATR-Lab GitHub organization](https://github.com/ATR-Lab). Ask [who sends GitHub organization invitations] to invite your GitHub account, and turn on two-factor authentication first.
 - [ ] Join [Slack workspace] and the [main lab channel].
+- [ ] Join the lab's [Discord server](https://discord.gg/NvwsANWEuw) and say hello to [Teo](tech-stack/teo-discord-bot.md), its assistant bot.
 - [ ] Subscribe to the lab calendar, [lab calendar].
 
 **Trainings**

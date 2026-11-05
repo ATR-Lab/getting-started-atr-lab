@@ -34,6 +34,7 @@ This repository is the onboarding handbook for new members of the Advanced Teler
 | `tech-stack/docker.md` | Docker Engine vs Desktop, NVIDIA Container Toolkit, GUI apps, Compose, ROSEnv |
 | `tech-stack/claude-code.md` | Claude Code: install, AGENTS.md and CLAUDE.md, permission modes, lab rules for AI coding agents |
 | `tech-stack/codex.md` | Codex CLI: install, AGENTS.md, sandbox and approvals, lab rules for AI coding agents |
+| `tech-stack/teo-discord-bot.md` | Teo, the lab's Discord bot: how to ask it, what it can and won't do, limits and privacy (from the private `ATR-Lab/Teo-Discord-Bot` repo; recheck when the bot changes) |
 | `lab-rules/README.md` | Index of the lab rules |
 | `lab-rules/code-of-conduct.md` | Code of conduct (approved by the director, Nov. 5, 2026), extending Kent State's Code of Student Conduct |
 | `lab-rules/safety.md` | Safety rules: emergencies, injuries, benches and soldering, robots in motion, batteries, resin, lasers, attire |
