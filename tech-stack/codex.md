@@ -56,7 +56,7 @@ Choose **Sign in with ChatGPT** to use a ChatGPT plan that includes Codex, or si
 printenv OPENAI_API_KEY | codex login --with-api-key
 ```
 
-The lab's arrangement for accounts is `[which OpenAI accounts the lab provides, if any]`. Never paste an API key into a prompt or commit it; keep it in an environment variable.
+The lab doesn't provide OpenAI accounts. Students can claim OpenAI's [$100 in Codex credits](https://chatgpt.com/codex/students/) (checked Nov. 5, 2026): it is open to verified students at degree-granting universities in the United States and Canada, with a ChatGPT Free, Go, Plus or Pro plan. You verify through SheerID with your university email. These are ChatGPT credits that extend Codex beyond your plan's limits, not API credits, and they expire 12 months after they're granted. Never paste an API key into a prompt or commit it; keep it in an environment variable.
 
 ## AGENTS.md
 

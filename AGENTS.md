@@ -108,7 +108,7 @@ Every placeholder in this repository, by file, with who can fill it. Agents must
 | `README.md` | `[mentor name]` | Director, per new member |
 | `lab-rules/code-of-conduct.md` | `[designated break area]`, `[lab door rules: ...]`, `[visitor rules: ...]`, `[after-hours rules, ...]`, `[lab policy on personal use of equipment and printers]` | Director and lab manager |
 | `lab-rules/code-of-conduct.md` | `[purchase request procedure]`, `[reimbursement procedure]` | Director, with the department office |
-| `lab-rules/code-of-conduct.md` | `[lab social media administrators]`, `[lab contact for concerns]` | Director |
+| `lab-rules/code-of-conduct.md` | `[lab social media administrators]` | Director |
 | `lab-rules/code-of-conduct.md` | `[Department of Computer Science chair]` | Lab manager (from the department website; name the role if the person changes) |
 | `lab-rules/code-of-conduct.md` | `[where students check assistantship and employment terms]` | Lab manager, with the Graduate College |
 | `lab-rules/safety.md` | `[how sign-offs are recorded]`, `[how the lab marks a robot test area]` | Director |
@@ -129,7 +129,6 @@ Every placeholder in this repository, by file, with who can fill it. Agents must
 | `tech-stack/lerobot.md` | `[lab Hugging Face organization]` | Director |
 | `tech-stack/autodesk.md` | `[CAD file location]` | Director |
 | `tech-stack/unity.md` | `[which Unity license lab machines use]`, `[Meta Quest headsets and location]` | Lab manager |
-| `tech-stack/codex.md` | `[which OpenAI accounts the lab provides, if any]` | Director |
 | `tech-stack/docker.md` | `[machine administrator]` | Lab manager |
 
 Lab decisions these pages raise (not placeholders, but open): whether the lab needs a paid Docker Desktop plan under Docker's public-sector terms (`tech-stack/docker.md`). Lab contacts (Nov. 5, 2026): lab manager Marcus Arnett, secondary Irvin Cardenas; lab safety contact Marcus Arnett, backup Lucky Sah. AI coding agents stay limited to public or non-sensitive work; the hardware pages' minors rules, the code of conduct and the password and SSH-key rules are the director's.

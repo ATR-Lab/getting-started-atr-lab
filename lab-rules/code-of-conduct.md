@@ -149,7 +149,7 @@ You can raise any concern about safety, conduct, research integrity or how you a
 | Concern | Where to go |
 | --- | --- |
 | An emergency or immediate danger | **911** |
-| Anything about the lab | [lab contact for concerns] or the director. If the concern involves the director, go to the [Department of Computer Science chair] or one of the university routes below |
+| Anything about the lab | The director, Jong-Hoon Kim (<jkim72@kent.edu>). If the concern involves the director, go to the [Department of Computer Science chair] or one of the university routes below |
 | General concerns (students) | Office of the Dean of Students, 330-672-8003, <ODOS@kent.edu> ([Kent State concerns](https://www.kent.edu/concerns)) |
 | General concerns (faculty and staff) | Office of Equal Opportunity and Compliance, 330-672-2038, <compliance_equalopp@kent.edu> |
 | Student conduct | Office of Student Conduct [reporting form](https://www.kent.edu/studentconduct/file-report) |
