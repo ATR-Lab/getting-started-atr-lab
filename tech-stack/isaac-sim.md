@@ -93,7 +93,7 @@ To bring in a robot that is not in the library, use the URDF importer (Isaac Sim
 
 ## Isaac Lab
 
-Isaac Lab trains policies with reinforcement learning or imitation learning across many parallel simulated robots on one GPU. It needs at least 32 GB of RAM and 16 GB of GPU memory and runs on Ubuntu 22.04 or later or Windows 11 ([installation guide](https://isaac-sim.github.io/IsaacLab/release/3.0.0/source/setup/installation/index.html)).
+Isaac Lab trains policies with reinforcement learning or imitation learning across many parallel simulated robots on one GPU. It needs at least 32 GB of RAM and 16 GB of GPU memory and runs on Ubuntu 22.04 or later or Windows 11 ([installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html)).
 
 - **Which version:** for a project starting now, ask your mentor. Version 3.0 is the one built for Isaac Sim 6.1 but is still early access; version 2.3.2 is stable but needs Isaac Sim 5.1 or older.
 - **Install:** the 3.0 guide recommends [uv](https://docs.astral.sh/uv/); a pip wheel, Docker and source installs are also documented. Follow the guide for your chosen version rather than copying commands between versions.
