@@ -2,7 +2,7 @@
 
 > **Read this when** you need a photorealistic robot simulator, want to train a locomotion or manipulation policy with reinforcement learning, or want to test ROS 2 code against a simulated Unitree Go2 or SO-101.
 
-[Isaac Sim](https://github.com/isaac-sim/IsaacSim) is NVIDIA's robot simulator, built on Omniverse: it renders cameras and lidars with ray tracing, simulates physics on the GPU and talks to ROS 2. [Isaac Lab](https://github.com/isaac-sim/IsaacLab) is the robot-learning framework on top of it, used to train policies across thousands of simulated robots at once. The one thing to remember: Isaac Sim needs an NVIDIA RTX GPU with at least 16 GB of memory, so most laptops cannot run it; use a lab workstation.
+[Isaac Sim](https://github.com/isaac-sim/IsaacSim) is NVIDIA's robot simulator, built on Omniverse: it renders cameras and lidars with ray tracing, simulates physics on the GPU and talks to ROS 2. [Isaac Lab](https://github.com/isaac-sim/IsaacLab) is NVIDIA's robot-learning framework, used to train policies across thousands of simulated robots at once; since version 3.0 it runs on its own physics engine by default and adds Isaac Sim only when a project needs it. The one thing to remember: Isaac Sim needs an NVIDIA RTX GPU with at least 16 GB of memory, so most laptops cannot run it; use a lab workstation.
 
 ## Contents
 
@@ -17,12 +17,12 @@
 
 ## Versions
 
-Checked on Sept. 30, 2026:
+Checked on Nov. 5, 2026:
 
 | Package | Current version | Notes |
 | --- | --- | --- |
-| Isaac Sim | **6.1.0** (Sept. 10, 2026) | [Release notes](https://github.com/isaac-sim/IsaacSim/releases). A 7.0.0 alpha is out as a pre-release; don't use it for research runs |
-| Isaac Lab | **3.0.0 early access** (Sept. 16, 2026), built for Isaac Sim 6.1 | NVIDIA targets general availability for the end of October 2026. The last stable line, **2.3.2**, works with Isaac Sim 4.5, 5.0 and 5.1 ([releases](https://github.com/isaac-sim/IsaacLab/releases)) |
+| Isaac Sim | **6.2.0** (Oct. 14, 2026) | [Release notes](https://docs.isaacsim.omniverse.nvidia.com/6.2.0/overview/release_notes.html). A 7.0.0 alpha is out as a pre-release; don't use it for research runs |
+| Isaac Lab | **3.0.0** (Oct. 20, 2026), built for Isaac Sim 6.2 and Python 3.12 | NVIDIA calls 3.0 "the recommended baseline for new projects". It doesn't support Isaac Sim 5.1 or older; the last 2.x release, **2.3.2**, works with Isaac Sim 4.5, 5.0 and 5.1 ([releases](https://github.com/isaac-sim/IsaacLab/releases)) |
 
 Isaac Sim's source code is on GitHub under the Apache 2.0 license; running it also uses NVIDIA components under NVIDIA's [additional software license](https://www.nvidia.com/en-us/agreements/enterprise-software/isaac-sim-additional-software-and-materials-license/). You accept the Omniverse license agreement the first time you launch it. Isaac Lab is BSD-3-Clause.
 
@@ -40,7 +40,7 @@ From NVIDIA's [requirements page](https://docs.isaacsim.omniverse.nvidia.com/lat
 | Storage | 50 GB SSD | 500 GB SSD | 1 TB NVMe SSD |
 | NVIDIA driver | Linux 595.58.03, Windows 595.97 | | |
 
-GPUs without RT cores, such as the A100 and H100 data-center GPUs, are not supported. Isaac Sim does not run on macOS.
+GPUs without RT cores, such as the A100 and H100 data-center GPUs, are not supported. Isaac Sim does not run on macOS. NVIDIA warns that Ubuntu 22.04 support "is deprecated and will be removed in a future release", so set up new machines on Ubuntu 24.04.
 
 ## Install Isaac Sim
 
@@ -51,7 +51,7 @@ There are four ways, all documented in the [installation guide](https://docs.isa
 ```bash
 python3.12 -m venv env_isaacsim
 source env_isaacsim/bin/activate
-pip install isaacsim[all,extscache]==6.1.0.0 --extra-index-url https://pypi.nvidia.com
+pip install isaacsim[all,extscache]==6.2.0.0 --extra-index-url https://pypi.nvidia.com
 # First launch: accept the license agreement when asked (or set OMNI_KIT_ACCEPT_EULA=YES)
 isaacsim
 ```
@@ -59,7 +59,7 @@ isaacsim
 **Container** (Ubuntu with Docker Engine and the [NVIDIA Container Toolkit](docker.md#give-containers-a-gpu)); follow the [container guide](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_container.html) for the volume mounts that cache shaders between runs:
 
 ```bash
-docker pull nvcr.io/nvidia/isaac-sim:6.1.0
+docker pull nvcr.io/nvidia/isaac-sim:6.2.0
 ```
 
 **Workstation download:** a zip for Linux or Windows from the [download page](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/download.html).
@@ -68,19 +68,19 @@ docker pull nvcr.io/nvidia/isaac-sim:6.1.0
 
 ## ROS 2 bridge
 
-"For the ROS 2 bridge, Isaac Sim is compatible with ROS 2 Humble and ROS 2 Jazzy" ([ROS installation guide](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_ros.html)):
+Isaac Sim's ROS 2 bridge is tested with Humble and Jazzy, and NVIDIA recommends "Ubuntu 24.04 with Jazzy" ([ROS installation guide](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_ros.html)):
 
 | Host | ROS 2 distribution |
 | --- | --- |
 | Ubuntu 24.04 | Jazzy (recommended) |
-| Ubuntu 22.04 | Humble; Jazzy only if you build it from source |
+| Ubuntu 22.04 | Humble; Jazzy only from source or in Docker (there are no Jazzy packages for 22.04) |
 | Windows 11 | Jazzy, installed through Pixi |
 
-Kilted and Lyrical are not supported by this release. Isaac Sim ships its own internal ROS 2 libraries, so custom message packages must be built with Python 3.12 to load. For the lab's ROS 2 setup, see [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2).
+Humble on Ubuntu 24.04 is not supported. Other ROS 2 distributions installed natively on Ubuntu 22.04 or 24.04, such as Kilted, are experimental; Lyrical needs Ubuntu 26.04, which Isaac Sim doesn't support yet. Isaac Sim ships its own internal ROS 2 libraries, so custom message packages must be built with Python 3.12 to load. For the lab's ROS 2 setup, see [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2).
 
 ## Robot assets for lab robots
 
-Isaac Sim's asset library includes ready-made models ([quadrupeds](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_robots_quadruped.html), [humanoids](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_robots_humanoid.html), [manipulators](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_robots_manipulator.html)). Checked against the lab's robots on Sept. 30, 2026:
+Isaac Sim's asset library includes ready-made models ([quadrupeds](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_robots_quadruped.html), [humanoids](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_robots_humanoid.html), [manipulators](https://docs.isaacsim.omniverse.nvidia.com/latest/assets/usd_assets_robots_manipulator.html)). Checked against the lab's robots in Isaac Sim 6.2.0 on Nov. 5, 2026:
 
 | Lab robot | In the Isaac Sim library? | Asset path or note |
 | --- | --- | --- |
@@ -93,11 +93,12 @@ To bring in a robot that is not in the library, use the URDF importer (Isaac Sim
 
 ## Isaac Lab
 
-Isaac Lab trains policies with reinforcement learning or imitation learning across many parallel simulated robots on one GPU. It needs at least 32 GB of RAM and 16 GB of GPU memory and runs on Ubuntu 22.04 or later or Windows 11 ([installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html)).
+Isaac Lab trains policies with reinforcement learning or imitation learning across many parallel simulated robots on one GPU. Version 3.0 installs NVIDIA's Newton physics engine (built on NVIDIA Warp) by default and runs without Isaac Sim; add Isaac Sim 6.2 when a project needs PhysX, RTX camera rendering, the ROS 2 bridge or XR ([installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html), [3.0 release notes](https://github.com/isaac-sim/IsaacLab/releases/tag/v3.0.0)).
 
-- **Which version:** for a project starting now, ask your mentor. Version 3.0 is the one built for Isaac Sim 6.1 but is still early access; version 2.3.2 is stable but needs Isaac Sim 5.1 or older.
-- **Install:** the 3.0 guide recommends [uv](https://docs.astral.sh/uv/); a pip wheel, Docker and source installs are also documented. Follow the guide for your chosen version rather than copying commands between versions.
-- **Unitree Go2 tasks:** Isaac Lab ships flat- and rough-terrain velocity-tracking tasks for the Go2. Their names changed between versions: `Isaac-Velocity-Rough-Unitree-Go2-v0` in 2.3.2 and `Isaac-Velocity-Rough-UnitreeGo2` in 3.0 early access. Isaac Lab has no Booster robot configuration.
+- **Requirements:** Python 3.12; Ubuntu 22.04 or later (x86_64 or aarch64) or Windows 11; an NVIDIA GPU from the Turing generation or newer; driver 580.65.06 or newer on Linux, 580.88 or newer on Windows. With Isaac Sim, plan for at least 32 GB of RAM, 16 GB of GPU memory and an RTX GPU, and more for training with cameras.
+- **Which version:** use 3.0 for new projects. Stay on 2.3.2 with Isaac Sim 5.1 only for code that needs it, such as Booster's `booster_train`, which is tested with Isaac Lab 2.3.2 and Isaac Sim 5.1.0 ([Booster K1](../hardware/booster-k1.md)). Ask your mentor if you're unsure.
+- **Install:** the guide recommends its automatic setup with [uv](https://docs.astral.sh/uv/) from an Isaac Lab checkout. It also documents the older `isaaclab.sh` installer, a Python environment with Isaac Sim from pip, the Isaac Lab package, Docker and source builds. Follow the guide for your version rather than copying commands between versions.
+- **Unitree Go2 tasks:** Isaac Lab ships flat- and rough-terrain velocity-tracking tasks for the Go2. Their names changed in 3.0: it registers `Isaac-Velocity-Flat-UnitreeGo2` and `Isaac-Velocity-Rough-UnitreeGo2` ([task config](https://github.com/isaac-sim/IsaacLab/blob/v3.0.0/source/isaaclab_tasks/isaaclab_tasks/core/velocity/config/go2/__init__.py)), where 2.3.2 used `Isaac-Velocity-Flat-Unitree-Go2-v0` and `Isaac-Velocity-Rough-Unitree-Go2-v0`. Isaac Lab has no Booster robot configuration.
 
 > [!WARNING]
 > A policy trained in simulation can behave very differently on the real robot (the "sim-to-real gap"). Before a trained policy runs on the Go2 or any other robot, follow the robot's [safety section](../hardware/unitree-go2.md#safety) and the general rules for [robots in motion](../lab-rules/safety.md#robots-in-motion), and label any video of it as autonomous.
@@ -116,4 +117,4 @@ Isaac Lab trains policies with reinforcement learning or imitation learning acro
 - [LeRobot](lerobot.md): imitation learning on real arms
 - [Unitree Go2](../hardware/unitree-go2.md)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/isaac-sim.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/isaac-sim.md)</sub>

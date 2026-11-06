@@ -63,8 +63,8 @@ Students can get free developer tools, including GitHub features, through the [G
 | Ubuntu | 24.04.5 LTS, 26.04.1 LTS | 22.04 LTS standard support ends May 2027 |
 | NVIDIA JetPack | 7.2.1 (Ubuntu 24.04; Jetson AGX Thor and Orin) | 6.2.3 is the latest JetPack 6 for Orin (Ubuntu 22.04) |
 | ROS 2 | Lyrical (May 2026, LTS), Kilted, Jazzy (LTS), Humble (LTS) | Details in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2) |
-| Isaac Sim | 6.1.0 | ROS 2 Humble and Jazzy |
-| Isaac Lab | 3.0.0 early access; 2.3.2 stable | 3.0 general availability targeted for late October 2026 |
+| Isaac Sim | 6.2.0 | ROS 2 Humble and Jazzy; Ubuntu 22.04 support deprecated (checked Nov. 5, 2026) |
+| Isaac Lab | 3.0.0; 2.3.2 for Isaac Sim 5.1 | 3.0 runs on Newton by default, with Isaac Sim 6.2 optional (checked Nov. 5, 2026) |
 | MuJoCo | 3.14.0 | Menagerie `mujoco-menagerie` 2026.9.0 |
 | Gazebo | Jetty, Ionic, Harmonic, Fortress | Harmonic pairs with Jazzy |
 | PyTorch | 2.14 | Needs Python 3.10 or later |
@@ -83,4 +83,4 @@ Students can get free developer tools, including GitHub features, through the [G
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines): code style, Git and AI-assisted development
 - [Research standards](../research/standards.md): reproducibility and artifacts
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/README.md)</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/README.md)</sub>
