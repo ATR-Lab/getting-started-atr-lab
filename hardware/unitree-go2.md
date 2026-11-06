@@ -154,7 +154,7 @@ Two rules for all of them:
 | --- | --- | --- |
 | MuJoCo Menagerie `unitree_go2` | MJCF model (BSD-3-Clause), MuJoCo 2.2.2 or later | [unitree_go2](https://github.com/google-deepmind/mujoco_menagerie/tree/main/unitree_go2) |
 | unitree_mujoco | Unitree's MuJoCo simulator for SDK development; "only supports low-level development" | [unitree_mujoco](https://github.com/unitreerobotics/unitree_mujoco) |
-| Isaac Lab | Go2 locomotion tasks `Isaac-Velocity-Rough-Unitree-Go2-v0` and `Isaac-Velocity-Flat-Unitree-Go2-v0` | [Isaac Lab environments](https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html) |
+| Isaac Lab | Go2 locomotion tasks `Isaac-Velocity-Rough-UnitreeGo2` and `Isaac-Velocity-Flat-UnitreeGo2` in Isaac Lab 3.0 (`Isaac-Velocity-Rough-Unitree-Go2-v0` and `Isaac-Velocity-Flat-Unitree-Go2-v0` in 2.3.2) | [Isaac Lab 3.0 Go2 tasks](https://github.com/isaac-sim/IsaacLab/blob/v3.0.0/source/isaaclab_tasks/isaaclab_tasks/core/velocity/config/go2/__init__.py) |
 | unitree_rl_lab, unitree_rl_gym | Unitree's reinforcement-learning examples (Isaac Lab; Isaac Gym with MuJoCo sim-to-sim) | [unitree_rl_lab](https://github.com/unitreerobotics/unitree_rl_lab), [unitree_rl_gym](https://github.com/unitreerobotics/unitree_rl_gym) |
 | unitree_ros `go2_description` | URDF and meshes (a ROS 1 and Gazebo package) | [go2_description](https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go2_description) |
 
