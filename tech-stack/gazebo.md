@@ -35,7 +35,7 @@ From Gazebo's [ROS installation page](https://gazebosim.org/docs/latest/ros_inst
 | Jazzy (LTS) | Harmonic | |
 | Kilted | Ionic | Harmonic |
 | Lyrical (LTS) | Jetty | Harmonic, Ionic |
-| Rolling | Jetty | Harmonic, Ionic |
+| Rolling | Rotary (Gazebo's rolling release, built nightly) | |
 
 Which ROS 2 distribution the lab uses for each robot is in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2).
 
@@ -78,4 +78,4 @@ Gazebo Classic (the old `gazebo` 11 with `gazebo_ros_pkgs`) reached end of life 
 - [Isaac Sim](isaac-sim.md) and [MuJoCo](mujoco.md): the lab's other simulators
 - [Gazebo documentation](https://gazebosim.org/docs/latest/getstarted/)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/gazebo.md)</sub>
+<sub>Last reviewed: Nov. 6, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/gazebo.md)</sub>
