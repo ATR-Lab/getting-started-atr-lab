@@ -14,6 +14,7 @@ This repository is the onboarding handbook for new members of the Advanced Teler
 | `.markdownlint.jsonc` | markdownlint rules shared by the lab's docs repos |
 | `.lycheeignore` | Sites that block automated link checkers (ACM, Autodesk, IEEE, Meta); check those links by hand |
 | `.github/workflows/docs.yml` | CI: markdownlint on every push and pull request; lychee checks local links on pull requests and every link after merge and weekly |
+| `.github/workflows/version-check.yml` | Weekly (Mondays): Claude checks the software facts on these pages against current sources and opens a pull request on `automation/version-updates`; review its sources before merging. Logic in `ATR-Lab/.github` (`tools/docs-version-updater/`) |
 | `.github/assets/header.png`, `social-preview.png` | Banner and GitHub social preview (don't regenerate) |
 | `.github/assets/icons/` | 96 px navy icon badges used in the README card grid and the hardware index |
 | `research/README.md` | Index of the research pages |
