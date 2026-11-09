@@ -116,7 +116,7 @@ Booster's [modes page](https://docs.booster.tech/docs/product-manual/k1/basic-op
 | [Booster Studio](https://studio.booster.tech) | Booster's desktop tool for code editing, simulation, debugging and deployment | Virtual robots need Docker Desktop ([install guide](https://docs.booster.tech/docs/product-manual/booster-studio/quick-start/download-install/)); see [Docker](../tech-stack/docker.md) |
 | [booster_robotics_sdk](https://github.com/BoosterRobotics/booster_robotics_sdk) | C++ SDK: headers plus a prebuilt library for aarch64 and x86_64. Supports K1, T1 and T2 | Apache-2.0 license text. README: Ubuntu 22.04; Booster's docs: Ubuntu 22.04 or 24.04. Uses Fast DDS |
 | Python SDK | The SDK README installs `booster_robotics_sdk_python` with pip; Booster's docs describe a newer Python SDK, `boosteros` (Python 3.10 or later, firmware v1.7 or later) | [Python SDK overview](https://docs.booster.tech/docs/developer-guide/booster-os-python-sdk/sdk-overview/). Check which one matches our firmware |
-| [booster_robotics_sdk_ros2](https://github.com/BoosterRobotics/booster_robotics_sdk_ros2) | ROS 2 package `booster_interface`: messages and services for robot control, with examples | The README names no ROS 2 distro and the repo has no license file yet. Booster's [booster_deploy guide](https://docs.booster.tech/docs/developer-guide/open-source/booster-deploy/) says ROS 2 Humble is already installed on the robot |
+| [booster_robotics_sdk_ros2](https://github.com/BoosterRobotics/booster_robotics_sdk_ros2) | ROS 2 package `booster_interface`: messages and services for robot control, with examples | The README names no ROS 2 distro and the repo has no license file yet. Booster's [booster_deploy README](https://github.com/BoosterRobotics/booster_deploy) says ROS 2 Humble is already installed on the robot |
 
 **What the SDK controls** ([C++ SDK overview](https://docs.booster.tech/docs/developer-guide/cpp/sdk-overview/)):
 
@@ -129,7 +129,7 @@ Booster's [modes page](https://docs.booster.tech/docs/product-manual/k1/basic-op
 
 | Repo or model | What it gives you | License |
 | --- | --- | --- |
-| [booster_train](https://github.com/BoosterRobotics/booster_train) | Reinforcement-learning tasks for T2, T1 and K1 in Isaac Lab (README: tested with Isaac Lab 2.3.2 and Isaac Sim 5.1.0) | Apache-2.0 text |
+| [booster_train](https://github.com/BoosterRobotics/booster_train) | BeyondMimic motion-tracking tasks for the K1 in Isaac Lab (README: tested with Isaac Lab 2.2 and Isaac Sim 5.0) | Apache-2.0 text |
 | [booster_deploy](https://github.com/BoosterRobotics/booster_deploy) | Runs the same policy in MuJoCo (sim-to-sim) and on the real robot (sim-to-real) | Apache-2.0 text |
 | [booster_assets](https://github.com/BoosterRobotics/booster_assets) | K1 robot description: URDF (`robots/K1/K1_22dof.urdf`) and MuJoCo XML (`robots/K1/K1_22dof.xml`) | BSD-3-Clause |
 | [booster_gym](https://github.com/BoosterRobotics/booster_gym) | Older Isaac Gym framework; **T1 only**. Booster's docs point K1 users to booster_train and booster_deploy | Apache-2.0 text |

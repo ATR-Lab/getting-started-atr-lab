@@ -95,9 +95,9 @@ To bring in a robot that is not in the library, use the URDF importer (Isaac Sim
 
 Isaac Lab trains policies with reinforcement learning or imitation learning across many parallel simulated robots on one GPU. Version 3.0 installs NVIDIA's Newton physics engine (built on NVIDIA Warp) by default and runs without Isaac Sim; add Isaac Sim 6.2 when a project needs PhysX, RTX camera rendering, the ROS 2 bridge or XR ([installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html), [3.0 release notes](https://github.com/isaac-sim/IsaacLab/releases/tag/v3.0.0)).
 
-- **Requirements:** Python 3.12; Ubuntu 22.04 or later (x86_64 or aarch64) or Windows 11; an NVIDIA GPU from the Turing generation or newer; driver 580.65.06 or newer on Linux, 580.88 or newer on Windows. With Isaac Sim, plan for at least 32 GB of RAM, 16 GB of GPU memory and an RTX GPU, and more for training with cameras.
+- **Requirements:** Python 3.12; Ubuntu 22.04 or later on x86_64, Linux on aarch64 (including DGX Spark) or Windows 11; an NVIDIA GPU from the Turing generation or newer; driver 595.58.03 or newer on Linux x86_64 (580.159 on Linux aarch64), 595.97 or newer on Windows, set by the PyTorch CUDA 13.0 build it installs. With Isaac Sim, plan for at least 32 GB of RAM, 16 GB of GPU memory and an RTX GPU, and more for training with cameras.
 - **Which version:** use 3.0 for new projects. Stay on 2.3.2 with Isaac Sim 5.1 only for code that needs it, such as Booster's `booster_train`, which is tested with Isaac Lab 2.3.2 and Isaac Sim 5.1.0 ([Booster K1](../hardware/booster-k1.md)). Ask your mentor if you're unsure.
-- **Install:** the guide recommends its automatic setup with [uv](https://docs.astral.sh/uv/) from an Isaac Lab checkout. It also documents the older `isaaclab.sh` installer, a Python environment with Isaac Sim from pip, the Isaac Lab package, Docker and source builds. Follow the guide for your version rather than copying commands between versions.
+- **Install:** the guide recommends its automatic setup with [uv](https://docs.astral.sh/uv/) from an Isaac Lab checkout. It also documents a uv environment you manage yourself (with Isaac Sim as an option), the Isaac Lab Python package (`isaaclab` from pypi.nvidia.com), Docker, cloud workstations and building Isaac Sim from source. The older `isaaclab.sh` installer is deprecated in 3.0. Follow the guide for your version rather than copying commands between versions.
 - **Unitree Go2 tasks:** Isaac Lab ships flat- and rough-terrain velocity-tracking tasks for the Go2. Their names changed in 3.0: it registers `Isaac-Velocity-Flat-UnitreeGo2` and `Isaac-Velocity-Rough-UnitreeGo2` ([task config](https://github.com/isaac-sim/IsaacLab/blob/v3.0.0/source/isaaclab_tasks/isaaclab_tasks/core/velocity/config/go2/__init__.py)), where 2.3.2 used `Isaac-Velocity-Flat-Unitree-Go2-v0` and `Isaac-Velocity-Rough-Unitree-Go2-v0`. Isaac Lab has no Booster robot configuration.
 
 > [!WARNING]
@@ -117,4 +117,4 @@ Isaac Lab trains policies with reinforcement learning or imitation learning acro
 - [LeRobot](lerobot.md): imitation learning on real arms
 - [Unitree Go2](../hardware/unitree-go2.md)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/isaac-sim.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/isaac-sim.md)</sub>

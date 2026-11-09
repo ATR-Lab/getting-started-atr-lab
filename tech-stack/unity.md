@@ -40,13 +40,13 @@ Headsets need developer mode turned on through a Meta developer account; ask the
 
 ## Connecting Unity to ROS 2
 
-Status of the common options, checked on GitHub on Sept. 30, 2026:
+Status of the common options, checked on GitHub on Nov. 9, 2026:
 
 | Option | How it connects | Status |
 | --- | --- | --- |
 | [ROS-TCP-Connector](https://github.com/Unity-Technologies/ROS-TCP-Connector) and ROS-TCP-Endpoint (Unity Robotics Hub) | TCP to a ROS-side endpoint node | Last release v0.7.0, February 2022; the README still lists ROS 2 Foxy and Galactic. Unity has moved this workflow to the hub's [archive page](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/ARCHIVE.md). Treat it as unmaintained |
 | [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub): Simulation Pro | Unity's new robotics package with URDF import, sensors and ROS 2 support | Early access for Unity Industry developers; "supported for production on Unity 6.3 and newer" |
-| [ROS#](https://github.com/siemens/ros-sharp) with [rosbridge_suite](https://github.com/RobotWebTools/rosbridge_suite) | WebSocket to a rosbridge server on the robot's ROS 2 side | Maintained: ROS# 2.3.0 (Sept. 9, 2026) and rosbridge_suite 4.2.1, with Humble, Jazzy and Kilted branches. ROS# is built with Unity 2022.3 LTS; its README says Unity 6 "has not yet been thoroughly tested" |
+| [ROS#](https://github.com/siemens/ros-sharp) with [rosbridge_suite](https://github.com/RobotWebTools/rosbridge_suite) | WebSocket to a rosbridge server on the robot's ROS 2 side | Maintained: ROS# 2.3.1 (Oct. 9, 2026, a security fix for message generation) and rosbridge_suite 4.2.1 (Humble on its `humble` branch; Jazzy and later on the `ros2` branch). ROS# is built with Unity 2022.3 LTS; its README says Unity 6 "has not yet been thoroughly tested" |
 | [ros2-for-unity](https://github.com/RobotecAI/ros2-for-unity) | Native ROS 2 (DDS) inside Unity | Its README says the team is "unable to provide support and maintain the project for the general community" |
 
 For a new project, the rosbridge route is the most actively maintained today, at the cost of WebSocket latency (the delay between an action and the robot's response). Measure latency for your task before you build a teleoperation study on it. Whichever option you choose, write it and its version in the project README.

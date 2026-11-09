@@ -67,10 +67,10 @@ Students can get free developer tools, including GitHub features, through the [G
 | Isaac Lab | 3.0.0; 2.3.2 for Isaac Sim 5.1 | 3.0 runs on Newton by default, with Isaac Sim 6.2 optional (checked Nov. 5, 2026) |
 | MuJoCo | 4.0.0 | Menagerie `mujoco-menagerie` 2026.9.0 |
 | Gazebo | Jetty, Ionic, Harmonic, Fortress | Harmonic pairs with Jazzy |
-| PyTorch | 2.14 | Needs Python 3.10 or later |
+| PyTorch | 2.15 | Check the Python versions it supports on [pytorch.org](https://pytorch.org/get-started/locally/) |
 | LeRobot | 0.7.0 | Needs Python 3.12 or later |
 | Unity | 6.3 LTS | Supported until December 2027 |
-| PreForm | 3.63.1 | |
+| PreForm | 3.64.2 | |
 | NVIDIA Container Toolkit | 1.20.1 | |
 | Claude Code, Codex | Update themselves or through your package manager | Check with `claude --version` and `codex --version` |
 
