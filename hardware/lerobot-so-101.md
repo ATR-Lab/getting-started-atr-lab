@@ -79,6 +79,8 @@ These steps follow the [LeRobot SO-101 guide](https://huggingface.co/docs/lerobo
    pip install -e ".[core_scripts]"
    # Feetech motor support for the SO-101
    pip install -e ".[feetech]"
+   # Training policies (adds accelerate and trackio)
+   pip install -e ".[training]"
    ```
 
 3. **Find each arm's USB port.** Connect one controller board by USB and power, run the command below and unplug the board when it asks:
@@ -193,7 +195,7 @@ lerobot-train \
   --policy.repo_id=${HF_USER}/my_policy
 ```
 
-**Run the trained policy** on the follower with `lerobot-rollout`, using the same robot ID you calibrated with. With a policy in control, the arm moves **autonomously**:
+**Run the trained policy** on the follower with `lerobot-rollout`, using the same robot ID you calibrated with and the same camera names, resolution and task description you recorded with. With a policy in control, the arm moves **autonomously**:
 
 ```bash
 lerobot-rollout \
@@ -202,12 +204,12 @@ lerobot-rollout \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
   --robot.id=my_follower_arm \
-  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}}" \
+  --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
   --task="Grab the black cube" \
   --duration=60
 ```
 
-The `sentry` strategy (with `--dataset.repo_id`, `--dataset.single_task` and `--strategy.upload_every_n_episodes`) records evaluation episodes while the policy runs and uploads them to the Hub.
+The `sentry` strategy (with `--dataset.repo_id`, `--dataset.single_task` and `--strategy.upload_every_n_episodes`) records evaluation episodes while the policy runs and uploads them to the Hub. Datasets recorded by `lerobot-rollout` need a name that starts with `rollout_` (for example `${HF_USER}/rollout_so101_test`), and like `lerobot-record` it adds a timestamp to the name.
 
 ### Simulation models
 

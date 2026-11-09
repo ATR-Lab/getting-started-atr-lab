@@ -69,7 +69,7 @@ Claude Code reads project instructions from `CLAUDE.md` files at the start of ev
 @AGENTS.md
 ```
 
-The `@` imports the file, so Claude Code reads exactly what other agents read. Recent versions of Claude Code (v2.1.277 or later) also read `AGENTS.md` directly when a repository has no `CLAUDE.md`, but the import works in every version and setup ([memory docs](https://code.claude.com/docs/en/memory#agentsmd)). Run `/context` in a session to see which instruction files loaded.
+The `@` imports the file, so Claude Code reads exactly what other agents read. Recent versions of Claude Code (v2.1.277 or later) also read `AGENTS.md` directly when a repository has no `CLAUDE.md`, but the import works in every version and setup ([memory docs](https://code.claude.com/docs/en/memory#agents-md)). Run `/context` in a session to see which instruction files loaded.
 
 In a repository with no instructions yet, `/init` drafts a `CLAUDE.md` from the code. For a lab repository, move what it writes into `AGENTS.md` and follow the documentation standards in the [dev guidelines](https://github.com/ATR-Lab/dev-guidelines).
 
