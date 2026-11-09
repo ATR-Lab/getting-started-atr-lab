@@ -11,6 +11,7 @@
 ^https://(www\.)?raspberrypi\.com/
 ^https://forums\.raspberrypi\.com/
 ^https://support\.unitree\.com/
+^https://robotics\.stackexchange\.com/
 # Repository-specific
 ^https://(www\.)?acm\.org/
 ^https://authors\.acm\.org/
