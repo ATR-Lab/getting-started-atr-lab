@@ -64,10 +64,10 @@ The README's reference prices were $121.94 for one follower arm and $229.88 for 
 
 ## First steps
 
-These steps follow the [LeRobot SO-101 guide](https://huggingface.co/docs/lerobot/so101) (LeRobot v0.6.1, the latest release on PyPI on Sept. 30, 2026). If the arms are already assembled, set up and calibrated, skip to step 5 and ask `[SO-101 owner or contact name]` for the IDs.
+These steps follow the [LeRobot SO-101 guide](https://huggingface.co/docs/lerobot/so101) (LeRobot v0.7.0, released on PyPI Nov. 5, 2026). If the arms are already assembled, set up and calibrated, skip to step 5 and ask `[SO-101 owner or contact name]` for the IDs.
 
 1. **Finish the [hardware checklist](README.md#before-you-use-any-hardware)** and read [Safety](#safety) below.
-2. **Install LeRobot.** It needs Python 3.12 or later ([installation guide](https://huggingface.co/docs/lerobot/installation)):
+2. **Install LeRobot.** It needs Python 3.12 or later ([installation guide](https://huggingface.co/docs/lerobot/installation)). On Linux, the default PyTorch wheels need an NVIDIA driver of 580.65 or later; on Apple silicon, PyTorch needs macOS 14 or later, and GPU (MPS) acceleration needs macOS 15:
 
    ```bash
    # Ubuntu 24.04 or macOS, in a conda (Miniforge) environment
@@ -125,9 +125,6 @@ These steps follow the [LeRobot SO-101 guide](https://huggingface.co/docs/lerobo
        --teleop.id=my_leader_arm
    ```
 
-> [!NOTE]
-> Two command examples in the LeRobot docs (checked Sept. 30, 2026) break if you paste them into bash: the `lerobot-calibrate` examples put a `# comment` after a line-continuation backslash, and the `lerobot-record` example has a commented-out line inside the command. The commands on this page have those comments removed.
-
 ## Software
 
 ### Cameras, datasets, training and running a policy
@@ -167,6 +164,8 @@ lerobot-record \
     --dataset.encoder_threads=2
 ```
 
+`lerobot-record` adds the session's date and time to the end of `--dataset.repo_id`, so `${HF_USER}/record-test` is saved as `${HF_USER}/record-test_YYYYMMDD_HHMMSS`. Find the full name on your Hugging Face profile or with `ls ~/.cache/huggingface/lerobot/${HF_USER}`, and use it in the commands below. To keep the exact name you passed, add `--dataset.no_stamp=true`.
+
 > [!IMPORTANT]
 > Recording **uploads the dataset to the Hugging Face Hub by default**. If a camera can see people, or the data belongs to a study, add `--dataset.push_to_hub=False` and ask the lab manager before you share it. Human-subjects data follows the lab's research standards and IRB approval.
 
@@ -177,24 +176,24 @@ lerobot-replay \
     --robot.type=so101_follower \
     --robot.port=/dev/ttyACM0 \
     --robot.id=my_follower_arm \
-    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.repo_id=${HF_USER}/record-test_YYYYMMDD_HHMMSS \
     --dataset.episode=0
 ```
 
-**Train a policy** (ACT shown here) on a machine with an NVIDIA GPU (`--policy.device=cuda`; use `mps` on Apple silicon). Use the same dataset name you recorded. The trained model is pushed to the Hub unless you add `--policy.push_to_hub=false`:
+**Train a policy** (ACT shown here) on a machine with an NVIDIA GPU (`--policy.device=cuda`; use `mps` on Apple silicon). Use the dataset's full name, including the timestamp. `--trackio.enable=true` (optional) logs training plots to Trackio, which replaced Weights & Biases in LeRobot v0.7.0; run `trackio show --project lerobot` to open the dashboard. The trained model is pushed to the Hub unless you add `--policy.push_to_hub=false`:
 
 ```bash
 lerobot-train \
-  --dataset.repo_id=${HF_USER}/record-test \
+  --dataset.repo_id=${HF_USER}/record-test_YYYYMMDD_HHMMSS \
   --policy.type=act \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true \
+  --trackio.enable=true \
   --policy.repo_id=${HF_USER}/my_policy
 ```
 
-**Run the trained policy** on the follower with `lerobot-rollout`. The docs' example uses `so100_follower`; for our arms pass `so101_follower`, which LeRobot v0.6.1 registers as a robot type. With a policy in control, the arm moves **autonomously**:
+**Run the trained policy** on the follower with `lerobot-rollout`, using the same robot ID you calibrated with. With a policy in control, the arm moves **autonomously**:
 
 ```bash
 lerobot-rollout \
@@ -202,12 +201,13 @@ lerobot-rollout \
   --policy.path=${HF_USER}/my_policy \
   --robot.type=so101_follower \
   --robot.port=/dev/ttyACM0 \
+  --robot.id=my_follower_arm \
   --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}}" \
   --task="Grab the black cube" \
   --duration=60
 ```
 
-The `sentry` strategy (with `--dataset.repo_id=${HF_USER}/eval_...`) records evaluation episodes while the policy runs.
+The `sentry` strategy (with `--dataset.repo_id`, `--dataset.single_task` and `--strategy.upload_every_n_episodes`) records evaluation episodes while the policy runs and uploads them to the Hub.
 
 ### Simulation models
 
@@ -265,4 +265,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [LeRobot](../tech-stack/lerobot.md) · [MuJoCo](../tech-stack/mujoco.md) · [Isaac Sim](../tech-stack/isaac-sim.md)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/lerobot-so-101.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/lerobot-so-101.md)</sub>

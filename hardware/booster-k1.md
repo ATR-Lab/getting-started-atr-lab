@@ -92,7 +92,7 @@ ssh booster@192.168.10.102
 
 Booster's connect guide publishes the factory-default password; the lab has changed it on its units. Ask the lab manager for the lab's login, and never write it in a repo, notebook or chat.
 
-**Firmware.** Check the installed version on the robot with `cat /opt/booster/version.txt`. The latest release listed on Sept. 30, 2026 was v1.8.0.9 (Sept. 15, 2026) ([version upgrade](https://docs.booster.tech/docs/product-manual/k1/firmware-version/software-upgrade/)). SDK and demo versions are tied to firmware versions, so don't upgrade without asking the lab manager.
+**Firmware.** Check the installed version on the robot with `cat /opt/booster/version.txt`. The release listed on Nov. 9, 2026 was v1.8.1.2 (Oct. 19, 2026) ([version upgrade](https://docs.booster.tech/docs/product-manual/k1/firmware-version/software-upgrade/)). SDK and demo versions are tied to firmware versions, so don't upgrade without asking the lab manager.
 
 ### Modes
 
@@ -187,4 +187,4 @@ Booster's remote support uses a third-party remote-desktop tool. Check with the 
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [Isaac Sim](../tech-stack/isaac-sim.md) · [MuJoCo](../tech-stack/mujoco.md) · [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/booster-k1.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/booster-k1.md)</sub>

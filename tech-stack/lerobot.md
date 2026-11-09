@@ -19,12 +19,12 @@
 | Part | What it is |
 | --- | --- |
 | Hardware drivers | Leader and follower arms and mobile bases, including SO-100, SO-101, Koch, LeKiwi, Reachy 2 and Unitree G1, plus keyboards, gamepads and phones as teleoperators |
-| Command-line tools | `lerobot-find-port`, `lerobot-calibrate`, `lerobot-teleoperate`, `lerobot-record`, `lerobot-replay`, `lerobot-train`, `lerobot-eval` and more |
+| Command-line tools | `lerobot-find-port`, `lerobot-calibrate`, `lerobot-teleoperate`, `lerobot-record`, `lerobot-replay`, `lerobot-train`, `lerobot-rollout`, `lerobot-eval` and more |
 | Dataset format | LeRobotDataset v3.0: Parquet tables for states and actions plus MP4 video, shareable on the [Hugging Face Hub](https://huggingface.co/datasets?other=LeRobot) ([format docs](https://huggingface.co/docs/lerobot/lerobot-dataset-v3)) |
 | Policies | Imitation learning, reinforcement learning and vision-language-action models ([below](#policies)) |
 | Simulation environments | Optional extras such as `aloha` and `pusht` for testing policies without hardware |
 
-Versions checked on Sept. 30, 2026: the latest release is **0.6.1** (Aug. 3, 2026) on [GitHub](https://github.com/huggingface/lerobot/releases) and [PyPI](https://pypi.org/project/lerobot/), and it needs **Python 3.12 or later**.
+Versions checked on Nov. 9, 2026: the latest release is **0.7.0** (Nov. 5, 2026) on [GitHub](https://github.com/huggingface/lerobot/releases) and [PyPI](https://pypi.org/project/lerobot/), and it needs **Python 3.12 or later**.
 
 ## Install
 
@@ -90,6 +90,8 @@ The [imitation learning tutorial](https://huggingface.co/docs/lerobot/il_robots)
      --dataset.push_to_hub=false
    ```
 
+   `lerobot-record` adds the session's date and time to the dataset name, so `[dataset name]` is saved as `[dataset name]_YYYYMMDD_HHMMSS`. Use that full name in the steps below (`ls ~/.cache/huggingface/lerobot/[hf namespace]` lists it), or pass `--dataset.no_stamp=true` to keep the name you gave.
+
 4. **Train** a policy, for example ACT, on a GPU (see [shared GPUs](../lab-rules/best-practices.md#shared-machines-and-gpus)):
 
    ```bash
@@ -102,7 +104,21 @@ The [imitation learning tutorial](https://huggingface.co/docs/lerobot/il_robots)
      --policy.push_to_hub=false
    ```
 
-5. **Evaluate** the trained policy on the robot with a person at the stop switch, and log every run: which checkpoint, how many trials, how many succeeded.
+5. **Evaluate** the trained policy on the robot with `lerobot-rollout` and a person at the stop switch. Use the same robot `id`, cameras and task description as in the recording; `--strategy.type=base` runs the policy without recording:
+
+   ```bash
+   lerobot-rollout \
+     --strategy.type=base \
+     --policy.path=outputs/train/[run name]/checkpoints/last/pretrained_model \
+     --robot.type=so101_follower \
+     --robot.port=[follower port] \
+     --robot.id=[follower id] \
+     --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 640, height: 480, fps: 30}}" \
+     --task="[one-sentence task description]" \
+     --duration=60
+   ```
+
+   Log every run: which checkpoint, how many trials, how many succeeded.
 
 > [!WARNING]
 > A trained policy can move the arm in ways you did not demonstrate. Clear the workspace, keep your hands out of reach while it runs, start at low speed and keep one hand on the power switch. The arm-specific rules are in the [SO-101 safety section](../hardware/lerobot-so-101.md#safety) and the general ones in [robots in motion](../lab-rules/safety.md#robots-in-motion).
@@ -140,4 +156,4 @@ The [compute hardware guide](https://huggingface.co/docs/lerobot/hardware_guide)
 - [Research standards](../research/standards.md): data management and reproducibility
 - [LeRobot documentation](https://huggingface.co/docs/lerobot)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/lerobot.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/lerobot.md)</sub>

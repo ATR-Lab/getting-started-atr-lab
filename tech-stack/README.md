@@ -2,7 +2,7 @@
 
 > **Read this when** you want to see how the lab's software fits together, pick a tool for a project, or find the page that sets one up.
 
-The lab's software, from the robots and their computers up to the AI coding agents we write code with. Each layer builds on the one below it; tooling and coding agents cut across all of them. Every tool below is named because lab projects use it, as a fact, not an endorsement by the lab or Kent State University. The one thing to remember: most of the stack targets **Ubuntu 24.04 LTS** today (ROS 2 Jazzy, Gazebo Harmonic and Isaac Sim 6.1 all support it), so start there unless your project says otherwise.
+The lab's software, from the robots and their computers up to the AI coding agents we write code with. Each layer builds on the one below it; tooling and coding agents cut across all of them. Every tool below is named because lab projects use it, as a fact, not an endorsement by the lab or Kent State University. The one thing to remember: most of the stack targets **Ubuntu 24.04 LTS** today (ROS 2 Jazzy, Gazebo Harmonic and Isaac Sim 6.2 all support it), so start there unless your project says otherwise.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#003976','primaryTextColor':'#FFFFFF','primaryBorderColor':'#00295F','secondaryColor':'#EFAB00','secondaryTextColor':'#1B2533','tertiaryColor':'#F3F6FA','tertiaryTextColor':'#1B2533','lineColor':'#2C8ECD','textColor':'#1B2533','edgeLabelBackground':'#F3F6FA','clusterBkg':'#F3F6FA','clusterBorder':'#D6DEE8','titleColor':'#003976'}}}%%
@@ -56,7 +56,7 @@ Students can get free developer tools, including GitHub features, through the [G
 ## Versions at a glance
 
 <details>
-<summary>Current versions checked on Sept. 30, 2026 (each page links its source)</summary>
+<summary>Current versions checked on Nov. 9, 2026 (each page links its source)</summary>
 
 | Tool | Version | Notes |
 | --- | --- | --- |
@@ -65,10 +65,10 @@ Students can get free developer tools, including GitHub features, through the [G
 | ROS 2 | Lyrical (May 2026, LTS), Kilted, Jazzy (LTS), Humble (LTS) | Details in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2) |
 | Isaac Sim | 6.2.0 | ROS 2 Humble and Jazzy; Ubuntu 22.04 support deprecated (checked Nov. 5, 2026) |
 | Isaac Lab | 3.0.0; 2.3.2 for Isaac Sim 5.1 | 3.0 runs on Newton by default, with Isaac Sim 6.2 optional (checked Nov. 5, 2026) |
-| MuJoCo | 3.14.0 | Menagerie `mujoco-menagerie` 2026.9.0 |
+| MuJoCo | 4.0.0 | Menagerie `mujoco-menagerie` 2026.9.0 |
 | Gazebo | Jetty, Ionic, Harmonic, Fortress | Harmonic pairs with Jazzy |
 | PyTorch | 2.14 | Needs Python 3.10 or later |
-| LeRobot | 0.6.1 | Needs Python 3.12 or later |
+| LeRobot | 0.7.0 | Needs Python 3.12 or later |
 | Unity | 6.3 LTS | Supported until December 2027 |
 | PreForm | 3.63.1 | |
 | NVIDIA Container Toolkit | 1.20.1 | |
@@ -83,4 +83,4 @@ Students can get free developer tools, including GitHub features, through the [G
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines): code style, Git and AI-assisted development
 - [Research standards](../research/standards.md): reproducibility and artifacts
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/README.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/README.md)</sub>

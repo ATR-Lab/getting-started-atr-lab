@@ -80,7 +80,7 @@ From the [Raspberry Pi 5 product brief (PDF)](https://pip-assets.raspberrypi.com
 | --- | --- | --- | --- |
 | **Ubuntu 24.04 LTS (64-bit)** | Ubuntu Noble | **ROS 2 Jazzy: Tier 1, official binary packages for arm64** ([REP 2000](https://reps.openrobotics.org/rep-2000/)). Jazzy is supported until May 2029 | Your project uses ROS 2 Jazzy (the lab's usual choice: `[confirm lab default distro]`) |
 | Ubuntu 26.04 LTS (64-bit) | Ubuntu Resolute | ROS 2 Lyrical: Tier 1 for arm64 ([Lyrical platforms](https://docs.ros.org/en/lyrical/Releases/lyrical/supported-platforms.html)) | Your project has moved to Lyrical, released May 22, 2026 |
-| Raspberry Pi OS (64-bit) | Debian 13 "trixie" (release of Sept. 15, 2026); a Debian 12 "bookworm" legacy image is still offered | No Tier 1 binaries: Jazzy supports Debian 12 at Tier 3 and Lyrical supports Debian 13 at Tier 3 (build from source). You can run ROS 2 in a Docker container instead | You need Raspberry Pi's own camera and GPIO tooling first, and ROS 2 second |
+| Raspberry Pi OS (64-bit) | Debian 13 "trixie" (release of Oct. 6, 2026); a Debian 12 "bookworm" legacy image is still offered | No Tier 1 binaries: Jazzy supports Debian 12 at Tier 3 and Lyrical supports Debian 13 at Tier 3 (build from source). You can run ROS 2 in a Docker container instead | You need Raspberry Pi's own camera and GPIO tooling first, and ROS 2 second |
 
 Sources: [Raspberry Pi OS downloads](https://www.raspberrypi.com/software/operating-systems/), [ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html). Ubuntu 24.04 was the first Ubuntu LTS to support the Pi 5 with arm64 server and desktop images ([Ubuntu 24.04 release notes](https://documentation.ubuntu.com/release-notes/24.04/)); the current 24.04.5 Pi images are at [cdimage.ubuntu.com](https://cdimage.ubuntu.com/releases/24.04/release/).
 
@@ -159,4 +159,4 @@ Read the lab's [safety rules](../lab-rules/safety.md) first, including [workbenc
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/raspberry-pi-5.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/raspberry-pi-5.md)</sub>

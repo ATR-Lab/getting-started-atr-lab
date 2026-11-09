@@ -183,7 +183,7 @@ The GPU block follows Docker's [Compose GPU guide](https://docs.docker.com/compo
 
 ## ROSEnv for ROS 2 projects
 
-[ROSEnv](https://github.com/MarcoDotIO/rosenv) is an open-source ROS 2 project and dependency manager written by a lab member. You choose a ROS 2 distribution, declare packages in `rosenv.toml`, commit a `rosenv.lock` lockfile and run the workspace in a persistent Docker environment, so everyone on a project gets the same packages without installing ROS 2 on the host. It is MIT-licensed and not yet published as a release (version 0.2.0 on its main branch, Sept. 30, 2026).
+[ROSEnv](https://github.com/MarcoDotIO/rosenv) is an open-source ROS 2 project and dependency manager written by a lab member. You choose a ROS 2 distribution, declare packages in `rosenv.toml`, commit a `rosenv.lock` lockfile and run the workspace in a persistent Docker environment, so everyone on a project gets the same packages without installing ROS 2 on the host. It is MIT-licensed; version 0.2.0 was published as a GitHub release on Nov. 5, 2026 ([ROSEnv releases](https://github.com/MarcoDotIO/rosenv/releases)).
 
 It needs Linux (Ubuntu 24.04 is the tested host), Python 3.11 or later and a running Docker Engine. Install from source with [uv](https://docs.astral.sh/uv/) (or `pipx install .`):
 
@@ -205,7 +205,7 @@ rosenv run -- ros2 run demo_nodes_cpp talker
 On another machine, `rosenv sync --locked` recreates the same environment from the lockfile, and `rosenv build` and `rosenv test` run colcon inside it. ROSEnv supports Humble, Jazzy (the default), Kilted, Lyrical and Rolling.
 
 > [!NOTE]
-> This version of ROSEnv does not pass GPUs, GUI windows or USB devices through to the container, so use plain Docker (above) for RViz, Gazebo, Isaac Sim or robots on a USB cable. Check the [ROSEnv README](https://github.com/MarcoDotIO/rosenv#readme) for changes.
+> ROSEnv 0.2.0 (released Nov. 5, 2026) can give the container access to USB devices, such as a robot or sensor on a USB serial cable: you declare the device in the project's runtime settings, and ROSEnv passes it in with Docker's `--device` option ([pull request #7](https://github.com/MarcoDotIO/rosenv/pull/7)). It does not pass GPUs or GUI windows through, so use plain Docker (above) for RViz, Gazebo or Isaac Sim. Check the [ROSEnv README](https://github.com/MarcoDotIO/rosenv#readme) for the exact syntax and for changes.
 
 The full ROS 2 guide, including when to use ROSEnv and when to install natively, is in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2).
 
@@ -227,4 +227,4 @@ The full ROS 2 guide, including when to use ROSEnv and when to install natively,
 - [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2): installing ROS 2 natively or with ROSEnv
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/docker.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/docker.md)</sub>

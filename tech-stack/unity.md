@@ -14,12 +14,12 @@
 
 ## Versions and licenses
 
-Checked on Sept. 30, 2026, on [Unity 6 releases](https://unity.com/releases/unity-6):
+Checked on Nov. 9, 2026, on [Unity 6 releases](https://unity.com/releases/unity-6):
 
 | Version | Support | Use it for |
 | --- | --- | --- |
 | **Unity 6.3 LTS** (6000.3) | Long-term support until December 2027 | New lab projects: the current long-term-support release |
-| Unity 6.0 LTS (6000.0) | Supported through October 2026 | Existing projects only; plan to move them to 6.3 |
+| Unity 6.0 LTS (6000.0) | Two-year LTS ended October 2026 (one more year for Unity Enterprise and Unity Industry subscribers) | Existing projects only; move them to 6.3 |
 | Newer 6.x update releases | Shorter support | Only if a package you need requires one |
 
 Install Unity through Unity Hub and pin the exact editor version (for example `6000.3.x`) in the project's README, so everyone opens the project with the same one.
@@ -31,9 +31,10 @@ Install Unity through Unity Hub and pin the exact editor version (for example `6
 From Meta's [Unity project setup guide](https://developers.meta.com/horizon/documentation/unity/unity-project-setup/):
 
 1. Use Unity Editor 6000.0.66f2 or later; Meta recommends 6.1 or later, so Unity 6.3 LTS fits.
-2. Install the **Meta XR Core SDK** and the **Meta XR Platform SDK**, and use the **Unity OpenXR Plugin** as the XR provider. The older Oculus XR Plugin is deprecated and scheduled for removal.
-3. Set the build target to **Meta Quest** (or Android on older editors).
-4. Install [Meta Quest Developer Hub](https://developers.meta.com/horizon/documentation/unity/ts-mqdh-getting-started/), a companion app for Windows and macOS, to manage headsets, install builds and read logs.
+2. Install [Meta Quest Developer Hub](https://developers.meta.com/horizon/documentation/unity/ts-mqdh-getting-started/) (MQDH), a companion app for Windows and macOS that manages headsets, installs builds, reads logs and creates projects. In MQDH, select **XR Projects** > **Create project**, choose the editor version, set **XR Plugin** to **OpenXR** and set **SDKs** to **All** to install the Meta XR All-in-One SDK. The older OculusXR plugin is deprecated and no longer receives updates.
+3. In Unity, open **Window** > **Meta** > **Tools** > **Project Setup Tool** and fix the outstanding issues in both the **Standalone** and **Android** tabs. Then, under **Edit** > **Project Settings** > **XR Plug-in Management** > **OpenXR**, turn on the **Meta XR** feature group for both.
+4. Set the build target to **Meta Quest** (or Android on older editors).
+5. Add the **Meta XR Platform SDK** only if the app uses platform features such as user identity, entitlements or achievements.
 
 Headsets need developer mode turned on through a Meta developer account; ask the lab manager (Marcus Arnett, <marnett5@kent.edu>) which lab headsets are already set up.
 
@@ -63,4 +64,4 @@ For a new project, the rosbridge route is the most actively maintained today, at
 - [TeleBot-4R-XR](https://github.com/ATR-Lab/TeleBot-4R-XR), the lab's Meta Quest interface for TeleBot-4R
 - [Autodesk Fusion and Inventor](autodesk.md): models and meshes for Unity scenes
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/unity.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/unity.md)</sub>
