@@ -149,7 +149,7 @@ The teleop keys: <kbd>1</kbd>/<kbd>q</kbd>, <kbd>2</kbd>/<kbd>w</kbd>, <kbd>3</k
 | ROS 2 Humble | 22.04 | `humble` | Package names start with `open_manipulator_x_` (for example `open_manipulator_x_bringup`) |
 | ROS 1 Noetic | 20.04 | `noetic` | Still documented; the branch's last commit is from July 2021 |
 
-The code is in [ROBOTIS-GIT/open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) (Apache-2.0; release 5.1.3 on Sept. 28, 2026). Jazzy is supported until May 2029 and Humble until May 2027 ([ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html)). Lab guides: [ROS 2](../tech-stack/ros2.md) and the lab-robots page in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/08-lab-robots.md).
+The code is in [ROBOTIS-GIT/open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator) (Apache-2.0; release 5.1.4 on Oct. 19, 2026). Jazzy is supported until May 2029 and Humble until May 2027 ([ROS 2 distributions](https://docs.ros.org/en/rolling/Releases.html)). Lab guides: [ROS 2](../tech-stack/ros2.md) and the lab-robots page in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2/blob/main/docs/08-lab-robots.md).
 
 <details>
 <summary>Humble launch commands (Ubuntu 22.04)</summary>
@@ -199,6 +199,8 @@ Typical uses ([basic features](https://docs.robotis.com/docs/software/dynamixel_
 
 Close the Wizard before you launch ROS 2: only one program can hold the serial port.
 
+[DYNAMIXEL Wizard CLI](https://docs.robotis.com/docs/software/dynamixel_wizard_cli/introduction) does the same scans, control-table reads and writes, reboots and firmware updates from a terminal, for machines without a desktop such as a Docker container or an embedded board. It is packaged for Windows 10 and 11 and Ubuntu 22.04 and 24.04. At its prompt, `open /dev/ttyUSB0 1000000` and then `scan 11-15` check the arm's servos ([commands](https://docs.robotis.com/docs/software/dynamixel_wizard_cli/commands)); the same one-program-per-port rule applies.
+
 ### Simulation models
 
 - **MuJoCo:** DeepMind's MuJoCo Menagerie has no OpenManipulator-X model. ROBOTIS publishes one in [robotis_mujoco_menagerie](https://github.com/ROBOTIS-GIT/robotis_mujoco_menagerie) (`robotis_open_manipulator_x/`), and the `jazzy` branch of open_manipulator includes MJCF files under `open_manipulator_description/mujoco/`. Lab guide: [MuJoCo](../tech-stack/mujoco.md).
@@ -246,4 +248,4 @@ Read the lab's safety rules first, especially [robots in motion](../lab-rules/sa
 - [Lab safety rules](../lab-rules/safety.md)
 - Tech stack: [ROS 2](../tech-stack/ros2.md) · [Gazebo](../tech-stack/gazebo.md) · [MuJoCo](../tech-stack/mujoco.md) · [Docker](../tech-stack/docker.md)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/openmanipulator-x.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/hardware/openmanipulator-x.md)</sub>

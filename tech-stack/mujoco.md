@@ -15,17 +15,17 @@
 
 ## Versions and packages
 
-Checked on Sept. 30, 2026:
+Checked on Nov. 9, 2026:
 
 | Package | Version | What it is | Install |
 | --- | --- | --- | --- |
-| `mujoco` | **3.14.0** (Sept. 22, 2026) | The engine and its Python bindings; Python 3.10 or later | `pip install mujoco` |
-| `mujoco-mjx` | 3.14.0 | MJX: MuJoCo rewritten in JAX, for many simulations in parallel on a GPU or TPU | `pip install mujoco-mjx` |
-| `mujoco-warp` | 3.14.0 | MuJoCo Warp (MJWarp): a GPU version for NVIDIA hardware, maintained by Google DeepMind and NVIDIA | `pip install mujoco-warp` |
-| `playground` | 0.2.0 | [MuJoCo Playground](https://github.com/google-deepmind/mujoco_playground): ready-made learning environments on MJX; Python 3.11 or later | `pip install playground` |
+| `mujoco` | **4.0.0** | The engine and its Python bindings; Python 3.10 or later | `pip install mujoco` |
+| `mujoco-mjx` | 4.0.0 (Nov. 6, 2026) | MJX: MuJoCo rewritten in JAX, for many simulations in parallel on a GPU or TPU; Python 3.11 or later | `pip install mujoco-mjx` |
+| `mujoco-warp` | 4.0.0 (Nov. 6, 2026) | MuJoCo Warp (MJWarp): a GPU version for NVIDIA hardware, maintained by Google DeepMind and NVIDIA; Python 3.11 or later | `pip install mujoco-warp` |
+| `playground` | 1.0.1 (Nov. 9, 2026) | [MuJoCo Playground](https://github.com/google-deepmind/mujoco_playground): ready-made robot environments and learning tasks written in PyTorch on MuJoCo and MuJoCo Warp (the earlier JAX/MJX environments are kept under `rss2025`); Python 3.12 or 3.13 | `pip install playground` |
 | `mujoco-menagerie` | 2026.9.0 | Downloads and loads Menagerie models by name | `pip install mujoco-menagerie` |
 
-Sources: [MuJoCo releases](https://github.com/google-deepmind/mujoco/releases), [Python docs](https://mujoco.readthedocs.io/en/latest/python.html), [MJX docs](https://mujoco.readthedocs.io/en/latest/mjx.html), [MuJoCo Warp](https://github.com/google-deepmind/mujoco_warp) and the [Menagerie README](https://github.com/google-deepmind/mujoco_menagerie#readme). MuJoCo is Apache 2.0; each Menagerie model carries its own license file.
+Sources: [MuJoCo releases](https://github.com/google-deepmind/mujoco/releases), [Python docs](https://mujoco.readthedocs.io/en/latest/python.html), [MJX docs](https://mujoco.readthedocs.io/en/latest/mjx.html), [MuJoCo Warp](https://github.com/google-deepmind/mujoco_warp), PyPI ([mujoco-core](https://pypi.org/project/mujoco-core/), [mujoco-mjx](https://pypi.org/project/mujoco-mjx/), [mujoco-warp](https://pypi.org/project/mujoco-warp/), [playground](https://pypi.org/project/playground/)) and the [Menagerie README](https://github.com/google-deepmind/mujoco_menagerie#readme). MuJoCo is Apache 2.0; each Menagerie model carries its own license file.
 
 ## Install and first run
 
@@ -45,6 +45,8 @@ To look at a lab robot's model, clone Menagerie and open its scene file (the com
 git clone https://github.com/google-deepmind/mujoco_menagerie.git
 python -m mujoco.viewer --mjcf mujoco_menagerie/unitree_go2/scene.xml
 ```
+
+On a headless machine that only runs simulations, `pip install mujoco-core` installs just the bindings and the MuJoCo library, with NumPy as the only dependency.
 
 On macOS, use `mjpython` instead of `python` for the passive viewer when you launch it from your own script; the [Python docs](https://mujoco.readthedocs.io/en/latest/python.html) explain why.
 
@@ -79,8 +81,10 @@ Menagerie also has the Unitree G1 and H1 humanoids, Franka arms and Hello Robot 
 
 For reinforcement learning you usually need thousands of simulations at once. Two options run MuJoCo on the GPU:
 
-- **MJX** is written in JAX and runs on "Nvidia and AMD GPUs, Apple Silicon, and Google Cloud TPUs" ([MJX docs](https://mujoco.readthedocs.io/en/latest/mjx.html)). MuJoCo Playground's environments use it. Models often need simplifying (fewer contacts, simpler collision shapes) to run fast; the Go2 has a ready `scene_mjx.xml`.
+- **MJX** is written in JAX and runs on "Nvidia and AMD GPUs, Apple Silicon, and Google Cloud TPUs" ([MJX docs](https://mujoco.readthedocs.io/en/latest/mjx.html)). MuJoCo Playground's original JAX environments (`rss2025`) use it; Playground 1.0 and later runs on MuJoCo Warp instead. Models often need simplifying (fewer contacts, simpler collision shapes) to run fast; the Go2 has a ready `scene_mjx.xml`.
 - **MuJoCo Warp** is written in NVIDIA Warp for NVIDIA GPUs and handles contacts faster; MJX can use it as a backend (`pip install mujoco-mjx[warp]`). Unlike MJX on JAX, it does not support automatic differentiation.
+
+Without a GPU, `mujoco.batch` (MuJoCo 3.17.0 and later, released Oct. 22, 2026) steps many simulations of one model on a CPU thread pool, and its results match a plain loop exactly at any thread count.
 
 Book GPU time on the lab machines before long runs ([shared machines and GPUs](../lab-rules/best-practices.md#shared-machines-and-gpus)).
 
@@ -97,4 +101,4 @@ Book GPU time on the lab machines before long runs ([shared machines and GPUs](.
 - [Research standards: reproducibility](../research/standards.md#reproducibility-and-artifacts)
 - [MuJoCo documentation](https://mujoco.readthedocs.io/)
 
-<sub>Last reviewed: Sept. 30, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/mujoco.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/mujoco.md)</sub>

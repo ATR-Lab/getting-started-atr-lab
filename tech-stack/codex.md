@@ -2,7 +2,7 @@
 
 > **Read this when** you want to install OpenAI's Codex CLI, use it on a lab repository, or check the lab's rules for AI coding agents.
 
-Codex is OpenAI's coding agent. The Codex CLI runs in your terminal, reads your repository, edits files and runs commands inside a sandbox, asking before it goes outside it; the same agent is also available as an editor extension and as Codex cloud. Codex reads a repository's `AGENTS.md` before it starts work, and lab repositories keep their agent instructions there, so Codex and [Claude Code](claude-code.md) follow the same rules. The one thing to remember: you are the author of everything the agent writes, so read every diff before you commit it, and never give it passwords, keys or identifiable study data.
+Codex is OpenAI's coding agent. The Codex CLI runs in your terminal, reads your repository, edits files and runs commands inside a sandbox, asking before it goes outside it; the same agent is also available as an editor extension, as a desktop app (start it with `codex app`) and as Codex cloud. Codex reads a repository's `AGENTS.md` before it starts work, and lab repositories keep their agent instructions there, so Codex and [Claude Code](claude-code.md) follow the same rules. The one thing to remember: you are the author of everything the agent writes, so read every diff before you commit it, and never give it passwords, keys or identifiable study data.
 
 > [!IMPORTANT]
 > **Kent State's guidance comes first.** Kent State's [AI Hub](https://www.kent.edu/ai) lists Microsoft Copilot, Google Gemini and NotebookLM, and Adobe Firefly as sanctioned for university use, and says tools outside that list, naming Claude and ChatGPT, "may be used for personal/non-sensitive work only, do not input university data." The director's rule (Nov. 2026): use Codex only on public or non-sensitive code, such as the lab's open-source repositories, and never on student records, study data or other university data. No current lab work involves personal or sensitive data; the lab will set rules before any does.
@@ -18,7 +18,7 @@ Codex is OpenAI's coding agent. The Codex CLI runs in your terminal, reads your 
 
 ## Install
 
-From the [Codex CLI docs](https://learn.chatgpt.com/docs/codex/cli) and the [openai/codex README](https://github.com/openai/codex#readme) (checked Sept. 30, 2026; latest release 0.159.2, Apache 2.0 license).
+From the [Codex CLI docs](https://learn.chatgpt.com/docs/codex/cli) and the [openai/codex README](https://github.com/openai/codex#readme) (checked Nov. 9, 2026; latest release 0.167.0, Apache 2.0 license).
 
 macOS and Linux:
 
@@ -99,4 +99,4 @@ Codex is named here because lab members use it; this page describes the tool and
 - [AI-assisted development](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/ai-assisted-development.md) in the dev guidelines
 - [Codex documentation](https://learn.chatgpt.com/docs/codex/cli)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/codex.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/codex.md)</sub>

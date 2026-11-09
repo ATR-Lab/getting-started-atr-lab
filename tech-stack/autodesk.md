@@ -36,7 +36,7 @@ Autodesk Education gives eligible students and educators "free, one-year, single
 
 ## From CAD to the Form 3 printer
 
-The lab's resin printer is prepared in Formlabs PreForm (version 3.63.1, Sept. 25, 2026, for Windows 10 64-bit or later and macOS 13 or later; [release notes](https://formlabs.com/support/PreForm-Release-Notes)).
+The lab's resin printer is prepared in Formlabs PreForm (version 3.64.2, Oct. 23, 2026, for Windows 10 64-bit or later and macOS 13 or later; [release notes](https://formlabs.com/support/PreForm-Release-Notes)).
 
 1. In Fusion, export the body as a mesh: **File > Export** or **Save As Mesh**, as STL or 3MF ([Autodesk](https://www.autodesk.com/support/technical/article/caas/sfdcarticles/sfdcarticles/How-to-export-an-STL-file-from-Fusion-360.html)). In Inventor, use **File > Save As > Save Copy As** and choose STL, and check the units under **Options** ([Autodesk](https://help.autodesk.com/cloudhelp/2015/ENU/Inventor-Help/files/GUID-59FB702C-F37A-4DEA-ADCF-51AD8A219C9B.htm)).
 2. Open the file in [PreForm](https://formlabs.com/software/preform/). PreForm opens STL, OBJ and 3MF meshes and also CAD files directly, including STEP and Inventor `.ipt` and `.iam` ([Formlabs](https://formlabs.com/support/Opening-a-model-in-PreForm)).
@@ -76,4 +76,4 @@ Follow the CAD and hardware file conventions in the dev guidelines' [hardware pa
 - [Unity](unity.md): CAD models in XR scenes
 - [Dev guidelines: hardware](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/hardware.md)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/autodesk.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/autodesk.md)</sub>

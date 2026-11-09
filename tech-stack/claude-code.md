@@ -80,7 +80,7 @@ A permission mode decides what Claude Code may do without asking you first ([per
 | Mode | What runs without asking | Use it in the lab |
 | --- | --- | --- |
 | Manual (`default`) | Reads only; asks before edits, commands and network access | On shared lab machines, on any computer connected to a robot, and for sensitive work |
-| Plan (`plan`) | Reads; proposes a plan and changes nothing | To explore unfamiliar code or plan a change |
+| Plan (`plan`) | Reads, plus commands the safety classifier approves when auto mode is available; proposes a plan and doesn't edit your files | To explore unfamiliar code or plan a change |
 | Accept edits (`acceptEdits`) | Reads, file edits and common file commands | On a branch you will review before merging |
 | Auto (`auto`) | Everything, with background safety checks | Your own machine, in a repository with no secrets or study data |
 | Bypass permissions (`bypassPermissions`) | Everything | Only inside a disposable container or virtual machine |
@@ -109,4 +109,4 @@ Claude Code is named here because lab members use it; this page describes the to
 - [AI-assisted development](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/ai-assisted-development.md) in the dev guidelines
 - [Claude Code documentation](https://code.claude.com/docs/en/overview)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/claude-code.md)</sub>
+<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/claude-code.md)</sub>
