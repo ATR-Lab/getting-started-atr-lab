@@ -18,3 +18,5 @@
 ^https://www\.autodesk\.com/
 ^https://www\.ieee\.org/
 ^https://developers\.meta\.com/
+# IEEE conference sites sit behind a Cloudflare bot check (403 to checkers).
+^https://\d{4}\.ieee-[a-z]+\.org/
