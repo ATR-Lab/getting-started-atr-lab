@@ -110,7 +110,7 @@ Lab equipment is Kent State property, bought with grants and university funds, a
 Only the director approves spending lab funds, and every purchase follows Kent State's purchasing rules.
 
 - **Ask first:** send a purchase request through [purchase request procedure] with the item, vendor, price, quantity and the project or grant it is for. The director decides which fund pays.
-- **Kent State buys through FlashCart.** A requisition entered in FlashCart becomes a purchase order after approval, and "a requisition should be completed before goods or services are obtained" ([Procurement](https://www.kent.edu/procurement/it-okay-obtain-goods-and-services-prior-getting-po)). FlashCart is required for goods of $2,500 or more, and goods of $25,000 or more must be bid ([purchasing takeaways](https://www.kent.edu/procurement/what-are-some-key-takeaways-purchasing-policy)).
+- **Kent State buys through FlashCart.** A requisition entered in FlashCart becomes a purchase order after approval, and "a requisition should be completed before goods or services are obtained" ([Procurement](https://www.kent.edu/procurement/it-okay-obtain-goods-and-services-prior-getting-po)). Goods costing $5,000 or more, and services costing $50,000 or more, need a purchase order from Procurement, and purchases of $50,000 or more must be competitively bid unless Procurement approves a waiver (for an emergency or a sole source, for example). Splitting an order to stay under either limit isn't allowed, and the bidding limit counts everything the university buys of similar goods or services from one supplier in a fiscal year ([Policy 7-12.1](https://www.kent.edu/policyreg/administrative-policy-regarding-purchasing-goods-andor-services)).
 - **No personal purchases** with university funds, by purchase order or purchasing card ([Policy 7-12.1](https://www.kent.edu/policyreg/administrative-policy-regarding-purchasing-goods-andor-services); [P-card policy 7-02.16](https://www.kent.edu/policyreg/administrative-policy-regarding-use-purchasing-card-p-card)).
 - **Don't pay with your own money** expecting to be reimbursed unless the director has approved it in writing beforehand: [reimbursement procedure].
 - **Grant funds** can only be spent on what the grant allows; the director and the Office of Sponsored Programs decide.
@@ -167,4 +167,4 @@ You can raise any concern about safety, conduct, research integrity or how you a
 - [Research standards](../research/standards.md)
 - [Kent State University Code of Student Conduct](https://www.kent.edu/studentconduct/code-student-conduct)
 
-<sub>Last reviewed: Nov. 5, 2026 · Sources checked Sept. 30, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/code-of-conduct.md)</sub>
+<sub>Last reviewed: Nov. 16, 2026 · Sources checked Nov. 16, 2026 · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/lab-rules/code-of-conduct.md)</sub>
