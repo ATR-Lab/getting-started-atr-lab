@@ -18,7 +18,7 @@ Claude Code is Anthropic's coding agent: it runs in your terminal (and in editor
 
 ## Install
 
-From Anthropic's [setup guide](https://code.claude.com/docs/en/setup) (checked Sept. 30, 2026). Claude Code runs on macOS 13 or later, Ubuntu 20.04 or later, Debian 10 or later and Windows 10 1809 or later, with at least 4 GB of RAM.
+From Anthropic's [setup guide](https://code.claude.com/docs/en/setup) (checked Nov. 16, 2026). Claude Code runs on macOS 13 or later, Ubuntu 20.04 or later, Debian 10 or later, Alpine Linux 3.19 or later and Windows 10 1809 or later (or Windows Server 2019 or later), with at least 4 GB of RAM.
 
 macOS, Linux and WSL (the native installer, which updates itself):
 
@@ -109,4 +109,4 @@ Claude Code is named here because lab members use it; this page describes the to
 - [AI-assisted development](https://github.com/ATR-Lab/dev-guidelines/blob/master/docs/ai-assisted-development.md) in the dev guidelines
 - [Claude Code documentation](https://code.claude.com/docs/en/overview)
 
-<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/claude-code.md)</sub>
+<sub>Last reviewed: Nov. 16, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/claude-code.md)</sub>

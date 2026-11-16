@@ -15,12 +15,12 @@
 
 ## Versions and packages
 
-Checked on Nov. 9, 2026:
+Checked on Nov. 16, 2026:
 
 | Package | Version | What it is | Install |
 | --- | --- | --- | --- |
-| `mujoco` | **4.0.0** | The engine and its Python bindings; Python 3.10 or later | `pip install mujoco` |
-| `mujoco-mjx` | 4.0.0 (Nov. 6, 2026) | MJX: MuJoCo rewritten in JAX, for many simulations in parallel on a GPU or TPU; Python 3.11 or later | `pip install mujoco-mjx` |
+| `mujoco` | **4.0.1** (Nov. 11, 2026) | The engine and its Python bindings; Python 3.10 or later | `pip install mujoco` |
+| `mujoco-mjx` | 4.0.1 (Nov. 11, 2026) | MJX: MuJoCo rewritten in JAX, for many simulations in parallel on a GPU or TPU; Python 3.11 or later | `pip install mujoco-mjx` |
 | `mujoco-warp` | 4.0.0 (Nov. 6, 2026) | MuJoCo Warp (MJWarp): a GPU version for NVIDIA hardware, maintained by Google DeepMind and NVIDIA; Python 3.11 or later | `pip install mujoco-warp` |
 | `playground` | 1.0.1 (Nov. 9, 2026) | [MuJoCo Playground](https://github.com/google-deepmind/mujoco_playground): ready-made robot environments and learning tasks written in PyTorch on MuJoCo and MuJoCo Warp (the earlier JAX/MJX environments are kept under `rss2025`); Python 3.12 or 3.13 | `pip install playground` |
 | `mujoco-menagerie` | 2026.9.0 | Downloads and loads Menagerie models by name | `pip install mujoco-menagerie` |
@@ -101,4 +101,4 @@ Book GPU time on the lab machines before long runs ([shared machines and GPUs](.
 - [Research standards: reproducibility](../research/standards.md#reproducibility-and-artifacts)
 - [MuJoCo documentation](https://mujoco.readthedocs.io/)
 
-<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/mujoco.md)</sub>
+<sub>Last reviewed: Nov. 16, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/mujoco.md)</sub>
