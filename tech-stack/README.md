@@ -56,7 +56,7 @@ Students can get free developer tools, including GitHub features, through the [G
 ## Versions at a glance
 
 <details>
-<summary>Current versions checked on Nov. 9, 2026 (each page links its source)</summary>
+<summary>Current versions checked on Nov. 16, 2026 (each page links its source)</summary>
 
 | Tool | Version | Notes |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ Students can get free developer tools, including GitHub features, through the [G
 | ROS 2 | Lyrical (May 2026, LTS), Kilted, Jazzy (LTS), Humble (LTS) | Details in [All things ROS 2](https://github.com/ATR-Lab/all-things-ros2) |
 | Isaac Sim | 6.2.0 | ROS 2 Humble and Jazzy; Ubuntu 22.04 support deprecated (checked Nov. 5, 2026) |
 | Isaac Lab | 3.0.0; 2.3.2 for Isaac Sim 5.1 | 3.0 runs on Newton by default, with Isaac Sim 6.2 optional (checked Nov. 5, 2026) |
-| MuJoCo | 4.0.0 | Menagerie `mujoco-menagerie` 2026.9.0 |
+| MuJoCo | 4.0.1 | Menagerie `mujoco-menagerie` 2026.9.0 |
 | Gazebo | Jetty, Ionic, Harmonic, Fortress | Harmonic pairs with Jazzy |
 | PyTorch | 2.14 | Needs Python 3.10 or later |
 | LeRobot | 0.7.0 | Needs Python 3.12 or later |
@@ -83,4 +83,4 @@ Students can get free developer tools, including GitHub features, through the [G
 - [Dev guidelines](https://github.com/ATR-Lab/dev-guidelines): code style, Git and AI-assisted development
 - [Research standards](../research/standards.md): reproducibility and artifacts
 
-<sub>Last reviewed: Nov. 9, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/README.md)</sub>
+<sub>Last reviewed: Nov. 16, 2026 · Sources checked on that date · [Suggest a change](https://github.com/ATR-Lab/getting-started-atr-lab/edit/master/tech-stack/README.md)</sub>
